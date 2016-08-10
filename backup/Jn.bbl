@@ -1,0 +1,18 @@
+
+\cvitem{\textbf{2014}\hspace{.25cm} [1]}
+{\FormatName{M.~Steuwer} and \FormatName{S.~Gorlatch}, {SkelCL: A High-Level
+  Extension of OpenCL for Multi-GPU Systems}, {\em Journal of Supercomputing},
+  (in press).
+}
+\cvitem{\textbf{2013}\hspace{.25cm} [2]}
+{\FormatName{M.~Steuwer}, \FormatName{M.~Friese}, \FormatName{S.~Albers}, and
+  \FormatName{S.~Gorlatch}, {Introducing and Implementing the Allpairs Skeleton
+  for GPU Systems}, {\em International Journal of Parallel Programming}, (in
+  press).
+}
+\cvitem{\textbf{}\hspace{.25cm} [3]}
+{\FormatName{P.~Kegel}, \FormatName{M.~Steuwer}, and \FormatName{S.~Gorlatch},
+  {dOpenCL: Towards uniform programming of distributed heterogeneous
+  multi-/many-core systems}, {\em Journal of Parallel and Distributed
+  Computing}, 73(12):1639--1648.
+}

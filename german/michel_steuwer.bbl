@@ -1,0 +1,577 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{DBLP:books/daglib/0036235}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {University of Münster}%
+      }
+      \strng{namehash}{187269ddb4a287b49f62f0c4a3c57bd0}
+      \strng{fullhash}{187269ddb4a287b49f62f0c4a3c57bd0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Grade: \textit{Summa Cum Laude}, Supervied by Prof. Sergei Gorlatch}
+      \field{title}{Improving Programmability and Performance Portability on Many-Core Processors}
+      \field{type}{phdthesis}
+      \field{year}{2015}
+      \keyw{thesis}
+    \endentry
+    \entry{StHBG:14}{article}{}
+      \name{author}{4}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=8de82e39d60c5ea8d1f97734e581cbd0}{Haidl}{H\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=816d726ab6265b6889aa9216c3d3f144}{Breuer}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c15cdf5c5753dcf757b1c8586caa0643}
+      \strng{fullhash}{c3a010bbb32fcbf1ffe54bbd04a85feb}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Parallel Processing Letters}
+      \field{number}{3}
+      \field{title}{{High-Level Programming of Stencil Computations on Multi-GPU Systems Using the SkelCL Library}}
+      \field{volume}{24}
+      \field{year}{2014}
+      \keyw{journal}
+    \endentry
+    \entry{OlSDGH:14}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d8f2af70c179bf30a47a58851524febf}{Olejnik}{O\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=da4f924257560bb522c6590cd9a53175}{Dybowski}{D\bibinitperiod}{J.\bibnamedelimi N.}{J\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=62cedb8fc804418efa66fd72006230fb}{Heider}{H\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{938a7b18bfd06ce26343ab90ecdaa77e}
+      \strng{fullhash}{1932d93020a9f5f77baae1c9afe59213}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bioinformatics}
+      \field{number}{22}
+      \field{title}{{gCUP: Rapid GPU-based HIV-1 Coreceptor Usage Prediction for Next-Generation Sequencing}}
+      \field{volume}{30}
+      \field{year}{2014}
+      \field{pages}{3272\bibrangedash 3273}
+      \range{pages}{2}
+      \keyw{journal}
+    \endentry
+    \entry{StG:14}{article}{}
+      \name{author}{2}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{07804b3224c110cf5a4942e05dafcf2e}
+      \strng{fullhash}{07804b3224c110cf5a4942e05dafcf2e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Supercomputing}
+      \field{number}{1}
+      \field{title}{{SkelCL: A High-Level Extension of OpenCL for Multi-GPU Systems}}
+      \field{volume}{69}
+      \field{year}{2014}
+      \field{pages}{25\bibrangedash 33}
+      \range{pages}{9}
+      \keyw{journal}
+    \endentry
+    \entry{StFAG:14}{article}{}
+      \name{author}{4}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=5f600a59ba3af02dfabe89ed0450ddc1}{Friese}{F\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=679ca1282319ce45f01a7e8725daccb7}{Albers}{A\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{c15cdf5c5753dcf757b1c8586caa0643}
+      \strng{fullhash}{ec6fe1f0bae19b2d72e1b737276439dc}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Parallel Programming}
+      \field{number}{4}
+      \field{title}{{Introducing and Implementing the Allpairs Skeleton for GPU Systems}}
+      \field{volume}{42}
+      \field{year}{2014}
+      \field{pages}{601\bibrangedash 618}
+      \range{pages}{18}
+      \keyw{journal}
+    \endentry
+    \entry{KeSG:13}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cc8fe16f6ece584ea02a4295f9a21512}{Kegel}{K\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{41924d8280414bb39fb0cc1b8c9dafed}
+      \strng{fullhash}{41924d8280414bb39fb0cc1b8c9dafed}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Parallel and Distributed Computing}
+      \field{number}{12}
+      \field{title}{{dOpenCL: Towards uniform programming of distributed heterogeneous multi-/many-core systems}}
+      \field{volume}{73}
+      \field{year}{2013}
+      \field{pages}{1639\bibrangedash 1648}
+      \range{pages}{10}
+      \keyw{journal}
+    \endentry
+    \entry{DBLP:conf/icfp/SteuwerFLD15}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=7c3b03cb8833bc3c6673c64c10e8a8d5}{Fensch}{F\bibinitperiod}{Christian}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=57b68e7d9ae666f817c2c0ec08bec7c9}{Lindley}{L\bibinitperiod}{Sam}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=d03baecda8711b9af7f266a11f923868}{Dubach}{D\bibinitperiod}{Christophe}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=da1b19e5d5688323cf6dc713732ac4fb}{Fisher}{F\bibinitperiod}{Kathleen}{K\bibinitperiod}{}{}{}{}}%
+        {{hash=4a737c49788fce8070cc11a285b927c5}{Reppy}{R\bibinitperiod}{John\bibnamedelima H.}{J\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, BC, Canada}%
+      }
+      \strng{namehash}{eac327a074da3f405788a5fbacee5323}
+      \strng{fullhash}{42e6789960ed67e9eaa8b2c3db2f290c}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20th {ACM} {SIGPLAN} International Conference on Functional Programming, {ICFP} 2015}
+      \field{title}{Generating Performance Portable Code using Rewrite Rules: From High-Level Functional Expressions to High-Performance OpenCL Code}
+      \field{year}{2015}
+      \field{pages}{205\bibrangedash 217}
+      \range{pages}{13}
+      \keyw{proceedings,conference}
+    \endentry
+    \entry{DBLP:conf/pppj/FumeroRSD15}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=3a9048bb3fd3a63c21d4a10480ae477f}{Fumero}{F\bibinitperiod}{Juan\bibnamedelima José}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=69931f80257387508cd6f66788bc1202}{Remmelg}{R\bibinitperiod}{Toomas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=d03baecda8711b9af7f266a11f923868}{Dubach}{D\bibinitperiod}{Christophe}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=9c01b9dd722a317f0b3eb8e0f7e86781}{Stansifer}{S\bibinitperiod}{Ryan}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=5e67305d952d58112dab512ac4fd87b1}{Krall}{K\bibinitperiod}{Andreas}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Melbourne, FL, USA}%
+      }
+      \strng{namehash}{24124ec9e2b2aed99d1695a116a72e10}
+      \strng{fullhash}{fde1168eef4d35f255d3f07345b3fdd0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Principles and Practices of Programming on the Java Platform, {PPPJ} 2015}
+      \field{title}{Runtime Code Generation and Data Management for Heterogeneous Computing in Java}
+      \field{year}{2015}
+      \field{pages}{16\bibrangedash 26}
+      \range{pages}{11}
+      \keyw{proceedings,conference}
+    \endentry
+    \entry{GoS:14}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {St. Petersburg, Russia}%
+      }
+      \strng{namehash}{15d0d83058c3cfe0eae1429847f77fd2}
+      \strng{fullhash}{15d0d83058c3cfe0eae1429847f77fd2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Perspectives of Systems Informatics 9th International Andrei Ershov Memorial Conference (PSI 2014)}
+      \field{title}{{Towards High-Level Programming for Systems with Many Cores}}
+      \field{year}{2014}
+      \field{pages}{111\bibrangedash 126}
+      \range{pages}{16}
+      \keyw{proceedings,conference}
+    \endentry
+    \entry{StG:13}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Spain}%
+      }
+      \strng{namehash}{07804b3224c110cf5a4942e05dafcf2e}
+      \strng{fullhash}{07804b3224c110cf5a4942e05dafcf2e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Conference on Computational Science, (ICCS)}
+      \field{series}{Procedia Computer Science}
+      \field{title}{{High-Level Programming for Medical Imaging on Multi-GPU Systems using the SkelCL Library}}
+      \field{volume}{18}
+      \field{year}{2013}
+      \field{pages}{749\bibrangedash 758}
+      \range{pages}{10}
+      \keyw{proceedings,conference}
+    \endentry
+    \entry{StG:13b}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=720e408adf1584f4e7c2fa9dd2060f45}{Malyskin}{M\bibinitperiod}{V.}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {St. Petersburg, Russia}%
+      }
+      \strng{namehash}{07804b3224c110cf5a4942e05dafcf2e}
+      \strng{fullhash}{07804b3224c110cf5a4942e05dafcf2e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Parallel Computing Technologies 2013}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{{SkelCL: Enhancing OpenCL for High-Level Programming of Multi-GPU Systems}}
+      \field{volume}{7979}
+      \field{year}{2013}
+      \field{pages}{258\bibrangedash 272}
+      \range{pages}{15}
+      \keyw{proceedings,conference}
+    \endentry
+    \entry{StKG:12b}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=cc8fe16f6ece584ea02a4295f9a21512}{Kegel}{K\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8aa5fe09f9139b979120033191b1b762}
+      \strng{fullhash}{8aa5fe09f9139b979120033191b1b762}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{New Trends in Software Methodologies, Tools and Techniques -- Proceedings of the 11th SoMeT'12}
+      \field{title}{{A High-Level Programming Approach for Distributed Systems with Accelerators}}
+      \field{year}{2012}
+      \field{pages}{430\bibrangedash 441}
+      \range{pages}{12}
+      \keyw{proceedings,conference}
+    \endentry
+    \entry{ReLSD:16}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=69931f80257387508cd6f66788bc1202}{Remmelg}{R\bibinitperiod}{Toomas}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=9b06b30234c65b9d78ffe91b5e2dc528}{Lutz}{L\bibinitperiod}{Thibaut}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=d03baecda8711b9af7f266a11f923868}{Dubach}{D\bibinitperiod}{Christophe}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Spain}%
+      }
+      \strng{namehash}{86b6fc5c9b86ad81f20b8dc375bd44bb}
+      \strng{fullhash}{3d1e4f71796af5fdf99e9676265443a2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{GPGPU'16: Proceedings of the 9th {ACM} Workshop on General Purpose Processing using GPUs}
+      \field{note}{(to appear)}
+      \field{title}{Performance Portable GPU Code Generation for Matrix Multiplication}
+      \field{year}{2016}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{HaSHG:16}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=b912a658a97b78087fafc9242eff7dde}{Haidl}{H\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=9c8278aad7327a8c5334a8c087992c8b}{Humernbrum}{H\bibinitperiod}{Tim}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=1fc3bde69661c7ede218515c9ad84eb8}{Gorlatch}{G\bibinitperiod}{Sergei}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Spain}%
+      }
+      \strng{namehash}{335ec446d680bcef5f4000f54c32f9ec}
+      \strng{fullhash}{9fdb354f8b120ab867fbe6091572154d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{GPGPU'16: Proceedings of the 9th {ACM} Workshop on General Purpose Processing using GPUs}
+      \field{note}{(to appear)}
+      \field{title}{Multi-Stage Programming for GPUs in Modern C++ using PACXX}
+      \field{year}{2016}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{HaSCGD:16}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=e013c2026a14cd6964fc1d97b1cfc862}{Harries}{H\bibinitperiod}{Adam}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=d2eb163d4598b5b139d806fd861e541c}{Cole}{C\bibinitperiod}{Murray}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0e8535cabac924ab58466959dcd8eb35}{Gray}{G\bibinitperiod}{Alan}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=d03baecda8711b9af7f266a11f923868}{Dubach}{D\bibinitperiod}{Christophe}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Prague, Czech Republic}%
+      }
+      \strng{namehash}{04dfcaee691eca85f637d2cb72c27540}
+      \strng{fullhash}{1599f009ed3535b80c3e149762b37675}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{HLPGPGPU'16: Workshop on High-Level Prog. for Heterogeneous and Hierarchical Parallel Systems}
+      \field{title}{Compositional Compilation for Sparse, Irregular Data Parallelism}
+      \field{year}{2016}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{CuPSL:16b}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=7804f5ee53ee7835a0e40e798d87b1bb}{Cummins}{C\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=e014c6f086d8616d10d1766fd74bc057}{Petoumenos}{P\bibinitperiod}{Pavlos}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=5a59ca35080fd8204be47a7458c71cd5}{Leather}{L\bibinitperiod}{Hugh}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Prague, Czech Republic}%
+      }
+      \strng{namehash}{17e46dab801be6db8722a7d5d26eb3f7}
+      \strng{fullhash}{1cb4085bf262073f4bdc05942e4908e2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{HLPGPGPU'16: Workshop on High-Level Prog. for Heterogeneous and Hierarchical Parallel Systems}
+      \field{title}{Towards Collaborative Performance Tuning of Algorithmic Skeletons}
+      \field{year}{2016}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{CuPSL:16}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=7804f5ee53ee7835a0e40e798d87b1bb}{Cummins}{C\bibinitperiod}{Chris}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=e014c6f086d8616d10d1766fd74bc057}{Petoumenos}{P\bibinitperiod}{Pavlos}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=187269ddb4a287b49f62f0c4a3c57bd0}{Steuwer}{S\bibinitperiod}{Michel}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=5a59ca35080fd8204be47a7458c71cd5}{Leather}{L\bibinitperiod}{Hugh}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Prague, Czech Republic}%
+      }
+      \strng{namehash}{17e46dab801be6db8722a7d5d26eb3f7}
+      \strng{fullhash}{1cb4085bf262073f4bdc05942e4908e2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ADAPT'16: Proceedings of the 2016 International Workshop on Adaptive Self-tuning Computing Systems}
+      \field{title}{Autotuning OpenCL Workgroup Size for Stencil Patterns}
+      \field{year}{2016}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{FuSD:14}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3a9048bb3fd3a63c21d4a10480ae477f}{Fumero}{F\bibinitperiod}{Juan\bibnamedelima José}{J\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=e198dbd4796bc913fefc4806fe192745}{Dubach}{D\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Edinburgh, Scotland, UK}%
+      }
+      \strng{namehash}{2bc245cec120408265c4026d1781b6db}
+      \strng{fullhash}{2bc245cec120408265c4026d1781b6db}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ARRAY'14: Proceedings of the 2014 {ACM} {SIGPLAN} International Workshop on Libraries, Languages, and Compilers for Array Programming}
+      \field{title}{A Composable Array Function Interface for Heterogeneous Computing in Java}
+      \field{year}{2014}
+      \field{pages}{44\bibrangedash 49}
+      \range{pages}{6}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{BrSG:14}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=816d726ab6265b6889aa9216c3d3f144}{Breuer}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \strng{namehash}{8519b884ec60f4771ddaca91adb5e211}
+      \strng{fullhash}{8519b884ec60f4771ddaca91adb5e211}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1st International Workshop on High-Performance Stencil Computations}
+      \field{title}{Extending the SkelCL Skeleton Library for Stencil Computations on Multi-GPU Systems}
+      \field{year}{2014}
+      \field{pages}{749\bibrangedash 758}
+      \range{pages}{10}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{StKG:12}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=cc8fe16f6ece584ea02a4295f9a21512}{Kegel}{K\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8aa5fe09f9139b979120033191b1b762}
+      \strng{fullhash}{8aa5fe09f9139b979120033191b1b762}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Symposium on Parallel and Distributed Processing Workshops}
+      \field{title}{{Towards High-Level Programming of Multi-{GPU} Systems Using the SkelCL Library}}
+      \field{year}{2012}
+      \field{pages}{1858\bibrangedash 1865}
+      \range{pages}{8}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{StGBB:12}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=0646c48fa4c12fb914ccfe8695fb9501}{Bu{ß}}{B\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=816d726ab6265b6889aa9216c3d3f144}{Breuer}{B\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=6c89008572e75a49557505ce9e556b2f}{Ioannis}{I\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=72cf4658e710425cea4a1fbded203e3f}{Michael}{M\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=25b94433f19dd4f1dd8b113e6c7c79d6}{Rosa{,\bibnamedelimb et.\bibnamedelimi al}}{R\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Rhodes Island, Greece}%
+      }
+      \strng{namehash}{c15cdf5c5753dcf757b1c8586caa0643}
+      \strng{fullhash}{e286e7664c524e1dd72159ced79e4cd2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Euro-Par 2012: Parallel Processing Workshops}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{{Using the {SkelCL} Library for High-Level {GPU} Programming of {2D} Applications}}
+      \field{year}{2012}
+      \field{pages}{370\bibrangedash 380}
+      \range{pages}{11}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{KeSG:12}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=cc8fe16f6ece584ea02a4295f9a21512}{Kegel}{K\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{41924d8280414bb39fb0cc1b8c9dafed}
+      \strng{fullhash}{41924d8280414bb39fb0cc1b8c9dafed}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Symposium on Parallel and Distributed Processing Workshops}
+      \field{title}{{dOpenCL: Towards a Uniform Programming Approach for Distributed Heterogeneous Multi-/Many-Core Systems}}
+      \field{year}{2012}
+      \field{pages}{174\bibrangedash 186}
+      \range{pages}{13}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{StKG:11}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=cc8fe16f6ece584ea02a4295f9a21512}{Kegel}{K\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8aa5fe09f9139b979120033191b1b762}
+      \strng{fullhash}{8aa5fe09f9139b979120033191b1b762}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Symposium on Parallel and Distributed Processing Workshops}
+      \field{title}{{SkelCL - A Portable Skeleton Library for High-Level GPU Programming}}
+      \field{year}{2011}
+      \field{pages}{1176\bibrangedash 1182}
+      \range{pages}{7}
+      \keyw{proceedings,workshop}
+    \endentry
+    \entry{KeGEDSK:13}{inbook}{}
+      \name{author}{6}{}{%
+        {{hash=96545053193a7a07ca8e9636b2647271}{Kessler}{K\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+        {{hash=8817a4a779c865807693af73b8eae186}{Emmyren}{E\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=49625676b886e782e94e6625a410f98c}{Dastgeer}{D\bibinitperiod}{U.}{U\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=cc8fe16f6ece584ea02a4295f9a21512}{Kegel}{K\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{d4be10bb319f4aad9a3f73eb98119e84}
+      \strng{fullhash}{a161fc4e506cf71d716b02eb6e713b72}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Programming Multi-core and Many-core Computing Systems}
+      \field{note}{(to appear)}
+      \field{title}{{Skeleton Programming for Portable Many-Core Computing}}
+      \field{year}{2014}
+      \keyw{book}
+    \endentry
+    \entry{KeSG:13b}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=cc8fe16f6ece584ea02a4295f9a21512}{Kegel}{K\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=665c76842fb46e04b66f224a8b7fa602}{Steuwer}{S\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=b9562a597117361b244534ad92050008}{Gorlatch}{G\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IOS Press}%
+      }
+      \strng{namehash}{41924d8280414bb39fb0cc1b8c9dafed}
+      \strng{fullhash}{41924d8280414bb39fb0cc1b8c9dafed}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Transition of HPC Towards Exascale Computing}
+      \field{series}{Advances in Parallel Computing}
+      \field{title}{{Uniform High-Level Programming of Many-Core and Multi-GPU Systems}}
+      \field{volume}{24}
+      \field{year}{2013}
+      \keyw{book}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

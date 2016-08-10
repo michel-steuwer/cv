@@ -1,0 +1,492 @@
+\documentclass[11pt,a4paper]{moderncv}
+% \usepackage{mathpazo}
+\usepackage[T1]{fontenc}
+
+\usepackage[sfdefault,scaled=.95]{FiraSans}
+\usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle{} #1}}
+
+\urlstyle{same}
+
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{Steuwer}{\textbf{#1}}{#1}%
+}
+
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Michel}
+\familyname{Steuwer}
+\address{%
+  Informatics Forum --- 1.02\\
+  10 Crichton Street\\
+  Edinburgh EH8 9AB\\}{%
+  United Kingdom}
+\email{michel.steuwer@ed.ac.uk}
+
+% divide publications
+\usepackage[style=numeric-comp,
+            sorting=none, % keep order as in the bib file ...
+            defernumbers,maxbibnames=50]{biblatex}
+
+\defbibenvironment{bibliography}
+  {\list%
+     {\printfield{year}\hspace{1em}\printtext[labelnumberwidth]{\printfield{prefixnumber}\printfield{labelnumber}}}
+     {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
+      \setlength{\labelwidth}{\hintscolumnwidth}%
+      \setlength{\labelsep}{\separatorcolumnwidth}%
+      \leftmargin\labelwidth%
+      \advance\leftmargin\labelsep%
+      }%
+      \sloppy\clubpenalty4000\widowpenalty4000}
+  {\endlist}
+  {\item}
+
+% Highlight my Name in bold
+\DeclareNameFormat{author}{%
+\ifthenelse{\equal{#1}{Steuwer}}%
+    {{\bfseries\ifblank{#4}{}{#4\space}#1}}%
+    {\ifblank{#4}{}{#4\space}#1}%
+\ifthenelse{\value{listcount}<\value{liststop}}%
+    {\addcomma\space}
+    {}}
+
+% Only print a year once
+\newcounter{currentYear}
+\DeclareFieldFormat{year}{%
+\ifthenelse{\equal{#1}{\arabic{currentYear}}}%
+    {}
+    {\setcounter{currentYear}{#1}{\bfseries #1}}}
+
+\bibliography{michel_steuwer}
+
+\usepackage{xspace}
+
+\newcommand{\since}{{\small since}\xspace}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\nocite{*} % cite everything ...
+
+\makecvtitle%
+\vspace{-1em}
+%\begin{minipage}[t]{0.5\textwidth}
+%  \section{Personal Details}
+%  %\cvline{Birthday}{21th of May 1985}
+%  \cvline{Birthplace}{Duisburg, Germany}
+%  \cvline{Nationality}{German}
+%\end{minipage}
+%\begin{minipage}[t]{.5\textwidth}
+%  \section{Languages}
+%  \cvline{German}{Native}
+%  \cvline{English}{Fluent}
+%\end{minipage}
+
+\section{University Education}
+\cventry{2010--2015}
+        {PhD degree in computer science}{University of Münster}{Germany}{}
+        {Supervisor: Prof.\ Sergei Gorlatch}
+\cvline{}{Thesis: \textit{Improving Programmability and Performance Portability on Many-Core Processors}}
+\cvline{}{Awarded with the highest possible grade: \textbf{Summa Cum Laude} ({\itshape\small with highest honor\/})}
+\cvline{}{Nominated as one of 34 candidates from all German, Austrian, and Swiss Universities for the \textbf{prize for best dissertation} awarded by the German Informatics Society.}
+
+\cventry{2005--2010}
+        {Diploma degree in computer science with a minor in mathematics}
+        {\newline(equivalent to a combined MSc and UG degree) University of Münster}{Germany}{}{}
+\cvline{}{Thesis: \textit{SkelCL --- A Portable Multi-GPU Skeleton Library}}
+% \cvline{}{Overall grade in computer science: \textit{very good (85 \%)}}
+
+
+\section{Professional Experience}
+\cventry{{\footnotesize since Oct.} 2014}
+        {Postdoctoral Research Associate}{The University of Edinburgh}{UK}{}{}
+\cventry{2010--2014}
+        {Research Associate}{University of Münster}{Germany}{}{}
+
+\section{Research Visits}
+\cventry{2014}{Visiting researcher (3 Month)}{The University of Edinburgh}{UK}{}{}
+\cventry{2013}
+        {Visiting researcher (4 Month)}{The University of Edinburgh}{UK}{}
+        {Funded by the EU HiPEAC Network of Excellence}
+\cventry{2012}
+        {Visiting researcher (3 Month)}{The University of Edinburgh/EPCC}{UK}{}
+        {Funded by the EU HPC-Europa2 project}
+
+\section{Research Community Activities}
+\subsection{Memberships and Participation in Research Networks}
+\cvline{}{
+  \begin{itemize}
+    \item Member of ACM and the German Informatics Society ({\footnotesize GI\@: Gesellschaft f{\"u}r Informatik})
+    \item Active participating member of the European Network on High Performance and Embedded Architecture and Compilation (HiPEAC)
+    \item I represent the University of Edinburgh in the recent EU \emph{EuroLab-4-HPC\@: Open source in high performance computing} initiative
+  \end{itemize}
+}
+\subsection{Conference Organisation}
+\cvline{}{
+  \begin{itemize}
+    \item I was the main organiser of the 7{\small th} UK Many-Core Developer Conference on May 10{\small th} in Edinburgh with over 50 participants, a keynote and 10 talks spanning topics from the landscape of accelerated, heterogeneous and many-core computing.
+  \end{itemize}
+}
+\subsection{Organisation of Informal Groups}
+\cvline{}{
+  \begin{itemize}
+    \item I co-organise the \emph{Programming Languages Interest Group} together with James Cheney, a group discussing a broad range of topics related to programming languages.
+    \item I organise the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
+  \end{itemize}
+}
+\subsection{Program Committees}
+\cvline{}{
+  \begin{itemize}
+    \item {\small 9{\footnotesize th} Int. Symposium on High-Level Parallel Programming and Applications (HLPP\,2016)}
+    \item {\small 16{\footnotesize th} IEEE Int. Conference on Scalable Computing and Communications (ScalCom\,2016)}
+    % \item {\small International Workshop on Applications of Language Engineering Techniques in Many-Core Compilers (ALLIANCE 2016)}
+\end{itemize}
+}
+\subsection{Artifact Evaluation Committees}
+\cvline{}{
+  \begin{itemize}
+    \item {The \small 25{\footnotesize th} Int. Conference on Parallel Architectures and Compilation Techniques (PACT\,2016)}
+  \end{itemize}
+}
+\subsection{Reviewing}
+\cvline{}{External reviewer for conferences:
+  \begin{itemize}
+    \item International Symposium on Code Generation and Optimization (CGO)
+    \item International Conference on Parallel and Distributed Computing (Euro-Par)
+    \item European MPI Users Group conference (EuroMPI)
+    \item International Symposium on Cluster, Cloud and Grid Computing (CCGrid)
+    \item International Parallel Computing Conference (ParCo)
+    \item Parallel Computing Technologies (PaCT)
+  \end{itemize}
+  \smallskip
+  Reviewer for journals:
+  \begin{itemize}
+    \item Science of Computer Programming Journal (Elsevier)
+    \item Software: Practice and Experience (Wiley)
+    \item The Journal of Supercomputing (Springer)
+  \end{itemize}
+}
+          %the Science of Computer Programming journal, the Software:
+          %Practice and Experience journal and the
+          %Journal of Supercomputing;
+          %as well as the HLPGPU HiPEAC Workshop.}
+
+
+% TODO: check names
+\section{Research Collaborations}
+\cvline{}{
+  \begin{itemize}
+    \item Sam Lindley, LFCS, University of Edinburgh
+    \item Alan Gray, EPCC, University of Edinburgh
+    \item Robert Atkey, University of Strathclyde
+    \item Ryan Newton, University of Indiana Bloomington
+    \item Sergei Gorlatch, University of M{\"u}nster
+    \item Alastair Murray, Codeplay
+    \item Grigori Fursin and Anton Lokhmotov, dividiti
+    \item Mario Wolczko and Tim Harris, Oracle Labs
+    \item Robert Hundt, Google
+  \end{itemize}
+}
+
+\section{Awarded Honours} % Auszeichnungen
+\cvline{}{
+  \begin{itemize}
+    \item PhD thesis honoured with the highest possible grade \emph{Summa cum laude}
+    \item Nominated as one of 34 candidates for the prize for best dissertation completed in 2015 in Informatics at a German, Austrian, or Swiss University.
+          The prize is awarded by the German Informatics Society and the selection is currently ongoing.
+    \item HiPEAC collaboration grants (2016 and 2013) and HPC-Europa2 visitor grant (2012)
+  \end{itemize}
+}
+
+% \section{Research Projects}
+% \cventry{since 2011}
+%         {dOpenCL}{An implementation of the OpenCL standard targeting distributed systems}{}{}
+%         {Ongoing research. Preliminary results published in: \cite{KeSG:13,KeSG:12}.}
+% \cvline{}{Together with other research groups we are leading the development of
+%           OpenCL implementations targeting distributed systems, by developing
+%           dOpenCL. dOpenCL allows to program all parallel processors
+%           (e.g., CPUs or GPUs) of a distributed Systems using OpenCL as the
+%           single programming model.
+%         }
+%
+% \cventry{since 2010}
+%         {SkelCL}{A high-level programming library for heterogeneous systems}{}{}
+%         {Ongoing research. Preliminary results published in: \cite{StHBG:14,StG:14,StFAG:14,GoS:14,BrSG:14,StG:13,StG:13b,StKG:12b,StKG:12,StGBB:12,KeGEDSK:13,KeSG:13b}.}
+% \cvline{}{I am the lead developer of SkelCL, a novel high-level programming
+%           model and library for programming heterogeneous systems. It uniquely
+%           combines algorithmic skeletons, container data types and data
+%           (re)distribution mechanisms to greatly simplify the programming of
+%           heterogeneous systems comprising of multiple parallel processors.
+%           SkelCL is open source software and can be found online at:
+%           \url{http://skelcl.uni-muenster.de}.
+%         }
+%
+% \cventry{01/2010\\ --\ 09/2010}
+%         {Diploma project}{Developing a Portable Multi-GPU Skeleton Library}{}{}
+%         {Results published in \cite{StKG:11}.}
+% \cvline{}{As my diploma project I developed the predecessor to SkelCL,
+%           an innovative high-level programming library for simplified
+%           programming of GPUs. We published the results of my diploma project in
+%           \cite{StKG:11} and showed, that we can greatly simplify the
+%           programming of GPU systems without scarifying performance.
+%           }
+
+\section{Talks and Presentations}
+  \cvline{08/2016}
+         {Invited Talk:\newline \emph{Structured Parallel Programming --- From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
+         Center for Advanced Electornics Dresden, Dresden University of Technology, Germany.
+         }
+  \cvline{05/2016}
+         {Invited Talk:\newline \emph{Improving Programmability and Performance Portability on Many-Core Processors}\newline
+         \small Colloquium of candidates nominated for the \emph{prize for best dissertation} awarded by the German Informatics Society, Schloss Dagstuhl, Germany.}
+  \cvline{04/2016}
+         {Invited Talk: \emph{The lift Project: Performance Portability via Rewrite Rules}\newline
+          Saarland University, Germany.}
+  \cvline{01/2016}
+         {Invited Talk: \emph{Performance Portable GPU Code Generation}\newline
+         \small Imperial College London, UK.}
+  \cvline{12/2015}
+         {Talk: \emph{Functional Programming in C++}\newline
+         \small Programming Language Interest Group at Edinburgh University, UK.}
+  \cvline{10/2015}
+         {Invited Talk: \emph{Generating Performance Portable Code using Rewrite Rules}\newline
+         \small PENCIL Developer Meeting at Imperial College London, UK.}
+  \cvline{10/2015}
+         {Guest Lecture:\newline \emph{DSLs and rewriting-based optimizations for performance-portable parallel programming}\newline
+         \small in the Elements of Programming Languages Course at the University of Edinburgh, UK.}
+  \cvline{09/2015}
+         {Talk: \emph{Generating Performance Portable Code using Rewrite Rules:\newline From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
+         \small International Conference on Functional Programming (ICFP) 2015 in Vancouver, Canada.}
+  \cvline{06/2015}
+         {Talk: \emph{Generating Performance Portable Code using Rewrite Rules}\newline
+         \small Scottish Programming Languages Seminar in St.\ Andrews, UK.}
+  \cvline{05/2014}
+         {Invited Talk: \emph{SkelCL\@: High-Level Programming of Multi-GPU
+          Systems}\newline \small Institute for Computational and Applied
+          Mathematics, University of Münster, Germany.}
+  \cvline{05/2014}
+         {Invited Talk: \emph{SkelCL\@: High-Level Programming of Multi-GPU
+          Systems}\newline \small Workshop on Fast Data Processing on GPUs in
+          Dresden, Germany.}
+  \cvline{01/2014}
+         {Talk: \emph{Extending the SkelCL Library for Stencil
+          Computations on Multi-GPU Systems}\newline \small HiStencils 2014
+          workshop in Vienna, Austria.}
+  \cvline{12/2013}
+         {Invited Talk: \emph{SkelCL\@: High-Level Programming of Multi-GPU
+          Systems}\newline \small Research group on elementary particle physics,
+          University of Wuppertal, Germany.}
+  \cvline{07/2013}
+         {Talk: \emph{Introducing and Implementing the Allpairs Skeleton for GPU
+          Systems}\newline \small HLPP 2013 workshop in Paris, France.}
+  \cvline{06/2013}
+         {Talk:\emph{High-Level Programming for Medical Imaging on Multi-GPU
+          Systems\newline using the SkelCL Library}\newline \small ICCS 2013 conference in
+          Barcelona, Spain.}
+  \cvline{08/2012}
+       {Talk: \emph{Using the SkelCL Library for High-Level GPU Programming of
+        2D Applications}\newline \small ParaPhrase 2012 workshop held in
+        conjunction with Euro-Par 2012 in Rhodes, Greece.}
+  \cvline{06/2012}
+       {Talk: \emph{High-Level Programming for Heterogeneous Systems with
+        Accelerators}\newline \small PDESoft 2012 workshop in Münster, Germany.}
+  \cvline{05/2012}
+       {Talk:\emph{Towards High-Level Programming of Multi-GPU Systems Using
+        the SkelCL Library}\newline \small AsHES 2012 workshop held in
+        conjunction with IPDPS 2012 in Shanghai, China.}
+  \cvline{04/2012}
+       {Invited talk: \emph{A Skeleton Library for Heterogeneous
+        Multi-/Many-Core Systems}\newline \small NAIS workshop in Edinburgh, UK.}
+  \cvline{01/2012}
+       {Talk: \emph{Towards a High-Level Approach for Programming Distributed
+        Systems with GPUs}\newline \small COST Action IC0805 (``ComplexHPC'')
+        meeting in Timisoara, Romania.}
+  \cvline{12/2011}
+       {Invited talk: \emph{SkelCL --- A High-Level Programming Library for GPU
+        Programming}\newline \small Jülich Supercomputing Centre (JSC), Germany.}
+  \cvline{05/2011}
+       {Talk: \emph{SkelCL --- A Portable Skeleton Library for High-Level
+        GPU Programming}\newline
+        \small HIPS 2011 workshop held in conjunction with IPDPS 2011 in
+        Anchorange, Alaska, USA.}
+  \cvline{09/2008}
+       {Invited talk: \emph{Development of an Online Game as a Student Project}\newline
+        \small ITSoftTEAM workshop in Chernihiv, Ukraine.}
+
+%\newpage
+
+\printbibheading[title={Publications}]
+
+\printbibliography[prefixnumbers={T},keyword=thesis,title={Thesis},
+                   heading=subbibliography]
+
+\printbibliography[prefixnumbers={J},keyword=journal,title={Journal Articles},
+                   heading=subbibliography]
+
+\printbibliography[prefixnumbers={C},keyword=conference,
+                   title={Conference Proceedings},heading=subbibliography]
+
+\printbibliography[prefixnumbers={W},keyword=workshop,
+                   title={Workshop Proceedings},heading=subbibliography]
+
+\printbibliography[prefixnumbers={B},keyword=book,title={Book Chapter},
+                   heading=subbibliography]
+ % \printbibliography[prefixnumbers={S},keyword=submission,title={Papers currently in submission},
+%                    heading=subbibliography]
+
+
+
+
+\section{Teaching Experience}
+\cvline{\small Fall Term 2015}{%
+  \begin{itemize}
+    \item Organiser and Lecturer of the C++ programming course \emph{The Humble C++ Programmer} aiming to improve PhD students coding skills.
+    \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course held by James Cheney.
+    \item Voluntary assistance in the tutorials of the \emph{Compiling Techniques} course held by Christophe Dubach.
+  \end{itemize}
+  }
+\vspace{-1em}
+\cvline{\small Fall Term 2014}{%
+  \begin{itemize}
+    \item Guest Lecture in the \emph{Compiling Techniques} course given by Christophe Dubach.
+  \end{itemize}
+}
+\vspace{-1em}
+\cvline{\small Summer Term 2014}{%
+\begin{itemize}
+  \item      Supervised MSc student project:\newline
+        \emph{Design and implementation of a high-level API for programming heterogeneous clusters}.
+\end{itemize}
+      }
+\vspace{-1em}
+\cvline{\small Winter Term 2013/2014}{%
+  \begin{itemize}
+    \item Supervised MSc student project:\newline
+        \emph{High-level programming of online games in future generation networks}.
+  \end{itemize}
+      }
+\vspace{-1em}
+\cvline{\small Summer Term 2013}{%
+  \begin{itemize}
+    \item  Course Design and Lecturer:
+        \emph{Introduction to programming with C and C++}.
+      \item    Teaching assistant:
+        \emph{Multi-core and GPU\@: Parallel Programming}.
+    \end{itemize}
+      }
+\vspace{-1em}
+\cvline{\small Winter Term 2011/2012}{%
+  \vspace{0em}
+  \begin{itemize}
+    \item Teaching assistant:
+        \emph{Operating Systems}.
+    \end{itemize}
+      }
+\vspace{-1em}
+\cvline{\small Summer Term 2012}{%
+  \begin{itemize}
+    \item Supervised MSc student project:
+        \emph{High-level programming of heterogeneous systems}.
+      \item Teaching assistant:
+        \emph{Multi-core and GPU\@: Parallel Programming}.
+    \end{itemize}
+      }
+\vspace{-1em}
+\cvline{\small Winter Term 2011/2012}{%
+  \begin{itemize}
+    \item Teaching assistant:
+        \emph{Technical aspects of cloud computing}.
+      \item Teaching assistant:
+        \emph{Operating Systems}.
+    \end{itemize}
+      }
+\vspace{-1em}
+\cvline{\small Summer Term 2011}{%
+  \begin{itemize}
+    \item Supervised UG/MSc student project:
+        \emph{Internet- and GPU-based Cloud Computing}.
+      \item Course Design and teaching assistant:
+        \emph{Multi-core and GPU\@: Parallel Programming}.
+    \end{itemize}
+      }
+\vspace{-1em}
+\cvline{\small Winter Term 2010/2011}{%
+  \vspace{0em}
+  \begin{itemize}
+    \item Supervised UG student project:
+        \emph{High-level GPU programming}.
+    \end{itemize}
+      }
+
+\section{Supervised Students}
+\cvline{}{\footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
+\cvline{\since{} 04/2016}{MSc studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations via Parallel Patterns}}
+\cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
+\cvline{\since{} 06/2015}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
+\cvline{}{\footnotesize The following students are co-supervised with Christophe Dubach at the University of Edinburgh.}
+\cvline{\since{} 09/2015}{PhD studies of Daniel Hillerström on\newline \emph{Efficient Compilation of Handlers for Algebraic Effects}} 
+\cvline{\since{} 09/2015}{PhD studies of Larisa Stoltzfus on\newline \emph{Stencil-based Acoustic Applications}}
+\cvline{\since{} 09/2015}{PhD studies of Vanya Yaneva on\newline \emph{Parallel Test Exectuion on GPUs}}
+\cvline{\since{} 10/2014}{PhD studies of Adam Harries on\newline \emph{Sparse and Irregular Data-Parallel Applications on GPUs}}
+\cvline{\since{} 10/2014}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{Heterogeneous Computing in Managed Languages}}
+\cvline{\since{} 10/2014}{PhD studies of Toomas Remmelg on\newline \emph{Automatic Performance Optimisations via Provably Correct Rewrite Rules}}
+\cvline{}{\footnotesize The following students have been co-supervised with Sergei Gorlatch at the University of Münster.}
+\cvline{07/2014}{Bachelor thesis of André Lüers on\newline
+                 \emph{Evaluation of the Skeleton Library FastFlow}}
+\cvline{07/2014}{Bachelor thesis of Lars Klein on\newline
+                 \emph{A Parallel Implementation of the T-CUP Software using the
+                       SkelCL Library}}
+\cvline{01/2014}{Master thesis of Michael Olejnik on\newline
+                       \emph{A GPU-based Classification Framework for
+                             HIV Resistance Prediction}}
+\cvline{01/2014}{Master thesis of Stefan Breuer on\newline
+                       \emph{Extending the SkelCL Library for
+                             Stencil Computations}}
+\cvline{11/2013}{Diploma thesis of Wadim Hamm on\newline
+                       \emph{Development of a Divide \& Conquer Skeleton for
+                             SkelCL}}
+\cvline{07/2013}{Bachelor thesis of Matthias Droste on\newline
+                       \emph{Evaluation of the Skeleton Library SkePU}}
+\cvline{06/2013}{Bachelor thesis of Kai Kientopf on\newline
+                       \emph{\small Implementation of the Needleman-Wunsch Algorithm
+                             and the Breath-First-Search with SkelCL}}
+\cvline{06/2013}{Master thesis of Florian Quinkert on\newline
+                       \emph{\small A Model for Predicting Work Distribution in
+                             Heterogeneous Systems and its Implementation
+                             in SkelCL}}
+\cvline{03/2013}{Master thesis of Malte Friese on\newline
+                 \emph{Extending the Skeleton Library SkelCL with a Skeleton for
+                       Allpairs Computations}}
+\cvline{03/2013}{Bachelor thesis of Sebastian Mißbach on\newline
+                 \emph{Implementing the LU-Decomposition and the Mersenne-Twister
+                       with the SkelCL Library}}
+\cvline{03/2013}{Bachelor thesis of Patrick Schiffler on\newline
+                 \emph{Performance Analysis of SkelCL using B+ Tree Traversal and
+                       3D Jacobi Stencil Computation}}
+\cvline{01/2013}{Diploma thesis of Markus Blank-Burian on\newline
+                 \emph{Simulation and Analysis of Two-Dimensional Turbulences on
+                       Parallel Computer Architectures}}
+\cvline{06/2012}{Diploma thesis of Matthias Buß on\newline
+                 \emph{Adding Multidimensional Data Types to the Multi-GPU
+                       Skeleton Library SkelCL}}
+\cvline{09/2011}{Bachelor thesis of Michael Olejnik on\newline
+                 \emph{Investigating the Use of GPUs for Radix Sort}}
+\cvline{09/2011}{Bachelor thesis of Jan Gerd Tenberge on\newline
+                 \emph{Extending the SkelCL Library with Iterators}}
+\cvline{08/2011}{Bachelor thesis of Stefan Breuer on\newline
+                 \emph{Enhancing SkelCL's MapOverlap Skeleton}}
+\cvline{08/2011}{Bachelor thesis of Tobias Günnewig on\newline
+                 \emph{Developing a Library for Manipulating Source Code of
+                   C-based Languages}}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

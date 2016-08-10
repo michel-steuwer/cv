@@ -1,0 +1,613 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+
+\urlstyle{same}
+
+\newboolean{eng}
+\setboolean{eng}{true}
+\newboolean{ger}
+\setboolean{ger}{false}
+
+\newcommand{\lang}[2]
+{
+  \ifthenelse{\boolean{eng}}{#1}{}%
+  \ifthenelse{\boolean{ger}}{#2}{}
+}
+
+\usepackage{xstring}
+\def\FormatName#1{%
+  \IfSubStr{#1}{Steuwer}{\textbf{#1}}{#1}%
+}
+
+%\moderncvtheme[blue]{casual}
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Michel}
+\familyname{Steuwer}
+\lang{\address{Coesfeldweg 79a}{48161 Münster, Germany}}
+     {\address{Coesfeldweg 79a}{48161 Münster, Deutschland}}
+\phone{+49 (0)251 83-32744}
+\fax{+49 (0)251 83-32742}
+\email{michel.steuwer@uni-muenster.de}
+%\homepage{http://www.uni-muenster.de/PVS/en/mitarbeiter/steuwer.html}
+%\extrainfo{\small\href{http://www.uni-muenster.de/PVS/en/mitarbeiter/steuwer.html}{http://www.uni-muenster.de/PVS/\\en/mitarbeiter/steuwer.html}}
+
+% divide publications 
+\usepackage{multibib}
+\newcites{Jn,Cn,Bk}{{},{},{}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\lang{\section{Personal Details}}
+     {\section{Personelle Angaben}}
+\lang{\cvline{Birthday}
+             {21 May 1985}}
+     {\cvline{Geburtstag}
+             {21.Mai 1985}}
+\lang{\cvline{Birthplace}
+             {Duisburg, Germany}}
+     {\cvline{Geburtsort}
+             {Duisburg, Deutschland}}
+\lang{\cvline{Nationality}
+             {German}}
+     {\cvline{Nationalit\"at}
+             {deutsch}}
+
+% \lang{
+% \section{School Education}
+% }{
+% \section{Schulbildung}
+% }
+% \lang{
+% \cventry{1991--1994}
+%         {Primary school}{Grundschule Theißelmannstraße}{Duisburg, Germany}{}{}
+% }{
+% \cventry{1991--1994}
+%         {Grundschule}{Grundschule Theißelmannstraße}{Duisburg, Deutschland}{}{}
+% }
+% \lang{
+% \cventry{1995--2004}
+%         {Abitur, Secondary school}{Gesamtschule Dinslaken}{Dinslaken, Germany}{}
+%         {Final grade: 1.5 (very good)}
+% }{
+% \cventry{1995--2004}
+%         {Abitur, weiterführende Schule}{Gesamtschule Dinslaken}{Dinslaken, Deutschland}{}
+%         {Abiturnote: 1.5}
+% }
+
+\lang{
+\section{University Education}
+}{
+\section{Universitäre Bildung}
+}
+\lang{
+\cventry{since 2010}
+        {Ph.\,D. studies}{University of Münster}{Münster, Germany}{}
+        {}
+\cvline{}{Supervisor: Prof. Sergei Gorlatch}
+\cvline{}{Main research interests:
+          High-level abstractions for parallel programming, Exploiting modern
+          parallel processors, including multi-core CPUs and GPUs.}
+}{
+\cventry{seit 2010}
+        {Doktorand}{Westfälische Wilhelms-Universität Münster}{Münster, Deutschland}{}
+        {Forschungsinteressen:
+          High-level Abstraktionen für die parallele Programmierung,
+          Nutzung moderner paralleler Prozessoren, insbesondere multi-core CPUs
+          und GPUs.}
+}
+\lang{
+\cventry{2005--2010}
+        {Diploma degree in computer science with a minor in mathematics}
+        {\hspace{5em}(equivalent to a M.\,Sc. degree) University of Münster}{Münster, Germany}{}
+        {Final grade in computer science: very good (85 \%)}
+}{
+\cventry{2005--2010}
+        {Diplomabschluss in Informatik mit Nebenfach Mathematik}
+        {Westfälische Wilhelms-Universität Münster}{Münster, Deutschland}{}
+        {Abschlussnote in Informatik: sehr gut}
+}
+
+\lang{
+\section{Research Visits}
+}{
+\section{Forschungsaufenthalte}
+}
+\lang{
+\cventry{02/2014}
+        {Visiting researcher (1 Month)}{Edinburgh University}{Edinburgh, UK}{}
+        {}
+\cventry{07/2013\\--\ 11/2013}
+        {Visiting researcher (4 Month)}{Edinburgh University}{Edinburgh, UK}{}
+        {Funded by the HiPEAC Network of Excellence}
+\cventry{07/2012\\--\ 10/2012}
+        {Visiting researcher (3 Month)}{EPPC (Edinburgh Parallel Computing Centre)}{Edinburgh, UK}{}
+        {Funded by the HPC-Europa2 project}
+}{
+\cventry{07.2012\\--\ 10.2012}
+        {Forschungsaufenthalt}{Universität Edinburgh}{Edinburgh, Vereinigtes Königreich}{}
+        {Gefördert durch das HPC-Europa2 Projekt}
+}
+
+\section{Reviewer}
+\cvline{}{I have been active as an external reviewer for the
+          Parallel Computing Technologies~(PaCT), PARCO, Euro-Par, EuroMPI and CCGrid
+          conferences.
+          The Science of Computer Programming journal and the
+          Journal of Supercomputing.
+          As well as the HLPGPU2012 HiPEAC Workshop.
+}
+
+\lang{
+\section{Languages}
+}{
+\section{Sprachen}
+}
+\lang{
+\cvlanguage{German}
+           {Native}{}
+}{
+\cvlanguage{Deutsch}
+           {Muttersprache}{}
+}
+\lang{
+\cvlanguage{English}
+           {Fluent}{}
+}{
+\cvlanguage{Englisch}
+           {fließend}{}
+}
+
+
+\pagebreak
+
+\lang{
+\section{Research Projects}
+}{
+\section{Forschungsprojekte}
+}
+\lang{
+\cventry{since 2011}
+        {dOpenCL}{An implementation of the OpenCL standard targeting distributed systems}{}{}
+        {Ongoing research. Preliminary results published in: [2,8].}
+\cvline{}{Together with other research groups we are leading the development of
+          OpenCL implementations targeting distributed systems, by developing
+          dOpenCL. dOpenCL allows to program all parallel processors
+          (e.g., CPUs or GPUs) of a distributed Systems using OpenCL as the
+          single programming model.
+          %We plan combining SkelCL and dOpenCL to
+          %create a software stack combining the strength of both projects.
+          %This will allow for high-level programming of heterogeneous
+          %distributed systems.
+        }
+
+\cventry{since 2010}
+        {SkelCL}{A high-level programming library for heterogeneous systems}{}{}
+        {Ongoing research. Preliminary results published in: [1, 3-7, 10-11].}
+\cvline{}{I am the lead developer of SkelCL, a novel high-level programming
+          model and library for programming heterogeneous systems. It uniquely
+          combines algorithmic skeletons, container data types and data
+          (re)distribution mechanisms to greatly simplify the programming of
+          heterogeneous systems comprising of multiple parallel processors.
+          %While raising the level of abstraction we are able to maintain high
+          %performance close to manually tuned OpenCL applications and we achieve
+          %strong scalability for multi-GPU systems evaluating a real-world
+          %application [4].
+          %A new algorithmic skeleton for 2D applications makes use of the fast
+          %local GPU memory leading to great performance results [6].
+          %We are the first to propose a new algorithmic skeleton capturing the
+          %important class of allpairs computations, which include applications
+          %like n-body simulations or matrix multiplication.
+          %By cleverly utilize semantic information of the allpairs computational
+          %scheme we are able to achieve high performance competitive to highly
+          %tuned BLAS routines [2].
+          %Our in-depth application study shows that using our library instead of
+          %OpenCL one can save half the lines of code while still achieving 95\%
+          %of the performance of a manually tuned implementation [1].
+          SkelCL is open source software and can be found online at:
+          \url{http://skelcl.uni-muenster.de}.
+        }
+
+\cventry{01/2010\\ --\ 09/2010}
+        {Diploma project}{Developing a Portable Multi-GPU Skeleton Library}{}{}
+        {Results published in [9].}
+\cvline{}{As my diploma project I developed the predecessor to SkelCL,
+          an innovative high-level programming library for simplified
+          programming of GPUs. We published the results of my diploma project in
+          [9] and showed, that we can greatly simplify the programming of GPU
+          systems without scarifying performance.
+          %Especially, we are able to
+          %completely eliminate the need for explicit data movement, which is a
+          %challenging task in state-of-the-art GPU programming.
+          }
+}{
+}
+
+% \lang{
+% \section{Diploma thesis}
+% }{
+% \section{Diplomarbeit}
+% }
+% \lang{
+% \cvline{Title}
+%        {\emph{Developing a Portable Multi-GPU Skeleton Library}}
+% }{
+% \cvline{Titel}
+%        {\emph{Developing a Portable Multi-GPU Skeleton Library}}
+% }
+% \lang{
+% \cvline{Supervisors}
+%        {Prof. Sergei Gorlatch, University of Münster}
+% }{
+% \cvline{Betreuer}
+%        {Prof. Sergei Gorlatch, Westfälische Wilhelms-Universität Münster}
+% }
+% \lang{
+% \cvline{Description}
+%        {\small While CUDA and OpenCL made general-purpose
+%          programming for Graphics Processing Units (GPU) popular,
+%          using these programming approaches remains complex and
+%          error-prone because they lack high-level abstractions. The
+%          especially challenging systems with multiple GPU are not
+%          addressed at all by these low-level programming models. We
+%          propose SkelCL – a library providing so-called algorithmic
+%          skeletons that capture recurring patterns of parallel compu-
+%          tation and communication, together with an abstract vector
+%          data type and constructs for specifying data distribution. We
+%          demonstrate that SkelCL greatly simplifies programming GPU
+%          systems. Because the library is implemented using OpenCL, it
+%          is portable across GPU hardware of different vendors.}
+% }{
+% \cvline{Description}
+%        {\small While CUDA and OpenCL made general-purpose
+%          programming for Graphics Processing Units (GPU) popular,
+%          using these programming approaches remains complex and
+%          error-prone because they lack high-level abstractions. The
+%          especially challenging systems with multiple GPU are not
+%          addressed at all by these low-level programming models. We
+%          propose SkelCL – a library providing so-called algorithmic
+%          skeletons that capture recurring patterns of parallel compu-
+%          tation and communication, together with an abstract vector
+%          data type and constructs for specifying data distribution. We
+%          demonstrate that SkelCL greatly simplifies programming GPU
+%          systems. Because the library is implemented using OpenCL, it
+%          is portable across GPU hardware of different vendors.}
+% }
+
+%\pagebreak
+
+\lang{
+\section{Presentations}
+}{
+\section{Vorträge}
+}
+\lang{
+  \cvline{05/2014}
+         {Invited Talk: \emph{SkelCL: High-Level Programming of Multi-GPU
+          Systems}\newline \small Institute for Computational and Applied
+          Mathematics, University of Münster, Germany}
+}{
+  \cvline{05.2014}
+         {Vorstellung des SkelCL Forschungsprojekts auf dem Workshop on Fast
+          Data Processing on GPUs in Dresden, Deutschland.}
+}
+\lang{
+  \cvline{05/2014}
+         {Invited Talk: \emph{SkelCL: High-Level Programming of Multi-GPU
+          Systems}\newline \small Workshop on Fast Data Processing on GPUs in
+          Dresden, Germany.}
+}{
+  \cvline{05.2014}
+         {Vorstellung des SkelCL Forschungsprojekts auf dem Workshop on Fast
+          Data Processing on GPUs in Dresden, Deutschland.}
+}
+\lang{
+  \cvline{01/2014}
+         {Talk: \emph{Extending the SkelCL Skeleton Library for Stencil
+          Computations on Multi-GPU Systems}\newline \small HiStencils 2014
+          workshop in Vienna, Austria.}
+}{
+  \cvline{01.2014}
+         {Vorstellung eines Beitrags auf dem HiStencils 2014 Workshop in Wien,
+          Österreich.}
+}
+\lang{
+  \cvline{12/2013}
+         {Invited Talk: \emph{SkelCL: High-Level Programming of Multi-GPU
+          Systems}\newline \small Research group on elementary particle physics,
+          University of Wuppertal, Germany.}
+}{
+  \cvline{12.2013}
+         {Vorstellung des SkelCL Forschungsprojekts an der Universität
+          Wuppertal, Deutschland.}
+}
+\lang{
+  \cvline{07/2013}
+         {Talk: \emph{Introducing and Implementing the Allpairs Skeleton for GPU
+          Systems}\newline \small HLPP 2013 workshop in Paris, France.}
+}{
+  \cvline{07.2013}
+         {Vorstellung eines Beitrags auf dem HLPP 2013 Workshop in Paris,
+          Frankreich.}
+}
+\lang{
+\cvline{06/2013}
+       {Talk: \emph{High-Level Programming for Medical Imaging on Multi-GPU
+        Systems using the SkelCL Library}\newline \small ICCS 2013 conference in
+        Barcelona, Spain.}
+}{
+\cvline{06.2013}
+       {Vorstellung eines Beitrags auf der ICCS 2013 Konferenz in Barcelona,
+        Spanien.}
+}
+\lang{
+\cvline{08/2012}
+       {Talk: \emph{Using the SkelCL Library for High-Level GPU Programming of
+        2D Applications}\newline \small ParaPhrase 2012 workshop held in
+        conjunction with Euro-Par 2012 in Rhodes, Greece.}
+%       {Paper Presentation at the Paraphrase workshop (held in conjunction with
+%        Euro-Par 2012) in Rhodes, Greece.}
+}{
+\cvline{08.2012}
+       {Vorstellung eines Beitrags auf dem Paraphrase Workshop (durchgeführt
+        zusammen mit Euro-Par 2012) in Rhodos, Griechenland.}
+}
+\lang{
+\cvline{06/2012}
+       {Talk: \emph{High-Level Programming for Heterogeneous Systems with
+        Accelerators}\newline \small PDESoft 2012 workshop in Münster, Germany.}
+%       {Presentation of the SkelCL research project at the PDESoft 2012 workshop
+%        in M\"unster, Germany.}
+}{
+\cvline{06.2012}
+       {Vorstellung des SkelCL Forschungsprojekts auf dem PDESoft 2012 Workshop
+        in Münster, Deutschland.}
+}
+\lang{
+\cvline{05/2012}
+       {Talk:\emph{Towards High-Level Programming of Multi-GPU Systems Using
+        the SkelCL Library}\newline \small AsHES 2012 workshop held in
+        conjunction with IPDPS 2012 in Shanghai, China.}
+%       {Paper Presentation at the AsHES 2012 workshop (held in conjunction with
+%        IPDPS 2012) in Shanghai, China.}
+}{
+\cvline{05.2012}
+       {Vorstellung eines Beitrages auf dem ASHES 2012 Workshop (durchgeführt
+        zusammen mit IPDPS 2012) in Schanghai, China.}
+}
+\lang{
+\cvline{04/2012}
+       {Invited talk: \emph{A Skeleton Library for Heterogeneous
+        Multi-/Many-Core Systems}\newline \small NAIS workshop in Edinburgh, UK.}
+%       {Invited speaker at the NAIS workshop in Edinburgh, UK. Presentation of
+%        the SkelCL research project.}
+%Presentation of the SkelCL research project
+}{
+\cvline{04.2012}
+       {Vorstellung des SkelCL Forschungsprojekts auf dem NAIS Workshop in
+        Edinburgh, Vereinigtes Königreich.}
+}
+\lang{
+\cvline{01/2012}
+       {Talk: \emph{Towards a High-Level Approach for Programming Distributed
+        Systems with GPUs}\newline \small COST Action IC0805 (``ComplexHPC'')
+        meeting in Timisoara, Romania.}
+%       {Presentation of the SkelCL research project at COST Action IC0805
+%        (``ComplexHPC'') meeting in Timisoara, Romania.}
+}{
+\cvline{01.2012}
+       {Vorstellung des SkelCL Forschungsprojekts beim Treffen der COST Action
+         IC0805 (``ComplexHPC'') in Timisoara, Rumänien.}
+}
+\lang{
+\cvline{12/2011}
+       {Invited talk: \emph{SkelCL -- A High-Level Programming Library for GPU
+        Programming}\newline \small Jülich Supercomputing Centre (JSC), Germany.}
+%       {Presentation of the SkelCL research project at the supercomputing center
+%        in J\"ulich, Germany.}
+}{
+\cvline{12.2011}
+       {Vorstellung des SkelCL Forschungsprojekts am Supercomputing Centre
+        im Forschungszentrum Jülich, Deutschland}
+}
+\lang{
+\cvline{05/2011}
+       {Talk: \emph{SkelCL -- A Portable Skeleton Library for High-Level
+        GPU Programming}\newline
+        \small HIPS 2011 workshop held in conjunction with IPDPS 2011 in
+        Anchorange, Alaska, USA.}
+%       {Paper presentation at the HIPS 2011 workshop (held in conjunction with
+%        IPDPS 2011) in Achorage, USA.}
+}{
+\cvline{05.2011}
+       {Vorstellung eines Beitrages auf dem HIPS 2011 Workshop (durchgeführt
+        zusammen mit IPDPS 2011) in Achorage, USA.}
+}
+\lang{
+\cvline{09/2008}
+       {Invited talk: \emph{Development of an Online Game as a Student Project}\newline
+        \small ITSoftTEAM workshop in Chernihiv, Ukraine.}
+%       {Presentation of a student project at the ITSoftTEAM third international
+%        project workshop in Chernihiv, Ukraine.}
+}{
+\cvline{09.2008}
+       {Vorstellung eines Studierendenprojekts auf dem dritten internationalen
+        ITSoftTeam Projekt Workshop in Chernihiv, Ukraine.}
+}
+
+
+%\pagebreak
+
+\lang{
+\section{Publications}
+}{
+\section{Veröffentlichungen}
+}
+
+\lang{
+\subsection{Journal Articles}
+}{
+\subsection{Artikel in Zeitschriften}
+}
+% Journal Articles
+\nociteJn{*}
+\bibliographystyleJn{bibcvstyle}
+\bibliographyJn{journal}
+
+\lang{
+\subsection{Conference Proceedings}
+}{
+\subsection{Konferenzbeiträge}
+}
+% Conference Proceedings
+\nociteCn{*}
+\bibliographystyleCn{bibcvstyle}
+\bibliographyCn{conference}
+
+\lang{
+\subsection{Book Chapter}
+}{
+\subsection{Buchkapitel}
+}
+% Book Chapters
+\nociteBk{*}
+\bibliographystyleBk{bibcvstyle}
+\bibliographyBk{bookchapter}
+
+
+\section{Teaching}
+\cvline{Summer Term 2014}{
+        Supervised a student project:
+        \emph{Design and implementation of a high-level API for programming heterogeneous clusters}.
+      }
+\cvline{Winter Term 2013/2014}{
+        Supervised a student project:
+        \emph{High-level programming of online games in future generation networks}.
+      }
+\cvline{Summer Term 2013}{
+        Lecturer for the course:
+        \emph{Introduction to programming with C and C++}.\newline
+        Teaching assistant for the course:
+        \emph{Multi-core and GPU: Parallel Programming}.
+      }
+\cvline{Winter Term 2011/2012}{
+        Teaching assistant for the course:
+        \emph{Operating Systems}.
+      }
+\cvline{Summer Term 2012}{
+        Supervised a student project:
+        \emph{High-level programming of heterogeneous parallel systems}.\newline
+        Teaching assistant for the course:
+        \emph{Multi-core and GPU: Parallel Programming}.
+      }
+\cvline{Winter Term 2011/2012}{
+        Teaching assistant for the seminar:
+        \emph{Technical aspects of cloud computing}.\newline
+        Teaching assistant for the course:
+        \emph{Operating Systems}.
+      }
+\cvline{Summer Term 2011}{
+        Supervised a student project:
+        \emph{Internet- and GPU-based Cloud Computing}.\newline
+        Teaching assistant for the course:
+        \emph{Multi-core and GPU: Parallel Programming}.
+      }
+\cvline{Winter Term 2010/2011}{
+        Supervised a student project:
+        \emph{High-level GPU programming}.
+      }
+
+\section{Supervised Students\newline
+         \footnotesize(All students are co-supervised with Prof. Sergei Gorlatch)}
+\subsection{Currently active}
+\cvline{since 04/2013}{Bachelor thesis of André Lüers:
+                 \emph{Evaluation of the Skeleton Library FastFlow}}
+\cvline{since 04/2014}{Bachelor thesis of Lars Klein:
+                 \emph{A Parallel Implementation of the T-CUP Software using the
+                       SkelCL Library}}
+\cvline{since 05/2013}{Bachelor thesis of Fabian Hall:
+                 \emph{Design and implementation of an OpenCL compatibility API
+                       for the SkelCL Library}}
+\subsection{Completed}
+\cvline{01/2014}{Master thesis of Michael Olejnik:
+                       \emph{A GPU-based Classification Framework for
+                             HIV Resistance Prediction}
+                       \footnotesize (co-supervised with Dr. habil. Dominik Heider)}
+\cvline{01/2014}{Master thesis of Stefan Breuer:
+                       \emph{Extending the SkelCL Library for 
+                             Stencil Computations}}
+\cvline{11/2013}{Diploma thesis of Wadim Hamm:
+                       \emph{Development of a Divide \& Conquer Skeleton for
+                             SkelCL}}
+\cvline{07/2013}{Bachelor thesis of Matthias Droste:
+                       \emph{Evaluation of the Skeleton Library SkePU}}
+\cvline{06/2013}{Bachelor thesis of Kai Kientopf:
+                       \emph{Implementation of the Needleman-Wunsch Algorithm
+                             and the Breath-First-Search with the SkelCL Library}}
+\cvline{06/2013}{Master thesis of Florian Quinkert:
+                       \emph{A Model for Predicting Work Distribution in
+                             Heterogeneous Systems and its Implementation
+                             in the SkelCL Library}}
+\cvline{03/2013}{Master thesis of Malte Friese:
+                 \emph{Extending the Skeleton Library SkelCL with a Skeleton for
+                       Allpairs Computations}}
+\cvline{03/2013}{Bachelor thesis of Sebastian Mißbach:
+                 \emph{Implementing the LU-Decomposition and the Mersenne-Twister
+                       with the SkelCL Library}}
+\cvline{03/2013}{Bachelor thesis of Patrick Schiffler:
+                 \emph{Performance Analysis of SkelCL using B+ Tree Traversal and
+                       3D Jacobi Stencil Computation}}
+\cvline{01/2013}{Diploma thesis of Markus Blank-Burian:
+                 \emph{Simulation and Analysis of Two-Dimensional Turbulences on
+                       Parallel Computer Architectures}
+                 \footnotesize (co-supervised with Prof. Gernot Münster)}
+\cvline{06/2012}{Diploma thesis of Matthias Buß:
+                 \emph{Adding Multidimensional Data Types to the Multi-GPU
+                       Skeleton Library SkelCL}}
+\cvline{09/2011}{Bachelor thesis of Michael Olejnik:
+                 \emph{Investigating the Use of GPUs for Radix Sort}}
+\cvline{09/2011}{Bachelor thesis of Jan Gerd Tenberge:
+                 \emph{Extending the SkelCL Library with Iterators}}
+\cvline{08/2011}{Bachelor thesis of Stefan Breuer:
+                 \emph{Enhancing SkelCL's MapOverlap Skeleton}}
+\cvline{08/2011}{Bachelor thesis of Tobias Günnewig:
+                 \emph{Developing a Library for Manipulating Source Code of
+                   C-based Languages}
+                 \footnotesize (co-supervised with Philipp Kegel)}
+% \lang{
+% \section{Computer Skills}
+% }{
+% \section{Computer Fähigkeiten}
+% }
+% \lang{
+% \cvline{Some Experience}
+%        {Databases, Machine Learning, Java, Ruby, Python, Haskell, Erlang}
+% }{
+% \cvline{Einige Erfahrungen}
+%        {Datenbanken, Maschinelles Lernen, Java, Ruby, Python, Haskell, Erlang}
+% }
+% \lang{
+% \cvline{Extended Experience}
+%        {C/C++ Programming, GPU Programming (OpenCL, CUDA), Parallel Programming,
+%         Unix/Linux}
+% }{
+% \cvline{Erweiterte Erfahrungen}
+%        {C/C++ Programmierung, GPU Programmierung (OpenCL, CUDA),
+%         Parallele Programmierung, Unix/Linux}
+% }
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

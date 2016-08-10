@@ -1,0 +1,15 @@
+[0] Config.pm:324> INFO - This is Biber 2.1
+[0] Config.pm:327> INFO - Logfile is 'michel_steuwer.blg'
+[65] biber-darwin:276> INFO - === Mon Feb 15, 2016, 10:54:28
+[65] Biber.pm:333> INFO - Reading 'michel_steuwer.bcf'
+[206] Biber.pm:642> INFO - Using all citekeys in bib section 0
+[234] Biber.pm:2977> INFO - Processing section 0
+[259] Biber.pm:3115> INFO - Looking for bibtex format file 'michel_steuwer.bib' for section 0
+[263] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[267] bibtex.pm:895> INFO - Found BibTeX data source 'michel_steuwer.bib'
+[757] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[757] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[757] Biber.pm:2854> INFO - Sorting list 'none' of type 'entry' with scheme 'none' and locale 'en-US'
+[758] Biber.pm:2858> INFO - No sort tailoring available for locale 'en-US'
+[788] bbl.pm:505> INFO - Writing 'michel_steuwer.bbl' with encoding 'UTF-8'
+[795] bbl.pm:596> INFO - Output to michel_steuwer.bbl
