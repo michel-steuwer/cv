@@ -1,0 +1,7 @@
+{% for section_hash in blurb %}
+  {% for section in section_hash %}
+    <h3>{{ section[0] }}</h3>
+    {% assign blurb = section[1] %}
+    {% include resume/list.html %}
+  {% endfor %}
+{% endfor %}

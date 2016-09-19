@@ -1,0 +1,15 @@
+{% for section_hash in blurb %}
+  {% for section in section_hash %}
+  <div class="cloud-section">
+      <h3>{{ section[0] }}</h3> 
+      {% for item in section[1]['primary'] %}
+          <span class="primary">{{ item }}</span>, 
+      {% endfor %}
+      {% for item in section[1]['secondary'] %}
+          <span class="secondary">{{ item }}</span>
+          {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+  </div>
+  {% endfor %}
+
+{% endfor %}

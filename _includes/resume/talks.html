@@ -1,0 +1,35 @@
+{% for section in blurb %}
+    <div class="talks">
+        <div>
+          <h5>{{ section.type }}</h5>
+        </div>
+        <div class="main-row">
+            <div class="title">
+                <h3>
+                  {% if section.url %}
+                    <a href="{{ section.url }}">
+                  {% endif %}
+                      {{ section.title }}
+                  {% if section.url %}
+                    </a>
+                  {% endif %}
+                </h3>
+            </div>
+            <div class="when">
+                <h3>{{ section.when }}</h3>
+            </div>
+        </div>
+        <div class="sub-row">
+            <div class="subtitle">
+                <h4>{{ section.subtitle }}</h4>
+            </div>
+            <div class="where">
+                <h4>{{ section.where }}</h4>
+            </div>
+        </div>
+        {% if section.notes %}
+        <p>{{ section.notes | markdownify }}</p>
+        {% endif %}
+        <div style="clear: both;"></div>
+    </div>
+{% endfor %}

@@ -1,0 +1,7 @@
+{% for section_hash in blurb %}
+  {% for section in section_hash %}
+    <p style="padding-left: 10px;">{{ section[0] }}</p>
+    {% assign blurb = section[1] %}
+    {% include resume/listWithDates.html %}
+  {% endfor %}
+{% endfor %}

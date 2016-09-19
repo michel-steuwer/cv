@@ -1,0 +1,41 @@
+# Use this file to control the main attributes of the website
+
+# You
+name: Michel Steuwer
+
+# Title for your site as it will appear in google
+# e.g. Resume, Curriculum Vitae, Work History
+title: <i>Curriculum vitae</i>
+
+# SEO description
+description: Digital curriculum vitae for Michel Steuwer, research associate at the University of Edinburgh.
+
+# URL of this resume
+url: 'https://michel-steuwer.github.io/'
+
+# URL of your personal website (make same as URL if you don't have one)
+personal: 'http://homepages.inf.ed.ac.uk/msteuwer/'
+
+# these should be pretty self-explanatory :-P
+email: michel.steuwer@ed.ac.uk
+#twitter: philipithomas
+
+# Show this in the footer
+copyright: All rights reserved.
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Files in this repo that we don't want to go to the web
+exclude: [
+  'scss',
+  '*.rb',
+  '*.yml',
+  'vendor',
+  'Gemfile',
+  'Gemfile.lock',
+  '*.sh',
+  'README.md',
+  'LICENSE.md',
+]

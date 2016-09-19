@@ -1,0 +1,45 @@
+# Use this to define the sections of the resume
+# Format:
+#   name -> Name displayed on the section
+#   id -> used for the CSS id and the yml file name.
+#   layout -> which resume format to use from _includes/resume
+
+- name: Michel Steuwer
+  id: intro
+  layout: intro
+
+- name: Professional Experience
+  id: professional
+  layout: listWithDates
+
+- name: University Education
+  id: education
+  layout: block
+
+- name: Research Visits and Collaborations
+  id: visits
+  layout: listWithDates
+
+- name: Awarded Honors
+  id: honors
+  layout: lists
+
+- name: Research Community Activities
+  id: community
+  layout: lists
+
+- name: Research Collaborations
+  id: collaborations
+  layout: list
+
+- name: Talks and Presentations
+  id: talks
+  layout: talks
+
+- name: Teaching Experience
+  id: teaching
+  layout: lists
+
+- name: Supervised students
+  id: students
+  layout: studentsList

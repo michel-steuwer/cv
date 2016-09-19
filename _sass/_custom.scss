@@ -1,0 +1,137 @@
+.cloud-section {
+    margin-top: 10px;
+    h3 {
+        margin-bottom: 10px;
+    }
+    .primary {}
+    .secondary {
+        opacity: .5;
+    }
+}
+
+.block {
+    padding: 20px 0;
+
+    .main-row, .sub-row {
+        display: block;
+        clear: both;
+        width: 100%;
+        h1, h2, h3, h4, h5, h6 {
+            padding: 6px 0 0 0;
+        }
+
+        .subtitle, .title {
+            float: left;
+            text-align: left;
+            width: 70%;
+        }
+        .where, .when {
+            text-align: right;
+            float: right;
+            width: 30%;
+        }
+    }
+    ul {
+        padding-top: 10px;
+        clear: both;
+    }
+}
+
+.listWithDates {
+    padding: 10px 0;
+
+    .main-row, .sub-row {
+        display: block;
+        clear: both;
+        width: 100%;
+        h1, h2, h3, h4, h5, h6 {
+            padding: 6px 0 0 0;
+        }
+
+        .subtitle, .title {
+            float: left;
+            text-align: left;
+            width: 70%;
+        }
+        .where, .when {
+            text-align: right;
+            float: right;
+            width: 30%;
+        }
+    }
+    ul {
+        padding-top: 10px;
+        clear: both;
+    }
+}
+
+.talks {
+  padding: 20px 0;
+
+  .main-row {
+      display: block;
+      clear: both;
+      width: 100%;
+      h1, h2, h3, h4, h5, h6 {
+          padding: 6px 0 0 0;
+      }
+      .title {
+          float: left;
+          text-align: left;
+          width: 75%;
+      }
+      .when {
+          text-align: right;
+          float: right;
+          width: 25%;
+      }
+  }
+
+  .sub-row {
+      display: block;
+      clear: both;
+      width: 100%;
+      h1, h2, h3, h4, h5, h6 {
+          padding: 6px 0 0 0;
+      }
+      .subtitle {
+          float: left;
+          text-align: left;
+          width: 60%;
+      }
+      .where {
+          text-align: right;
+          float: right;
+          width: 40%;
+      }
+  }
+
+  p {
+    padding-top: 5px;
+    padding-left: 10px;
+    clear: both;
+  }
+}
+
+.intro {
+  display: block;
+  clear: both;
+  width: 100%;
+
+  .img {
+      float: left;
+      text-align: left;
+      width: 50%;
+  }
+  .contact {
+      text-align: right;
+      float: right;
+      width: 50%;
+  }
+}
+
+footer {
+    padding-top: 40px;
+    text-align: center;
+    opacity: .5;
+}

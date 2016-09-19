@@ -1,0 +1,16 @@
+- title:  University of Münster
+  subtitle: Ph.D. degree in computer science
+  when: 2010 - 2015
+  where: Münster, Germany
+  notes:
+    - "Supervisor: [Prof. Sergei Gorlatch](http://www.uni-muenster.de/PVS/en/mitarbeiter/gorlatch.html)"
+    - "Thesis: *Improving Programmability and Performance Portability on Many-Core Processors*<br>
+      Awarded with the highest possible grade: *Summa Cum Laude* (*with highest honor*)<br>
+      Nominated as one of 34 candidates form all German, Austrian, and Swiss Universities for the *prize for best dissertation* awarded by the German Informatics Society."
+
+- title: University of Münster
+  subtitle: Diploma degree in computer science with a minor in mathematics
+  when: 2005 - 2010
+  where: Münster, Germany
+  notes:
+    - "Thesis: *SkelCL — A Portable Multi-GPU Skeleton Library*"

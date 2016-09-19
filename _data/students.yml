@@ -1,0 +1,107 @@
+# # Supervised Students
+#
+- The following students are co-supervised with Sergei Gorlatch at the University of Münster:
+
+  - title:  MSc studies of Bastian Hagedorn
+    subtitle: Efficient GPU Code Generation for Stencil Computations via Parallel Patterns
+    when: since 04/2016
+
+  - title: PhD studies of Ari Rasch
+    subtitle: Parametric Algorithmic Skeletons
+    when: since 06/2015
+
+  - title: PhD studies of Michael Haidl
+    subtitle: "PACXX: A GPU Programming Model Embedded in C++"
+    when: since 06/2015
+
+- The following students are co-supervised with Christophe Dubach at the University of Edinburgh:
+
+  - title: PhD studies of Daniel Hillerström
+    subtitle: Efficient Compilation of Handlers for Algebraic Effects
+    when: since 09/2015
+
+  - title: PhD studies of Larisa Stoltzfus
+    subtitle: Stencil-based Acoustic Applications
+    when: since 09/2015
+
+  - title: PhD studies of Adam Harries
+    subtitle: Spare and Irregular Data-Parallel Applications on GPUs
+    when: since 10/2014
+
+  - title: PhD studies of Juan José Fumero
+    subtitle: Heterogeneous Computing in Managed Languages
+    when: since 10/2014
+
+  - title: PhD studies of Toomas Remmelg
+    subtitle: Automatic Performance Optimisations via Provably Correct Rewrite Rules
+    when: since 10/2014
+
+- The following students have been co-supervised with Sergei Gorlatch at the University of Münster:
+
+  - title: Bachelor thesis of André Lüers
+    subtitle: Evaluation of the Skeleton Library FastFlow
+    when: 07/2014
+
+  - title: Bachelor thesis of Lars Klein
+    subtitle: A Parallel Implementation of the T-CUP Software using the SkelCL Library
+    when: 07/2014
+
+  - title: Master thesis of Michael Olejnik
+    subtitle: A GPU-based Classification Framework for HIV Resistance Prediction
+    when: 01/2014
+
+  - title: Master thesis of Stefan Breuer
+    subtitle: Extending the SkelCL Library for Stencil Computations
+    when: 01/2014
+
+  - title: Diploma thesis of Wadim Hamm
+    subtitle: Development of a Divide & Conquer Skeleton for SkelCL
+    when: 11/2013
+
+  - title: Bachelor thesis of Matthias Droste
+    subtitle: Evaluation of the Skeleton Library SkePU
+    when: 07/2013
+
+  - title: Bachelor thesis of Kai Kientopf
+    subtitle: Implementation of the Needleman-Wunsch Algorithm and the Breath-First-Search with SkelCL
+    when: 06/2013
+
+  - title: Master thesis of Florian Quinkert
+    subtitle: A Model for Predicting Work Distribution in Heterogeneous Systems and its Implementation in SkelCL
+    when: 06/2013
+
+  - title: Master thesis of Malte Friese
+    subtitle: Extending the Skeleton Library SkelCL with a Skeleton for Allpairs Computations
+    when: 03/2013
+
+  - title: Bachelor thesis of Sebastian Mißbach
+    subtitle: Implementing the LU-Decomposition and the Mersenne-Twister with the SkelCL Library
+    when: 03/2013
+
+  - title: Bachelor thesis of Patrick Schiffler
+    subtitle: Performance Analysis of SkelCL using B+ Tree Traversal and 3D Jacobi Stencil Computation
+    when: 03/2013
+
+  - title: Diploma thesis of Markus Blank-Burian
+    subtitle: Simulation and Analysis of Two-Dimensional Turbulences on Parallel Computer Architectures
+    when: 01/2013
+
+  - title: Diploma thesis of Matthias Buß
+    subtitle: Adding Multidimensional Data Types to the Multi-GPU Skeleton Library SkelCL
+    when: 06/2012
+
+  - title: Bachelor thesis of Michael Olejnik
+    subtitle: Investigating the Use of GPUs for Radix Sort
+    when: 09/2011
+
+  - title: Bachelor thesis of Jan Gerd Tenberge
+    subtitle: Extending the SkelCL Library with Iterators
+    when: 09/2011
+
+  - title: Bachelor thesis of Stefan Breuer
+    subtitle: Enhancing SkelCL’s MapOverlap Skeleton
+    when: 08/2011
+
+  - title: Bachelor thesis of Tobias Günnewig
+    subtitle: Developing a Library for Manipulating Source Code of C-based Languages
+    when: 08/2011

@@ -1,0 +1,29 @@
+---
+layout: main
+---
+<!--nav class="navdrawer-container promote-layer">
+    <ul>
+        {% for section in site.data.sections %}
+            <li><a href="#{{ section.id }}" class="to-{{ section.id }}">
+                    {{ section.name }}
+            </a></li>
+        {% endfor %}
+    </ul>
+</nav-->
+<main>
+    {% for section in site.data.sections %}
+        <div class="section">
+            <h2 id="{{ section.id }}">
+                {{ section.name }}
+            </h2>
+            <hr />
+            {% capture section_layout %}resume/{{section.layout}}.html{% endcapture %}
+            {% for hash in site.data %}
+              {% if hash[0] == section.id %}
+                {% assign blurb = hash[1] %}
+                {% include {{section_layout}} %}
+              {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+</main>

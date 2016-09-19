@@ -195,3 +195,10 @@ TSWLatexianTemp*
 
 # auto folder when using emacs and auctex 
 /auto/*
+
+_drafts/
+_site/
+.DS_Store
+*.swp
+Gemfile.lock
+.sass-cache/

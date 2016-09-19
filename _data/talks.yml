@@ -1,0 +1,146 @@
+# Talks and Presentations
+
+- type: Invited Talk
+  title: Structured Parallel Programming
+  subtitle: From High-Level Functional Expressions to High-Performance OpenCL Code
+  when: 08/2016
+  where: TU Dresden, Germany
+  notes: Centre for Advanced Electronics Dresden
+  url: https://github.com/michel-steuwer/talks/blob/master/2016/TUDresden-2016.pdf
+
+- type: Invited Talk
+  title: Improving Programmability and Performance Portability on Many-Core Processors
+  when: 05/2016
+  where: Schloss Dagstuhl, Germany
+  notes: Colloquium of candidates nominated for the prize for best dissertation awarded by the German Informatics Society
+  url: https://github.com/michel-steuwer/talks/blob/master/2016/Dagstuhl-2016.pdf
+
+- type: Invited Talk
+  title: "The <i>lift</i> Project: Performance Portability via Rewrite Rules"
+  when: 04/2016
+  where: Saarland University, Germany
+  url: https://github.com/michel-steuwer/talks/blob/master/2016/SaarlandUniversity-2016.pdf
+
+- type: Invited Talk
+  title: Performance Portable GPU Code Generation
+  when: 01/2016
+  where: Imperial College London, UK
+  url: https://github.com/michel-steuwer/talks/blob/master/2016/ImperialCollegeLondon-2016.pdf
+
+- type: Talk
+  title: Functional Programming in C++
+  when: 12/2015
+  where: University of Edinburgh, UK
+  notes: Programming Language Interest Group at the University of Edinburgh
+  url: https://github.com/michel-steuwer/talks/blob/master/2015/PLInG-2015.pdf
+
+- type: Invited Talk
+  title: Generating Performance Portable Code using Rewrite Rules
+  when: 10/2015
+  where: Imperial College London, UK
+  notes: PENCIL Developer Meeting
+
+- type: Guest Lecture
+  title: DSLs and rewriting-based optimisations for performance-portable parallel programming
+  when: 10/2015
+  where: University of Edinburgh, UK
+  notes: As part of the Elements of Programming Languages Course at the University of Edinburgh
+  url: https://github.com/michel-steuwer/talks/blob/master/2015/EPLGuestLecture-2015.pdf
+
+- type: Talk
+  title: Generating Performance Portable Code using Rewrite Rules
+  subtitle: From High-Level Functional Expressions to High-Performance OpenCL Code
+  when: 09/2015
+  where: Vancouver, Canada
+  notes: International Conference on Functional Programming (ICFP) 2015
+  url: https://github.com/michel-steuwer/talks/blob/master/2015/ICFP-2015.pdf
+
+- type: Talk
+  title: Generating Performance Portable Code using Rewrite Rules
+  when: 06/2015
+  where: University of St. Andrews, UK
+  notes: Scottish Programming Languages Seminar
+  url: https://github.com/michel-steuwer/talks/blob/master/2015/SPLS-2015.pdf
+
+- type: Invited Talk
+  title: "SkelCL: High-Level Programming of Multi-GPU Systems"
+  when: 05/2014
+  where: University of Münster, Germany
+  notes: Institute for Computational and Applied Mathematics at the University of Münster
+
+- type: Invited Talk
+  title: "SkelCL: High-Level Programming of Multi-GPU Systems"
+  when: 05/2014
+  where: TU Dresden, Germany
+  notes: Workshop on Fast Data Processing on GPUs at the TU Dresden
+
+- type: Talk
+  title: Extending the SkelCL Library for Stencil Computations on Multi-GPU Systems
+  when: 01/2014
+  where: Vienna, Austria
+  notes: HiStencils workshop @ HiPEAC 2014
+
+- type: Invited Talk
+  title: "SkelCL: High-Level Programming of Multi-GPU Systems"
+  when: 12/2013
+  where: University of Wuppertal, Germany
+  notes: Research group on elementary particle physics, University of Wuppertal
+
+- type: Talk
+  title: Introducing and Implementing the Allpairs Skeleton for GPU Systems
+  when: 07/2013
+  where: Paris, France
+  notes: International Symposium on High-Level Parallel Programming and Applications (HLPP) 2013
+
+- type: Talk
+  title: High-Level Programming for Medical Imaging on Multi-GPU Systems using the SkelCL Library
+  when: 06/2013
+  where: Barcelona, Spain
+  notes: International Conference on Computational Science (ICCS) 2013
+
+- type: Talk
+  title: Using the SkelCL Library for High-Level GPU Programming of 2D Applications
+  when: 08/2012
+  where: Rhodes Island, Greece
+  notes: ParaPhrase 2012 workshop @ Euro-Par 2012
+
+- type: Talk
+  title: High-Level Programming for Heterogeneous Systems with Accelerators
+  when: 06/2012
+  where: Münster, Germany
+  notes: PDESoft 2012 workshop
+
+- type: Talk
+  title: Towards High-Level Programming of Multi-GPU Systems Using the SkelCL Library
+  when: 05/2012
+  where: Shanghai, China
+  notes: AsHES 2012 workshop @ IPDPS 2012
+
+- type: Invtied Talk
+  title: A Skeleton Library for Heterogeneous Multi-/Many-Core Systems
+  when: 04/2012
+  where: Edinburgh, UK
+  notes: NAIS workshop on Skeletons, Heterogeneous Systems and Domain Specific Optimisation
+
+- type: Talk
+  title: Towards a High-Level Approach for Programming Distributed Systems with GPUs
+  when: 01/2012
+  where: Timisoara, Romania
+  notes: COST Action IC0805 (“ComplexHPC”) meeting
+
+- type: Invited Talk
+  title: SkelCL - A High-Level Programming Library for GPU Programming
+  when: 12/2011
+  where: Jülich Supercomputing Centre, Germany
+
+- type: Talk
+  title: SkelCL - A Portable Skeleton Library for High-Level GPU Programming
+  when: 05/2011
+  where: Anchorage, Alaska, USA
+  notes: HIPS 2011 workshop @ IPDPS 2011
+
+- type: Invited Talk
+  title: Development of an Online Game as a Student Project
+  when: 09/2008
+  where: Chernihiv, Ukraine
+  notes: ITSoftTEAM workshop

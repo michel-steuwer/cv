@@ -1,0 +1,28 @@
+{% for section in blurb %}
+    <div class="listWithDates">
+        <div class="main-row">
+            <div class="title">
+                <h3>{{ section.title }}</h3>
+            </div>
+            <div class="when">
+                <h3>{{ section.when }}</h3>
+            </div>
+        </div>
+        <div class="sub-row">
+            <div class="subtitle">
+                <h4>{{ section.subtitle }}</h4>
+            </div>
+            <div class="where">
+                <h4>{{ section.where }}</h4>
+            </div>
+        </div>
+        {% if section.bullets %}
+        <ul>
+            {% for bullet in section.bullets %}
+            <li>{{ bullet | markdownify }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <div style="clear: both;"></div>
+    </div>
+{% endfor %}
