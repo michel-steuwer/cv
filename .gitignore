@@ -197,8 +197,8 @@ TSWLatexianTemp*
 /auto/*
 
 _drafts/
-_site/
+docs/_site/
 .DS_Store
 *.swp
-Gemfile.lock
-.sass-cache/
+docs/Gemfile.lock
+docs/.sass-cache/
