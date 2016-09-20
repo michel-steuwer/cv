@@ -4,7 +4,7 @@
   where: Münster, Germany
   notes:
     - "Supervisor: [Prof. Sergei Gorlatch](http://www.uni-muenster.de/PVS/en/mitarbeiter/gorlatch.html)"
-    - "Thesis: *Improving Programmability and Performance Portability on Many-Core Processors*<br>
+    - "Thesis: *[Improving Programmability and Performance Portability on Many-Core Processors](https://github.com/michel-steuwer/publications/blob/master/2015/PhDThesis.pdf)*<br>
       Awarded with the highest possible grade: *Summa Cum Laude* (*with highest honor*)<br>
       Nominated as one of 34 candidates form all German, Austrian, and Swiss Universities for the *prize for best dissertation* awarded by the German Informatics Society."
 
@@ -13,4 +13,4 @@
   when: 2005 - 2010
   where: Münster, Germany
   notes:
-    - "Thesis: *SkelCL — A Portable Multi-GPU Skeleton Library*"
+    - "Thesis: *[SkelCL — A Portable Multi-GPU Skeleton Library](https://github.com/michel-steuwer/publications/blob/master/2010/SkelCL-2010.pdf)*"
