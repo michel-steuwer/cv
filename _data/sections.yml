@@ -38,8 +38,8 @@
 
 - name: Teaching Experience
   id: teaching
-  layout: lists
+  layout: teaching
 
-- name: Supervised students
+- name: Supervised Students
   id: students
   layout: studentsList

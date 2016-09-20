@@ -1,0 +1,14 @@
+{% for section_hash in blurb %}
+  {% for section in section_hash %}
+    <div class="teaching-row">
+      <div class="when">
+          <h3>{{ section[0] }}</h3>
+      </div>
+      <div class="list">
+        {% assign blurb = section[1] %}
+        {% include resume/list.html %}
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+  {% endfor %}
+{% endfor %}

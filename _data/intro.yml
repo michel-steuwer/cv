@@ -1,4 +1,10 @@
-- title:  The University of Edinburgh
-  subtitle: Postdoctoral Research Associate
-  when: since October 2014
-  where: Edinburgh, UK
+- picture:  https://github.com/michel-steuwer/michel-steuwer.github.io/raw/master/meRound.jpg
+  address:
+    - Michel Steuwer
+    - <a href="http://www.ed.ac.uk/informatics/about/location">Informatics Forum</a>
+    - 10 Crichton Street
+    - Edinburgh EH8 9AB
+    - United Kingdom
+    - '<i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:michel.steuwer@ed.ac.uk">michel.steuwer@ed.ac.uk</a>'
+    - '<i class="fa fa-home" aria-hidden="true"></i> <a href="http://homepages.inf.ed.ac.uk/msteuwer/">http://homepages.inf.ed.ac.uk/msteuwer</a>'
+    - '<a href="http://www.research.ed.ac.uk/portal/en/persons/michel-steuwer(0ed800f5-a3a0-47d7-a8b3-f97a4f2b6931).html"><img class="icon" src="http://www.ed.ac.uk/sites/all/themes/uoe/favicon/favicon-196.png"></a> <a href="http://dblp.uni-trier.de/pers/hd/s/Steuwer:Michel"><img class="icon" src="http://dblp.uni-trier.de/img/dblp.icon.120x120.png"></a> <a href="http://scholar.google.com/citations?user=XdXJRZEAAAAJ&hl=en&oi=ao"><i class="icon fa fa-google" aria-hidden="true"></i></a> <a href="https://github.com/michel-steuwer/"><i class="icon fa fa-github" aria-hidden="true"></i></a> <a href=""><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>'
