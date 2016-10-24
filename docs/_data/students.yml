@@ -2,9 +2,9 @@
 #
 - The following students are co-supervised with Sergei Gorlatch at the University of Münster:
 
-  - title:  MSc studies of Bastian Hagedorn
+  - title:  PhD studies of Bastian Hagedorn
     subtitle: Efficient GPU Code Generation for Stencil Computations via Parallel Patterns
-    when: since 04/2016
+    when: since 10/2016
 
   - title: PhD studies of Ari Rasch
     subtitle: Parametric Algorithmic Skeletons
@@ -37,6 +37,10 @@
     when: since 10/2014
 
 - The following students have been co-supervised with Sergei Gorlatch at the University of Münster:
+
+  - title:  MSc studies of Bastian Hagedorn
+    subtitle: GPU Code Generation for Stencil Computations via Parallel Patterns
+    when: 09/2016
 
   - title: Bachelor thesis of André Lüers
     subtitle: Evaluation of the Skeleton Library FastFlow
