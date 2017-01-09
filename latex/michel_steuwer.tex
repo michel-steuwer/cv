@@ -76,7 +76,7 @@
 \nocite{*} % cite everything ...
 
 \makecvtitle%
-\vspace{-1em}
+\vspace{-2em}
 %\begin{minipage}[t]{0.5\textwidth}
 %  \section{Personal Details}
 %  %\cvline{Birthday}{21th of May 1985}
@@ -104,15 +104,41 @@
 % \cvline{}{Overall grade in computer science: \textit{very good (85 \%)}}
 
 
+%\vspace{1em}
 \section{Professional Experience}
 \cventry{{\footnotesize since Oct.} 2014}
         {Postdoctoral Research Associate}{The University of Edinburgh}{UK}{}{}
 \cventry{2010--2014}
         {Research Associate}{University of Münster}{Germany}{}{}
 
+%\vspace{1em}
+\section{Awarded Honours} % Auszeichnungen
+\cvline{}{
+  \begin{itemize}
+    \item PhD thesis honoured with the highest possible grade \emph{Summa cum laude}
+    \item Nominated as one of 34 candidates for the prize for best dissertation completed in 2015 in Informatics at a German, Austrian, or Swiss University.
+          This highly prestigious prize is awarded annually by the German Informatics Society (GI).
+    %\item HiPEAC collaboration grants (2016 and 2013) and HPC-Europa2 visitor grant (2012)
+  \end{itemize}
+}
+\vspace{-2em}
+
+\section{Awarded Grants}
+\cvline{}{
+  \begin{itemize}
+    \item HiPEAC collaboration grants (2016 and 2013) and HPC-Europa2 visitor grant (2012) in total of approx. €15.000.
+    \item Nvidia GPU Grant Program (2011 and 2016) in total of approx. €12.500.
+    \item Intel Hardware Accelerator Research Program (2016) for privileged access to Intel's upcoming CPU+FPGA hardware.
+  \end{itemize}
+}
+\vspace{-2em}
+
+
 \section{Research Visits and Collaborations}
 \cventry{2016}{Research Collaboration (3 Month)}{dividiti Ltd.}{UK}{}
         {Funded by the HiPEAC Network of Excellence}
+\cventry{2016}{Hosting of a visiting researcher (2 Month)}{From the University of Münster}{Germany}{}
+        {Funded by the EuroLab-4-HPC project}
 \cventry{2014}{Visiting researcher (3 Month)}{The University of Edinburgh}{UK}{}{}
 \cventry{2013}
         {Visiting researcher (4 Month)}{The University of Edinburgh}{UK}{}
@@ -120,16 +146,6 @@
 \cventry{2012}
         {Visiting researcher (3 Month)}{The University of Edinburgh/EPCC}{UK}{}
         {Funded by the EU HPC-Europa2 project}
-
-\section{Awarded Honours} % Auszeichnungen
-\cvline{}{
-  \begin{itemize}
-    \item PhD thesis honoured with the highest possible grade \emph{Summa cum laude}
-    \item Nominated as one of 34 candidates for the prize for best dissertation completed in 2015 in Informatics at a German, Austrian, or Swiss University.
-          This highly prestigious prize is awarded annually by the German Informatics Society (GI).
-    \item HiPEAC collaboration grants (2016 and 2013) and HPC-Europa2 visitor grant (2012)
-  \end{itemize}
-}
 
 \section{Research Community Activities}
 \subsection{Memberships and Participation in Research Networks}
@@ -146,16 +162,17 @@
     \item I was the main organiser of the 7{\small th} UK Many-Core Developer Conference on May 10{\small th} in Edinburgh with over 50 participants, a keynote and 10 talks spanning topics from the landscape of accelerated, heterogeneous and many-core computing.
   \end{itemize}
 }
-%\subsection{Organisation of Informal Groups}
-%\cvline{}{
-%  \begin{itemize}
-%    \item I co-organise the \emph{Programming Languages Interest Group} together with James Cheney, a group discussing a broad range of topics related to programming languages.
-%    \item I organise the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
-%  \end{itemize}
-%}
+\subsection{Organisation of Informal Groups}
+\cvline{}{
+  \begin{itemize}
+    \item I co-organise the \emph{Programming Languages Interest Group} at the School of Informatics in Edinburgh together with James Cheney, a group discussing a broad range of topics related to programming languages.
+    \item I organise the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
+  \end{itemize}
+}
 \subsection{Program Committees}
 \cvline{}{
   \begin{itemize}
+    \item {\small 10{\footnotesize th} Int. Symposium on High-Level Parallel Programming and Applications (HLPP\,2017)}
     \item {\small 9{\footnotesize th} Int. Symposium on High-Level Parallel Programming and Applications (HLPP\,2016)}
     \item {\small 16{\footnotesize th} IEEE Int. Conference on Scalable Computing and Communications (ScalCom\,2016)}
     % \item {\small International Workshop on Applications of Language Engineering Techniques in Many-Core Compilers (ALLIANCE 2016)}
@@ -243,6 +260,10 @@
 %           }
 
 \section{Talks and Presentations}
+  \cvline{12/2016}
+         {Invited Talk:\newline \emph{The Lift Project: Performance Portable GPU Code Generation via Rewrite Rules}\newline
+         Computer Laboratory Systems Research Group Seminar, University of Cambridge, UK.
+         }
   \cvline{08/2016}
          {Invited Talk:\newline \emph{Structured Parallel Programming --- From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
          Center for Advanced Electornics Dresden, Dresden University of Technology, Germany.
@@ -262,9 +283,6 @@
   \cvline{10/2015}
          {Invited Talk: \emph{Generating Performance Portable Code using Rewrite Rules}\newline
          \small PENCIL Developer Meeting at Imperial College London, UK.}
-  \cvline{10/2015}
-         {Guest Lecture:\newline \emph{DSLs and rewriting-based optimizations for performance-portable parallel programming}\newline
-         \small in the Elements of Programming Languages Course at the University of Edinburgh, UK.}
   \cvline{09/2015}
          {Talk: \emph{Generating Performance Portable Code using Rewrite Rules:\newline From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
          \small International Conference on Functional Programming (ICFP) 2015 in Vancouver, Canada.}
@@ -328,9 +346,6 @@
 
 \printbibheading[title={Publications}]
 
-\printbibliography[prefixnumbers={T},keyword=thesis,title={Thesis},
-                   heading=subbibliography]
-
 \printbibliography[prefixnumbers={J},keyword=journal,title={Journal Articles},
                    heading=subbibliography]
 
@@ -339,6 +354,9 @@
 
 \printbibliography[prefixnumbers={W},keyword=workshop,
                    title={Workshop Proceedings},heading=subbibliography]
+
+\printbibliography[prefixnumbers={T},keyword=thesis,title={Thesis},
+                   heading=subbibliography]
 
 \printbibliography[prefixnumbers={B},keyword=book,title={Book Chapter},
                    heading=subbibliography]
@@ -349,11 +367,18 @@
 
 
 \section{Teaching Experience}
+\cvline{\small Fall Term 2016}{%
+  \begin{itemize}
+    \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course held by James Cheney.
+    \item Guest Lecture in the \emph{Compiling Techniques} course given by Christophe Dubach.
+    \item Assistance in the tutorials of the \emph{Compiling Techniques} course held by Christophe Dubach.
+  \end{itemize}
+  }
 \cvline{\small Fall Term 2015}{%
   \begin{itemize}
     \item Organiser and Lecturer of the C++ programming course \emph{The Humble C++ Programmer} aiming to improve PhD students coding skills.
     \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course held by James Cheney.
-    \item Voluntary assistance in the tutorials of the \emph{Compiling Techniques} course held by Christophe Dubach.
+    \item Assistance in the tutorials of the \emph{Compiling Techniques} course held by Christophe Dubach.
   \end{itemize}
   }
 \vspace{-1em}
@@ -431,7 +456,7 @@
 
 \section{Supervised Students}
 \cvline{}{\footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
-\cvline{\since{} 04/2016}{MSc studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations via Parallel Patterns}}
+\cvline{\since{} 04/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
 \cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
 \cvline{\since{} 06/2015}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
 \cvline{}{\footnotesize The following students are co-supervised with Christophe Dubach at the University of Edinburgh.}
@@ -442,6 +467,7 @@
 \cvline{\since{} 10/2014}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{Heterogeneous Computing in Managed Languages}}
 \cvline{\since{} 10/2014}{PhD studies of Toomas Remmelg on\newline \emph{Automatic Performance Optimisations via Provably Correct Rewrite Rules}}
 \cvline{}{\footnotesize The following students have been co-supervised with Sergei Gorlatch at the University of Münster.}
+\cvline{09/2016}{MSc thesis of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations via Parallel Patterns}}
 \cvline{07/2014}{Bachelor thesis of André Lüers on\newline
                  \emph{Evaluation of the Skeleton Library FastFlow}}
 \cvline{07/2014}{Bachelor thesis of Lars Klein on\newline
