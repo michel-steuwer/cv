@@ -8,10 +8,6 @@
 
 \urlstyle{same}
 
-\usepackage{xstring}
-\def\FormatName#1{%
-  \IfSubStr{#1}{Steuwer}{\textbf{#1}}{#1}%
-}
 
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
@@ -30,13 +26,16 @@
 \email{michel.steuwer@ed.ac.uk}
 
 % divide publications
-\usepackage[style=numeric-comp,
+\usepackage[style=numeric-verb,
             sorting=none, % keep order as in the bib file ...
-            defernumbers,maxbibnames=50]{biblatex}
+            giveninits=true,
+            defernumbers,
+            backend=biber,
+            maxbibnames=50]{biblatex}
 
 \defbibenvironment{bibliography}
   {\list%
-     {\printfield{year}\hspace{1em}\printtext[labelnumberwidth]{\printfield{prefixnumber}\printfield{labelnumber}}}
+     {\printfield{year}\hspace{1em}\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
      {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
       \setlength{\labelwidth}{\hintscolumnwidth}%
       \setlength{\labelsep}{\separatorcolumnwidth}%
@@ -47,14 +46,32 @@
   {\endlist}
   {\item}
 
-% Highlight my Name in bold
-\DeclareNameFormat{author}{%
-\ifthenelse{\equal{#1}{Steuwer}}%
-    {{\bfseries\ifblank{#4}{}{#4\space}#1}}%
-    {\ifblank{#4}{}{#4\space}#1}%
-\ifthenelse{\value{listcount}<\value{liststop}}%
-    {\addcomma\space}
-    {}}
+
+\DeclareNameAlias{default}{first-last}
+
+\usepackage{xstring}
+\usepackage{xpatch}
+\newbibmacro*{name:bold}[2]{%
+  \def\do##1{\iffieldequalstr{hash}{##1}{\bfseries\listbreak}{}}%
+  \dolistloop{\boldnames}%
+}
+
+\newcommand*{\boldnames}{}
+
+\xpretobibmacro{name:family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
+\xpretobibmacro{name:given-family}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
+\xpretobibmacro{name:family-given}{\begingroup\usebibmacro{name:bold}{#1}{#2}}{}{}
+\xpretobibmacro{name:delim}{\begingroup\normalfont}{}{}
+
+\xapptobibmacro{name:family}{\endgroup}{}{}
+\xapptobibmacro{name:given-family}{\endgroup}{}{}
+\xapptobibmacro{name:family-given}{\endgroup}{}{}
+\xapptobibmacro{name:delim}{\endgroup}{}{}
+
+\renewcommand*{\boldnames}{}
+\forcsvlist{\listadd\boldnames}
+  {{665c76842fb46e04b66f224a8b7fa602},
+   {187269ddb4a287b49f62f0c4a3c57bd0}}
 
 % Only print a year once
 \newcounter{currentYear}
@@ -162,10 +179,10 @@
     \item I was the main organiser of the 7{\small th} UK Many-Core Developer Conference on May 10{\small th} in Edinburgh with over 50 participants, a keynote and 10 talks spanning topics from the landscape of accelerated, heterogeneous and many-core computing.
   \end{itemize}
 }
-\subsection{Organisation of Informal Groups}
+\subsection{Organisation}
 \cvline{}{
   \begin{itemize}
-    \item I co-organise the \emph{Programming Languages Interest Group} at the School of Informatics in Edinburgh together with James Cheney, a group discussing a broad range of topics related to programming languages.
+    \item I co-organise the seminar of the \emph{Programming Language Research Programme} at the School of Informatics in Edinburgh together with James Cheney, an series of talks covering a broad range of topics related to programming languages.
     \item I organise the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
   \end{itemize}
 }
@@ -259,7 +276,34 @@
 %           programming of GPU systems without scarifying performance.
 %           }
 
+
+\printbibheading[title={Publications}]
+
+\newrefcontext[labelprefix=J]
+\printbibliography[keyword=journal,title={Journal Articles},heading=subbibliography]
+
+\newrefcontext[labelprefix=C]
+\printbibliography[keyword=conference,title={Conference Proceedings},heading=subbibliography]
+
+\newrefcontext[labelprefix=W]
+\printbibliography[keyword=workshop,title={Workshop Proceedings},heading=subbibliography]
+
+\newrefcontext[labelprefix=T]
+\printbibliography[keyword=thesis,title={Thesis},heading=subbibliography]
+
+\newrefcontext[labelprefix=B]
+\printbibliography[keyword=book,title={Book Chapter},heading=subbibliography]
+
+\newrefcontext[labelprefix=S]
+\printbibliography[keyword=submission,title={Papers currently in submission},heading=subbibliography]
+
 \section{Talks and Presentations}
+  \cvline{02/2017}
+         {Talk: \emph{Lift: A Functional Data-Parallel IR for High-Performance GPU Code Generation}\newline
+          \small International Symposium on Code Generation and Optimization (CGO) 2017 in Austin, USA.}
+  \cvline{02/2017}
+         {Talk: \emph{Towards Composable GPU Programming: Programming GPUs with Eager Actions and Lazy Views}\newline
+          \small  International Workshop on Programming Models and Applications for Multicores and Manycores (PMAM) 2017 in Austin, USA.}
   \cvline{12/2016}
          {Invited Talk:\newline \emph{The Lift Project: Performance Portable GPU Code Generation via Rewrite Rules}\newline
          Computer Laboratory Systems Research Group Seminar, University of Cambridge, UK.
@@ -343,26 +387,6 @@
         \small ITSoftTEAM workshop in Chernihiv, Ukraine.}
 
 %\newpage
-
-\printbibheading[title={Publications}]
-
-\printbibliography[prefixnumbers={J},keyword=journal,title={Journal Articles},
-                   heading=subbibliography]
-
-\printbibliography[prefixnumbers={C},keyword=conference,
-                   title={Conference Proceedings},heading=subbibliography]
-
-\printbibliography[prefixnumbers={W},keyword=workshop,
-                   title={Workshop Proceedings},heading=subbibliography]
-
-\printbibliography[prefixnumbers={T},keyword=thesis,title={Thesis},
-                   heading=subbibliography]
-
-\printbibliography[prefixnumbers={B},keyword=book,title={Book Chapter},
-                   heading=subbibliography]
- % \printbibliography[prefixnumbers={S},keyword=submission,title={Papers currently in submission},
-%                    heading=subbibliography]
-
 
 
 
@@ -456,16 +480,14 @@
 
 \section{Supervised Students}
 \cvline{}{\footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
-\cvline{\since{} 04/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
+\cvline{\since{} 10/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
 \cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
 \cvline{\since{} 06/2015}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
 \cvline{}{\footnotesize The following students are co-supervised with Christophe Dubach at the University of Edinburgh.}
-\cvline{\since{} 09/2015}{PhD studies of Daniel Hillerström on\newline \emph{Efficient Compilation of Handlers for Algebraic Effects}} 
 \cvline{\since{} 09/2015}{PhD studies of Larisa Stoltzfus on\newline \emph{Stencil-based Acoustic Applications}}
-\cvline{\since{} 09/2015}{PhD studies of Vanya Yaneva on\newline \emph{Parallel Test Exectuion on GPUs}}
 \cvline{\since{} 10/2014}{PhD studies of Adam Harries on\newline \emph{Sparse and Irregular Data-Parallel Applications on GPUs}}
-\cvline{\since{} 10/2014}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{Heterogeneous Computing in Managed Languages}}
 \cvline{\since{} 10/2014}{PhD studies of Toomas Remmelg on\newline \emph{Automatic Performance Optimisations via Provably Correct Rewrite Rules}}
+\cvline{\since{} 10/2014}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{Heterogeneous Computing in Managed Languages}}
 \cvline{}{\footnotesize The following students have been co-supervised with Sergei Gorlatch at the University of Münster.}
 \cvline{09/2016}{MSc thesis of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations via Parallel Patterns}}
 \cvline{07/2014}{Bachelor thesis of André Lüers on\newline
