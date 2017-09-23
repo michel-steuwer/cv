@@ -94,18 +94,6 @@
 \nocite{*} % cite everything ...
 
 \makecvtitle%
-\vspace{-2em}
-%\begin{minipage}[t]{0.5\textwidth}
-%  \section{Personal Details}
-%  %\cvline{Birthday}{21th of May 1985}
-%  \cvline{Birthplace}{Duisburg, Germany}
-%  \cvline{Nationality}{German}
-%\end{minipage}
-%\begin{minipage}[t]{.5\textwidth}
-%  \section{Languages}
-%  \cvline{German}{Native}
-%  \cvline{English}{Fluent}
-%\end{minipage}
 
 \section{Professional Experience}
 \cventry{{\footnotesize since Aug.} 2017}
@@ -130,16 +118,13 @@
 \cvline{}{Overall grade in computer science: \textit{very good (85 \%)}}
 
 
-%\vspace{1em}
 
-%\vspace{1em}
-\section{Awarded Honours} % Auszeichnungen
+\section{Awarded Honours}
 \cvline{}{
   \begin{itemize}
     \item PhD thesis honoured with the highest possible grade \textbf{Summa cum laude}
     \item Nominated as one of 34 candidates for the \textbf{prize for best dissertation} completed in 2015 in Informatics at a German, Austrian, or Swiss University.
           This highly prestigious prize is awarded annually by the German Informatics Society (GI).
-    %\item HiPEAC collaboration grants (2016 and 2013) and HPC-Europa2 visitor grant (2012)
   \end{itemize}
 }
 \vspace{-2em}
@@ -183,24 +168,21 @@
     \item I represented the University of Edinburgh in the EU \emph{EuroLab-4-HPC\@: Open source in high performance computing} initiative
   \end{itemize}
 }
-% \vspace{-1em}
 \subsection{Community Activities}
 \cvline{}{
   \begin{itemize}
-    % \item I was the main organiser of the 7{\small th} UK Many-Core Developer Conference on May 10{\small th} in Edinburgh with over 50 participants, a keynote and 10 talks spanning topics from the landscape of accelerated, heterogeneous and many-core computing
     \item I co-organised the seminar of the \emph{Programming Language Research Programme} at the School of Informatics in Edinburgh together with James Cheney, an series of talks covering a broad range of topics related to programming languages.
     \item I organised the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
   \end{itemize}
 }
-% \vspace{-1em}
 \subsection{Organisation Committees}
 \cvline{}{
   \begin{itemize}
-    \item Artifact Evaluation Chair of the 16{\footnotesize th} Int. Symposium on Code Generation and Optimization (CGO\,2018)
-    \item Main Organiser of the 7{\footnotesize th} UK Many-Core Developer Conference, UKMAC 2017
+    \item Artifact Evaluation Chair of the 16{\footnotesize th} International Symposium on Code Generation and Optimization, CGO 2018
+    \item Web \& Publicity Chair of the 27{\footnotesize th} International Conference on Compiler Construction, CC 2018
+    \item Local Organisation Chair of the 7{\footnotesize th} UK Many-Core Developer Conference, UKMAC 2017
 \end{itemize}
 }
-% \vspace{-1em}
 \subsection{Program Committees}
 \cvline{}{
   \begin{itemize}
@@ -209,7 +191,6 @@
     \item 16{\footnotesize th} IEEE Int. Conference on Scalable Computing and Communications (ScalCom\,2016)
 \end{itemize}
 }
-% \vspace{-1em}
 \subsection{Artifact Evaluation Committees}
 \cvline{}{
   \begin{itemize}
@@ -218,7 +199,6 @@
     \item 25{\footnotesize th} Int. Conference on Parallel Architectures and Compilation Techniques (PACT\,2016)
   \end{itemize}
 }
-% \vspace{-1em}
 \subsection{Reviewing}
 \cvline{}{
   Reviewer for journals:
@@ -257,40 +237,6 @@
   \end{itemize}
 }
 
-% \section{Research Projects}
-% \cventry{since 2011}
-%         {dOpenCL}{An implementation of the OpenCL standard targeting distributed systems}{}{}
-%         {Ongoing research. Preliminary results published in: \cite{KeSG:13,KeSG:12}.}
-% \cvline{}{Together with other research groups we are leading the development of
-%           OpenCL implementations targeting distributed systems, by developing
-%           dOpenCL. dOpenCL allows to program all parallel processors
-%           (e.g., CPUs or GPUs) of a distributed Systems using OpenCL as the
-%           single programming model.
-%         }
-%
-% \cventry{since 2010}
-%         {SkelCL}{A high-level programming library for heterogeneous systems}{}{}
-%         {Ongoing research. Preliminary results published in: \cite{StHBG:14,StG:14,StFAG:14,GoS:14,BrSG:14,StG:13,StG:13b,StKG:12b,StKG:12,StGBB:12,KeGEDSK:13,KeSG:13b}.}
-% \cvline{}{I am the lead developer of SkelCL, a novel high-level programming
-%           model and library for programming heterogeneous systems. It uniquely
-%           combines algorithmic skeletons, container data types and data
-%           (re)distribution mechanisms to greatly simplify the programming of
-%           heterogeneous systems comprising of multiple parallel processors.
-%           SkelCL is open source software and can be found online at:
-%           \url{http://skelcl.uni-muenster.de}.
-%         }
-%
-% \cventry{01/2010\\ --\ 09/2010}
-%         {Diploma project}{Developing a Portable Multi-GPU Skeleton Library}{}{}
-%         {Results published in \cite{StKG:11}.}
-% \cvline{}{As my diploma project I developed the predecessor to SkelCL,
-%           an innovative high-level programming library for simplified
-%           programming of GPUs. We published the results of my diploma project in
-%           \cite{StKG:11} and showed, that we can greatly simplify the
-%           programming of GPU systems without scarifying performance.
-%           }
-
-
 \printbibheading[title={Publications}]
 
 \newrefcontext[labelprefix=J]
@@ -313,13 +259,20 @@
 
 \newpage
 \section{Talks and Presentations}
+  \cvline{09/2017}
+         {\textbf{Invited Talk}:\newline
+          \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
+         \small University of Hull HPC Symposium 2017 at the University of Hull, UK.}
   \cvline{07/2017}
          {\textbf{Invited Talk}:\newline
           \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
-         \small University of Münster, Germany}
+         \small University of Münster, Germany.}
   \cvline{06/2017}
          {Talk: \emph{Towards Composable GPU Programming: Programming GPUs with Eager Actions and Lazy Views}\newline
          \small Scottish Programming Languages Seminar at the University of the West of Scotland in Paisley, UK.}
+  \cvline{04/2017}
+         {Talk: \emph{Towards Composable GPU Programming: Programming GPUs with Eager Actions and Lazy Views}\newline
+         \small C++ Edinburgh Meetup in Edinburgh, UK.}
   \cvline{02/2017}
          {Talk: \emph{Lift: A Functional Data-Parallel IR for High-Performance GPU Code Generation}\newline
           \small International Symposium on Code Generation and Optimization (CGO) 2017 in Austin, USA.}
@@ -501,16 +454,16 @@
       }
 
 \section{Supervised Students}
-\cvline{}{\footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
-\cvline{\since{} 10/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
-\cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
-\cvline{\since{} 06/2015}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
 \cvline{}{\footnotesize The following students are co-supervised with Christophe Dubach at the University of Edinburgh.}
 \cvline{\since{} 09/2015}{PhD studies of Larisa Stoltzfus on\newline \emph{Stencil-based Acoustic Applications}}
 \cvline{\since{} 10/2014}{PhD studies of Adam Harries on\newline \emph{Sparse and Irregular Data-Parallel Applications on GPUs}}
 \cvline{\since{} 10/2014}{PhD studies of Toomas Remmelg on\newline \emph{Automatic Performance Optimisations via Provably Correct Rewrite Rules}}
-\cvline{\since{} 10/2014}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{Heterogeneous Computing in Managed Languages}}
-\cvline{}{\footnotesize The following students have been co-supervised with Sergei Gorlatch at the University of Münster.}
+\cvline{08/2017}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{High-Level Just In Time Compilers and Runtime Systems for Efficient Heterogeneous Computing}}
+\cvline{}{\strut\newline \footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
+\cvline{\since{} 10/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
+\cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
+\cvline{\since{} 06/2015}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
+\cvline{}{\strut\newline \footnotesize The following students have been co-supervised with Sergei Gorlatch at the University of Münster.}
 \cvline{09/2016}{MSc thesis of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations via Parallel Patterns}}
 \cvline{07/2014}{Bachelor thesis of André Lüers on\newline
                  \emph{Evaluation of the Skeleton Library FastFlow}}
