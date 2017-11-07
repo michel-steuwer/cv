@@ -87,6 +87,12 @@
 
 \newcommand{\since}{{\small since}\xspace}
 
+\newenvironment{absolutelynopagebreak}
+{\par\nobreak\vfil\penalty0\vfilneg
+ \vtop\bgroup}
+{\par\xdef\tpd{\the\prevdepth}\egroup
+ \prevdepth=\tpd}
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -133,7 +139,7 @@
 \cvline{}{
   \begin{itemize}
     \item HiPEAC collaboration grants (2016 and 2013) and HPC-Europa2 visitor grant (2012) in total of approx. €15.000.
-    \item Nvidia GPU Grant Program (2011 and 2016) in total of approx. €12.500.
+    \item Nvidia GPU Grant Program (2011, 2016, and 2017) in total of approx. €13.500.
     \item Intel Hardware Accelerator Research Program (2016) for privileged access to Intel's upcoming CPU+FPGA hardware.
   \end{itemize}
 }
@@ -168,13 +174,6 @@
     \item I represented the University of Edinburgh in the EU \emph{EuroLab-4-HPC\@: Open source in high performance computing} initiative
   \end{itemize}
 }
-\subsection{Community Activities}
-\cvline{}{
-  \begin{itemize}
-    \item I co-organised the seminar of the \emph{Programming Language Research Programme} at the School of Informatics in Edinburgh together with James Cheney, an series of talks covering a broad range of topics related to programming languages.
-    \item I organised the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
-  \end{itemize}
-}
 \subsection{Organisation Committees}
 \cvline{}{
   \begin{itemize}
@@ -197,6 +196,13 @@
     \item 22{\footnotesize th} ACM SIGPLAN International Conference on Functional Programming (ICFP\,2017)
     \item 15{\footnotesize th} Int. Symposium on Code Generation and Optimization (CGO\,2017)
     \item 25{\footnotesize th} Int. Conference on Parallel Architectures and Compilation Techniques (PACT\,2016)
+  \end{itemize}
+}
+\subsection{Community Activities}
+\cvline{}{
+  \begin{itemize}
+    \item I co-organised the seminar of the \emph{Programming Language Research Programme} at the School of Informatics in Edinburgh together with James Cheney, an series of talks covering a broad range of topics related to programming languages.
+    \item I organised the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
   \end{itemize}
 }
 \subsection{Reviewing}
@@ -259,6 +265,10 @@
 
 \newpage
 \section{Talks and Presentations}
+  \cvline{10/2017}
+         {\textbf{Invited Talk}:\newline
+          \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
+         \small Microsoft Research Labs in Cambridge, UK.}
   \cvline{09/2017}
          {\textbf{Invited Talk}:\newline
           \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
@@ -366,6 +376,12 @@
 
 
 \section{Teaching Experience}
+\cvline{\small Fall Term 2017}{%
+  \begin{itemize}
+    \item Lecturer \emph{\small Team Project Year 3} course.
+    \item Supervised master group project: \emph{Developing a visual tool for exploring rewriting.}
+  \end{itemize}
+  }
 \cvline{\small Fall Term 2016}{%
   \begin{itemize}
     \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course held by James Cheney.
@@ -453,16 +469,28 @@
     \end{itemize}
       }
 
-\section{Supervised Students}
+\section{Supervised PhD Students}
+\begin{absolutelynopagebreak}
 \cvline{}{\footnotesize The following students are co-supervised with Christophe Dubach at the University of Edinburgh.}
+\cvline{\since{} 09/2016}{PhD studies of Naums Mogers on\newline \emph{Performance Portable Machine Learning Applications}}
+\end{absolutelynopagebreak}
+\cvline{\since{} 09/2016}{PhD studies of Federico Pizzuti on\newline \emph{Parallelizing non-associative sequential reductions}}
 \cvline{\since{} 09/2015}{PhD studies of Larisa Stoltzfus on\newline \emph{Stencil-based Acoustic Applications}}
 \cvline{\since{} 10/2014}{PhD studies of Adam Harries on\newline \emph{Sparse and Irregular Data-Parallel Applications on GPUs}}
 \cvline{\since{} 10/2014}{PhD studies of Toomas Remmelg on\newline \emph{Automatic Performance Optimisations via Provably Correct Rewrite Rules}}
-\cvline{08/2017}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{High-Level Just In Time Compilers and Runtime Systems for Efficient Heterogeneous Computing}}
+\cvline{12/2013\\- 08/2017}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{High-Level Just In Time Compilers and Runtime Systems for Efficient Heterogeneous Computing}}
+
+\begin{absolutelynopagebreak}
 \cvline{}{\strut\newline \footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
 \cvline{\since{} 10/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
+\end{absolutelynopagebreak}
 \cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
 \cvline{\since{} 06/2015}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
+
+\section{Supervised Undergraduate and Master Students}
+\cvline{\since{} 09/2017}{Final year project of Domantas Jurkus on\newline \emph{Computer Vision Applications with the Parallel STL}}
+\cvline{\since{} 09/2017}{Final year project of Matthew Cornetto on\newline \emph{Sorting Algorithms on GPUs}}
+
 \cvline{}{\strut\newline \footnotesize The following students have been co-supervised with Sergei Gorlatch at the University of Münster.}
 \cvline{09/2016}{MSc thesis of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations via Parallel Patterns}}
 \cvline{07/2014}{Bachelor thesis of André Lüers on\newline
