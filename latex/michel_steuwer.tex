@@ -2,26 +2,42 @@
 % \usepackage{mathpazo}
 \usepackage[T1]{fontenc}
 
-\usepackage[sfdefault,scaled=.95]{FiraSans}
+\usepackage[sfdefault,scaled=.9]{FiraSans}
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle{} #1}}
 
 \urlstyle{same}
 
 
-\moderncvtheme[blue]{classic}
+\moderncvtheme{classic}
+
+% University Blue R0 G56 B101 
+% Cobalt          R0 G117 B176
+% Sky Blue        R0 G83 B152
+% Turquoise       R0 G181 B209
+% Slate           R79 G89 B97
+% Leaf            R0 G132 B61
+% Moss            R56 G90 B79
+%\definecolor{color0}{RGB}{0,56,101}
+\definecolor{color1}{RGB}{0,56,101}
+\definecolor{color2}{RGB}{79,89,97}
+
 \usepackage[utf8]{inputenc}
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 \AtBeginDocument{\recomputelengths}
 
+\usepackage{lastpage}
+\rfoot{\addressfont\itshape\textcolor{color2}{Page \thepage\ of \pageref{LastPage}}}
+\cfoot{\addressfont\itshape\textcolor{color2}{Last updated on \today}}
+
 % personal data
-\firstname{Michel}
-\familyname{Steuwer}
+\firstname{\hspace{3.5em}\color{color1}Michel}
+\familyname{Steuwer\vspace{.55em}}
 \address{%
   Sir Alwyn Williams Building\\
   University of Glasgow\\
-  Glasgow G12 8RZ\\
+  Glasgow G12 8RZ\
 }{%
   United Kingdom}
 \email{michel.steuwer@glasgow.ac.uk}
@@ -99,6 +115,12 @@
 \begin{document}
 \nocite{*} % cite everything ...
 
+\begin{tikzpicture}[remember picture, overlay]
+  \node [anchor=north west, inner ysep=7mm, inner xsep=-3mm]  at (current page.north west)
+    {\includegraphics[width=55mm]{logo.jpg}};
+\end{tikzpicture}
+
+\vspace{-5em}
 \makecvtitle%
 
 \section{Professional Experience}
@@ -177,25 +199,28 @@
 \subsection{Organisation Committees}
 \cvline{}{
   \begin{itemize}
-    \item Artifact Evaluation Chair of the 16{\footnotesize th} International Symposium on Code Generation and Optimization, CGO 2018
-    \item Web \& Publicity Chair of the 27{\footnotesize th} International Conference on Compiler Construction, CC 2018
-    \item Local Organisation Chair of the 7{\footnotesize th} UK Many-Core Developer Conference, UKMAC 2017
+    \item \emph{Artifact Evaluation Chair} of the 19{\footnotesize th} Annual ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems, LCTES 2018
+    \item \emph{Artifact Evaluation Chair} of the 16{\footnotesize th} International Symposium on Code Generation and Optimization, CGO 2018
+    \item \emph{Web \& Publicity Chair} of the 27{\footnotesize th} International Conference on Compiler Construction, CC 2018
+    \item \emph{Local Organisation Chair} of the 7{\footnotesize th} UK Many-Core Developer Conference, UKMAC 2017
 \end{itemize}
 }
 \subsection{Program Committees}
 \cvline{}{
   \begin{itemize}
-    \item 10{\footnotesize th} Int. Symposium on High-Level Parallel Programming and Applications (HLPP\,2017)
-    \item 9{\footnotesize th} Int. Symposium on High-Level Parallel Programming and Applications (HLPP\,2016)
-    \item 16{\footnotesize th} IEEE Int. Conference on Scalable Computing and Communications (ScalCom\,2016)
+    \item 19{\footnotesize th} Annual ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems (LCTES\,2018)
+    \item 2{\footnotesize nd} Workshop on Distributed and Heterogeneous Programming in C/C++ (DHPCC++\,2018)
+    \item 10{\footnotesize th} International Symposium on High-Level Parallel Programming and Applications (HLPP\,2017)
+    \item 9{\footnotesize th} International Symposium on High-Level Parallel Programming and Applications (HLPP\,2016)
+    \item 16{\footnotesize th} IEEE International Conference on Scalable Computing and Communications (ScalCom\,2016)
 \end{itemize}
 }
 \subsection{Artifact Evaluation Committees}
 \cvline{}{
   \begin{itemize}
     \item 22{\footnotesize th} ACM SIGPLAN International Conference on Functional Programming (ICFP\,2017)
-    \item 15{\footnotesize th} Int. Symposium on Code Generation and Optimization (CGO\,2017)
-    \item 25{\footnotesize th} Int. Conference on Parallel Architectures and Compilation Techniques (PACT\,2016)
+    \item 15{\footnotesize th} International Symposium on Code Generation and Optimization (CGO\,2017)
+    \item 25{\footnotesize th} International Conference on Parallel Architectures and Compilation Techniques (PACT\,2016)
   \end{itemize}
 }
 \subsection{Community Activities}
@@ -218,6 +243,7 @@
   \smallskip
   External reviewer for conferences:
   \begin{itemize}
+    \item International Conference on Compiler Construction (CC)
     \item International Symposium on Code Generation and Optimization (CGO)
     \item International Conference on Parallel and Distributed Computing (Euro-Par)
     \item European MPI Users Group conference (EuroMPI)
@@ -248,22 +274,22 @@
 \newrefcontext[labelprefix=J]
 \printbibliography[keyword=journal,title={Journal Articles},heading=subbibliography]
 
+\bigskip
 \newrefcontext[labelprefix=C]
 \printbibliography[keyword=conference,title={Conference Proceedings},heading=subbibliography]
 
+\bigskip
 \newrefcontext[labelprefix=W]
 \printbibliography[keyword=workshop,title={Workshop Proceedings},heading=subbibliography]
 
+\bigskip
 \newrefcontext[labelprefix=T]
 \printbibliography[keyword=thesis,title={Thesis},heading=subbibliography]
 
+\bigskip
 \newrefcontext[labelprefix=B]
 \printbibliography[keyword=book,title={Book Chapter},heading=subbibliography]
 
-%\newrefcontext[labelprefix=S]
-%\printbibliography[keyword=submission,title={Papers currently in submission},heading=subbibliography]
-
-\newpage
 \section{Talks and Presentations}
   \cvline{10/2017}
          {\textbf{Invited Talk}:\newline
@@ -371,119 +397,101 @@
        {\textbf{Invited talk}: \emph{Development of an Online Game as a Student Project}\newline
         \small ITSoftTEAM workshop in Chernihiv, Ukraine.}
 
-%\newpage
-
 
 
 \section{Teaching Experience}
-\cvline{\small Fall Term 2017}{%
+
+\cvline{}{\footnotesize As a Lecturer at the University of Glasgow.}
+
+\cvline{\small 2017 - 2018}{%
   \begin{itemize}
-    \item Lecturer \emph{\small Team Project Year 3} course.
-    \item Supervised master group project: \emph{Developing a visual tool for exploring rewriting.}
+    \item \emph{Team Project}, undergraduate course (Level H/M), together with  Tim Storer (Course Coordinator), Inah Omoronyia, and Joemon Jose.
+    \item \emph{Operating Systems}, undergraduate course (Level H/M), together with Wim Vanderbauwhede.
+    \item \emph{MSc CS+ Team Project}, topic: \emph{Developing a visual tool for exploring rewriting}.
   \end{itemize}
   }
-\cvline{\small Fall Term 2016}{%
+
+\cvline{}{\footnotesize As a postdoctoral researcher at the University of Edinburgh.}
+
+\cvline{\small 2016 - 2017}{%
   \begin{itemize}
-    \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course held by James Cheney.
+    \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course given by James Cheney.
     \item Guest Lecture in the \emph{Compiling Techniques} course given by Christophe Dubach.
-    \item Assistance in the tutorials of the \emph{Compiling Techniques} course held by Christophe Dubach.
+    \item Assistance in the tutorials of the \emph{Compiling Techniques} course given by Christophe Dubach.
   \end{itemize}
   }
-\cvline{\small Fall Term 2015}{%
+
+\cvline{\small 2015 - 2016}{%
   \begin{itemize}
     \item Organiser and Lecturer of the C++ programming course \emph{The Humble C++ Programmer} aiming to improve PhD students coding skills.
-    \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course held by James Cheney.
-    \item Assistance in the tutorials of the \emph{Compiling Techniques} course held by Christophe Dubach.
+    \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course given by James Cheney.
+    \item Assistance in the tutorials of the \emph{Compiling Techniques} course given by Christophe Dubach.
   \end{itemize}
   }
-\vspace{-1em}
-\cvline{\small Fall Term 2014}{%
+
+\cvline{\small 2014 - 2015}{%
   \begin{itemize}
     \item Guest Lecture in the \emph{Compiling Techniques} course given by Christophe Dubach.
   \end{itemize}
 }
-\vspace{-1em}
-\cvline{\small Summer Term 2014}{%
+
+\cvline{}{\footnotesize As a research associate at the University of M{\"u}nster.}
+
+\cvline{\small 2013 - 2014}{%
 \begin{itemize}
-  \item      Supervised MSc student project:\newline
+  \item Supervised MSc student project:
         \emph{Design and implementation of a high-level API for programming heterogeneous clusters}.
-\end{itemize}
-      }
-\vspace{-1em}
-\cvline{\small Winter Term 2013/2014}{%
-  \begin{itemize}
-    \item Supervised MSc student project:\newline
+    \item Supervised MSc student project:
         \emph{High-level programming of online games in future generation networks}.
-  \end{itemize}
-      }
-\vspace{-1em}
-\cvline{\small Summer Term 2013}{%
+\end{itemize}
+}
+
+\cvline{\small 2012 - 2013}{%
   \begin{itemize}
     \item  Course Design and Lecturer:
         \emph{Introduction to programming with C and C++}.
       \item    Teaching assistant:
         \emph{Multi-core and GPU\@: Parallel Programming}.
-    \end{itemize}
-      }
-\vspace{-1em}
-\cvline{\small Winter Term 2011/2012}{%
-  \vspace{0em}
-  \begin{itemize}
     \item Teaching assistant:
         \emph{Operating Systems}.
     \end{itemize}
-      }
-\vspace{-1em}
-\cvline{\small Summer Term 2012}{%
+}
+
+\cvline{\small 2011 - 2012}{%
   \begin{itemize}
     \item Supervised MSc student project:
         \emph{High-level programming of heterogeneous systems}.
       \item Teaching assistant:
         \emph{Multi-core and GPU\@: Parallel Programming}.
-    \end{itemize}
-      }
-\vspace{-1em}
-\cvline{\small Winter Term 2011/2012}{%
-  \begin{itemize}
     \item Teaching assistant:
-        \emph{Technical aspects of cloud computing}.
+        \emph{Technical aspects of cloud computing} seminar.
       \item Teaching assistant:
         \emph{Operating Systems}.
     \end{itemize}
-      }
-\vspace{-1em}
-\cvline{\small Summer Term 2011}{%
+}
+
+\cvline{\small 2010 - 2011}{%
   \begin{itemize}
     \item Supervised UG/MSc student project:
         \emph{Internet- and GPU-based Cloud Computing}.
       \item Course Design and teaching assistant:
         \emph{Multi-core and GPU\@: Parallel Programming}.
-    \end{itemize}
-      }
-\vspace{-1em}
-\cvline{\small Winter Term 2010/2011}{%
-  \vspace{0em}
-  \begin{itemize}
     \item Supervised UG student project:
         \emph{High-level GPU programming}.
     \end{itemize}
-      }
+}
 
 \section{Supervised PhD Students}
-\begin{absolutelynopagebreak}
 \cvline{}{\footnotesize The following students are co-supervised with Christophe Dubach at the University of Edinburgh.}
 \cvline{\since{} 09/2016}{PhD studies of Naums Mogers on\newline \emph{Performance Portable Machine Learning Applications}}
-\end{absolutelynopagebreak}
 \cvline{\since{} 09/2016}{PhD studies of Federico Pizzuti on\newline \emph{Parallelizing non-associative sequential reductions}}
 \cvline{\since{} 09/2015}{PhD studies of Larisa Stoltzfus on\newline \emph{Stencil-based Acoustic Applications}}
 \cvline{\since{} 10/2014}{PhD studies of Adam Harries on\newline \emph{Sparse and Irregular Data-Parallel Applications on GPUs}}
 \cvline{\since{} 10/2014}{PhD studies of Toomas Remmelg on\newline \emph{Automatic Performance Optimisations via Provably Correct Rewrite Rules}}
 \cvline{12/2013\\- 08/2017}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{High-Level Just In Time Compilers and Runtime Systems for Efficient Heterogeneous Computing}}
 
-\begin{absolutelynopagebreak}
 \cvline{}{\strut\newline \footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
 \cvline{\since{} 10/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
-\end{absolutelynopagebreak}
 \cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
 \cvline{\since{} 06/2015}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
 
