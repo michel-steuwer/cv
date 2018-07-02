@@ -22,6 +22,22 @@
 \definecolor{color1}{RGB}{0,56,101}
 \definecolor{color2}{RGB}{79,89,97}
 
+\newcommand{\strong}[1]{\textcolor{color1}{\textbf{#1}}}
+\newcommand{\highlight}[1]{\textcolor{color1}}
+
+
+\makeatletter
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\strong{#3}}%
+    \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    .\strut%
+    \ifx&#7&%
+    \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+\makeatother
+
 \usepackage[utf8]{inputenc}
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
@@ -69,7 +85,7 @@
 \usepackage{xstring}
 \usepackage{xpatch}
 \newbibmacro*{name:bold}[2]{%
-  \def\do##1{\iffieldequalstr{hash}{##1}{\bfseries\listbreak}{}}%
+  \def\do##1{\iffieldequalstr{hash}{##1}{\color{color1}\bfseries\listbreak}{}}%
   \dolistloop{\boldnames}%
 }
 
@@ -95,7 +111,7 @@
 \DeclareFieldFormat{year}{%
 \ifthenelse{\equal{#1}{\arabic{currentYear}}}%
     {}
-    {\setcounter{currentYear}{#1}{\bfseries #1}}}
+    {\setcounter{currentYear}{#1}{\color{color1}\bfseries #1}}}
 
 \bibliography{michel_steuwer}
 
@@ -136,8 +152,8 @@
         {PhD degree in computer science}{University of Münster}{Germany}{}
         {Supervisor: Prof.\ Sergei Gorlatch}
 \cvline{}{Thesis: \textit{Improving Programmability and Performance Portability on Many-Core Processors}}
-\cvline{}{Awarded with the highest possible grade: \textbf{Summa Cum Laude} ({\itshape\small with highest honor\/})}
-\cvline{}{Nominated as one of 34 candidates from all German, Austrian, and Swiss Universities for the \textbf{prize for best dissertation} awarded by the German Informatics Society.}
+\cvline{}{Awarded with the highest possible grade: \strong{Summa Cum Laude} ({\itshape\small with highest honor\/})}
+\cvline{}{Nominated as one of 34 candidates from all German, Austrian, and Swiss Universities for the \strong{prize for best dissertation} awarded by the German Informatics Society.}
 
 \cventry{2005--2010}
         {Diploma degree in computer science with a minor in mathematics}
@@ -150,9 +166,9 @@
 \section{Awarded Honours}
 \cvline{}{
   \begin{itemize}
-    \item \textbf{Best Paper Award} at the International Symposium on Code Generation and Optimization (CGO) 2018.
-    \item PhD thesis honoured with the highest possible grade \textbf{Summa cum laude}
-    \item Nominated as one of 34 candidates for the \textbf{prize for best dissertation} completed in 2015 in Informatics at a German, Austrian, or Swiss University.
+    \item \strong{Best Paper Award} at the International Symposium on Code Generation and Optimization (CGO) 2018.
+    \item PhD thesis honoured with the highest possible grade \strong{Summa cum laude}
+    \item Nominated as one of 34 candidates for the \strong{prize for best dissertation} completed in 2015 in Informatics at a German, Austrian, or Swiss University.
           This highly prestigious prize is awarded annually by the German Informatics Society (GI).
   \end{itemize}
 }
@@ -183,31 +199,31 @@
 \subsection{Organisation Committees}
 \cvline{}{
   \begin{itemize}
-    \item \textcolor{color1}{\textbf{Artifact Evaluation Chair} of LCTES 2018}, the 19{\footnotesize th} Annual ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems
-    \item \textcolor{color1}{\textbf{Local Organisation Co-Chair} of SPLS}, the Scottish Programming Language Seminar, 03/2018
-    \item \textcolor{color1}{\textbf{Artifact Evaluation Chair} of CGO 2018}, the Intl. Symp. on Code Generation and Optimization
-    \item \textcolor{color1}{\textbf{Web \& Publicity Chair} of CC 2018}, the 27{\footnotesize th} Intl. Conference on Compiler Construction
-    \item \textcolor{color1}{\textbf{Local Organisation Chair} of UKMAC 2017}, the 7{\footnotesize th} UK Many-Core Developer Conference
+    \item \strong{Artifact Evaluation Chair} \highlight{of LCTES 2018}, the 19{\footnotesize th} Annual ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems
+    \item \strong{Local Organisation Co-Chair} \highlight{of SPLS}, the Scottish Programming Language Seminar, 03/2018
+    \item \strong{Artifact Evaluation Chair} \highlight{of CGO 2018}, the Intl. Symp. on Code Generation and Optimization
+    \item \strong{Web \& Publicity Chair} \highlight{of CC 2018}, the 27{\footnotesize th} Intl. Conference on Compiler Construction
+    \item \strong{Local Organisation Chair} \highlight{of UKMAC 2017}, the 7{\footnotesize th} UK Many-Core Developer Conference
 \end{itemize}
 }
 \subsection{Program Committees}
 \cvline{}{
   \begin{itemize}
-    \item \textcolor{color1}{\textbf{CGO\,2019}}: ACM SIGMICRO/SIGPLAN Intl. Symposium on Code Generation and Optimization
-    \item \textcolor{color1}{\textbf{HLPP\,2018}}: 11{\footnotesize th} Intl. Symposium on High-Level Parallel Programming and Applications
-    \item \textcolor{color1}{\textbf{LCTES\,2018}}: 19{\footnotesize th} Annual ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems
-    \item \textcolor{color1}{\textbf{DHPCC++\,2018}}: 2{\footnotesize nd} Workshop on Distributed and Heterogeneous Programming in C/C++
-    \item \textcolor{color1}{\textbf{HLPP\,2017}}: 10{\footnotesize th} Intl. Symposium on High-Level Parallel Programming and Applications
-    \item \textcolor{color1}{\textbf{HLPP\,2016}}: 9{\footnotesize th} Intl. Symposium on High-Level Parallel Programming and Applications
-    \item \textcolor{color1}{\textbf{ScalCom\,2016}}:16{\footnotesize th} IEEE Intl. Conference on Scalable Computing and Communications
+    \item \strong{CGO\,2019}: ACM SIGMICRO/SIGPLAN Intl. Symposium on Code Generation and Optimization
+    \item \strong{HLPP\,2018}: 11{\footnotesize th} Intl. Symposium on High-Level Parallel Programming and Applications
+    \item \strong{LCTES\,2018}: 19{\footnotesize th} Annual ACM SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems
+    \item \strong{DHPCC++\,2018}: 2{\footnotesize nd} Workshop on Distributed and Heterogeneous Programming in C/C++
+    \item \strong{HLPP\,2017}: 10{\footnotesize th} Intl. Symposium on High-Level Parallel Programming and Applications
+    \item \strong{HLPP\,2016}: 9{\footnotesize th} Intl. Symposium on High-Level Parallel Programming and Applications
+    \item \strong{ScalCom\,2016}:16{\footnotesize th} IEEE Intl. Conference on Scalable Computing and Communications
 \end{itemize}
 }
 \subsection{Artifact Evaluation Committees}
 \cvline{}{
   \begin{itemize}
-    \item \textcolor{color1}{\textbf{ICFP\,2017}}: 22{\footnotesize th} ACM SIGPLAN International Conference on Functional Programming
-    \item \textcolor{color1}{\textbf{CGO\,2017}}: 15{\footnotesize th} International Symposium on Code Generation and Optimization
-    \item \textcolor{color1}{\textbf{PACT\,2016}}: 25{\footnotesize th} Intl. Conference on Parallel Architectures and Compilation Techniques
+    \item \strong{ICFP\,2017}: 22{\footnotesize th} ACM SIGPLAN International Conference on Functional Programming
+    \item \strong{CGO\,2017}: 15{\footnotesize th} International Symposium on Code Generation and Optimization
+    \item \strong{PACT\,2016}: 25{\footnotesize th} Intl. Conference on Parallel Architectures and Compilation Techniques
   \end{itemize}
 }
 \subsection{Community Activities}
@@ -286,8 +302,8 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
 }
 
 \subsection{Citation Statistics}
-\cvline{}{\textbf{Overall citations: 412}, \textbf{h-index: 10}, \textbf{i-index: 11}}
-\cvline{}{\small (from Google Scholar accessed on the 27th of June 2018)}
+\cvline{}{\strong{Overall citations: 417}, \strong{h-index: 10}, \strong{i-index: 11}}
+\cvline{}{\small (from Google Scholar accessed on the 2nd of July 2018)}
 
 \newrefcontext[labelprefix=J]
 \printbibliography[keyword=journal,title={Journal Articles},heading=subbibliography]
@@ -310,11 +326,11 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
 
 \section{Talks and Presentations}
   \cvline{03/2018}
-         {\textbf{Invited Talk}:\newline
+         {\strong{Invited Talk}:\newline
           \emph{Lift: Code Generation by Rewriting Algorithmic Skeletons}\newline
          \small Dagstuhl Seminar on Loop Optimizations, Schloss Dagstuhl, Germany.}
   \cvline{02/2018}
-         {\textbf{Invited Talk}:\newline
+         {\strong{Invited Talk}:\newline
           \emph{Programming GPUs with Eager Actions and Lazy Views}\newline
          \small Compiler and Architecture Design Group Seminar, University of Edinburgh, UK.}
   \cvline{02/2018}
@@ -327,15 +343,15 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
          {Talk:\emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
          \small System Seminar, University of Glasgow, UK.}
   \cvline{10/2017}
-         {\textbf{Invited Talk}:\newline
+         {\strong{Invited Talk}:\newline
           \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
          \small Microsoft Research Labs in Cambridge, UK.}
   \cvline{09/2017}
-         {\textbf{Invited Talk}:\newline
+         {\strong{Invited Talk}:\newline
           \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
          \small University of Hull HPC Symposium 2017 at the University of Hull, UK.}
   \cvline{07/2017}
-         {\textbf{Invited Talk}:\newline
+         {\strong{Invited Talk}:\newline
           \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
          \small University of Münster, Germany.}
   \cvline{06/2017}
@@ -351,27 +367,27 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
          {Talk: \emph{Programming GPUs with Eager Actions and Lazy Views}\newline
           \small  International Workshop on Programming Models and Applications for Multicores and Manycores (PMAM) 2017 in Austin, USA.}
   \cvline{12/2016}
-         {\textbf{Invited Talk}:\newline \emph{The Lift Project: Performance Portable GPU Code Generation via Rewrite Rules}\newline
+         {\strong{Invited Talk}:\newline \emph{The Lift Project: Performance Portable GPU Code Generation via Rewrite Rules}\newline
          Computer Laboratory Systems Research Group Seminar, University of Cambridge, UK.
          }
   \cvline{08/2016}
-         {\textbf{Invited Talk}:\newline \emph{Structured Parallel Programming --- From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
+         {\strong{Invited Talk}:\newline \emph{Structured Parallel Programming --- From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
          Center for Advanced Electornics Dresden, Dresden University of Technology, Germany.
          }
   \cvline{05/2016}
-         {\textbf{Invited Talk}:\newline \emph{Improving Programmability and Performance Portability on Many-Core Processors}\newline
+         {\strong{Invited Talk}:\newline \emph{Improving Programmability and Performance Portability on Many-Core Processors}\newline
          \small Colloquium of candidates nominated for the \emph{prize for best dissertation} awarded by the German Informatics Society, Schloss Dagstuhl, Germany.}
   \cvline{04/2016}
-         {\textbf{Invited Talk}: \emph{The lift Project: Performance Portability via Rewrite Rules}\newline
+         {\strong{Invited Talk}: \emph{The lift Project: Performance Portability via Rewrite Rules}\newline
           \small Saarland University, Germany.}
   \cvline{01/2016}
-         {\textbf{Invited Talk}: \emph{Performance Portable GPU Code Generation}\newline
+         {\strong{Invited Talk}: \emph{Performance Portable GPU Code Generation}\newline
          \small Imperial College London, UK.}
   \cvline{12/2015}
          {Talk: \emph{Functional Programming in C++}\newline
          \small Programming Language Interest Group at Edinburgh University, UK.}
   \cvline{10/2015}
-         {\textbf{Invited Talk}: \emph{Generating Performance Portable Code using Rewrite Rules}\newline
+         {\strong{Invited Talk}: \emph{Generating Performance Portable Code using Rewrite Rules}\newline
          \small PENCIL Developer Meeting at Imperial College London, UK.}
   \cvline{09/2015}
          {Talk: \emph{Generating Performance Portable Code using Rewrite Rules:\newline From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
@@ -380,11 +396,11 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
          {Talk: \emph{Generating Performance Portable Code using Rewrite Rules}\newline
          \small Scottish Programming Languages Seminar in St.\ Andrews, UK.}
   \cvline{05/2014}
-         {\textbf{Invited Talk}: \emph{SkelCL\@: High-Level Programming of Multi-GPU
+         {\strong{Invited Talk}: \emph{SkelCL\@: High-Level Programming of Multi-GPU
           Systems}\newline \small Institute for Computational and Applied
           Mathematics, University of Münster, Germany.}
   \cvline{05/2014}
-         {\textbf{Invited Talk}: \emph{SkelCL\@: High-Level Programming of Multi-GPU
+         {\strong{Invited Talk}: \emph{SkelCL\@: High-Level Programming of Multi-GPU
           Systems}\newline \small Workshop on Fast Data Processing on GPUs in
           Dresden, Germany.}
   \cvline{01/2014}
@@ -392,7 +408,7 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
           Computations on Multi-GPU Systems}\newline \small HiStencils 2014
           workshop in Vienna, Austria.}
   \cvline{12/2013}
-         {\textbf{Invited Talk}: \emph{SkelCL\@: High-Level Programming of Multi-GPU
+         {\strong{Invited Talk}: \emph{SkelCL\@: High-Level Programming of Multi-GPU
           Systems}\newline \small Research group on elementary particle physics,
           University of Wuppertal, Germany.}
   \cvline{07/2013}
@@ -414,14 +430,14 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
         the SkelCL Library}\newline \small AsHES 2012 workshop held in
         conjunction with IPDPS 2012 in Shanghai, China.}
   \cvline{04/2012}
-       {\textbf{Invited talk}: \emph{A Skeleton Library for Heterogeneous
+       {\strong{Invited talk}: \emph{A Skeleton Library for Heterogeneous
         Multi-/Many-Core Systems}\newline \small NAIS workshop in Edinburgh, UK.}
   \cvline{01/2012}
        {Talk: \emph{Towards a High-Level Approach for Programming Distributed
         Systems with GPUs}\newline \small COST Action IC0805 (``ComplexHPC'')
         meeting in Timisoara, Romania.}
   \cvline{12/2011}
-       {\textbf{Invited talk}: \emph{SkelCL --- A High-Level Programming Library for GPU
+       {\strong{Invited talk}: \emph{SkelCL --- A High-Level Programming Library for GPU
         Programming}\newline \small Jülich Supercomputing Centre (JSC), Germany.}
   \cvline{05/2011}
        {Talk: \emph{SkelCL --- A Portable Skeleton Library for High-Level
@@ -429,7 +445,7 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
         \small HIPS 2011 workshop held in conjunction with IPDPS 2011 in
         Anchorange, Alaska, USA.}
   \cvline{09/2008}
-       {\textbf{Invited talk}: \emph{Development of an Online Game as a Student Project}\newline
+       {\strong{Invited talk}: \emph{Development of an Online Game as a Student Project}\newline
         \small ITSoftTEAM workshop in Chernihiv, Ukraine.}
 
 
