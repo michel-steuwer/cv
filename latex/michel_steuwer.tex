@@ -6,6 +6,22 @@
 \usepackage[T1]{fontenc}
 \renewcommand*\oldstylenums[1]{{\firaoldstyle{} #1}}
 
+
+\usepackage[inline]{enumitem}
+\newlist{inlineItemize}{itemize*}{1}
+\setlist[inlineItemize]{label={}, itemjoin={{,}}, itemjoin*={{, and}}, before={\hspace{-.5ex}}, after={.}}
+\setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=.5em}
+
+\usepackage{environ}
+\NewEnviron{cvitemize}[1][ ]{%
+  \cvline{#1}{\vspace{-1em}
+      \begin{itemize}
+              \BODY
+      \end{itemize}
+      \vspace{-1em}
+  }
+}
+
 \urlstyle{same}
 
 
@@ -139,7 +155,7 @@
 \vspace{-3em}
 \makecvtitle%
 
-\vspace{2em}
+%\vspace{2em}
 
 \section{Professional Experience}
 \cventry{{\footnotesize since Aug.} 2017}
@@ -154,123 +170,156 @@
         {PhD degree in computer science}{University of Münster}{Germany}{}
         {Supervisor: Prof.\ Sergei Gorlatch}
 \cvline{}{Thesis: \textit{Improving Programmability and Performance Portability on Many-Core Processors}}
-\cvline{}{Awarded with the highest possible grade: \strong{Summa Cum Laude} ({\itshape\small with highest honor\/})}
-\cvline{}{Nominated as one of 34 candidates from all German, Austrian, and Swiss Universities for the \strong{prize for best dissertation} awarded by the German Informatics Society.}
+%\cvline{}{Awarded with the highest possible grade: \strong{Summa Cum Laude} ({\itshape\small with highest honor\/}).\newline \strong{Nominated} as one of 34 candidates from all German, Austrian, and Swiss Universities for the \strong{prize for best dissertation} awarded by the German Informatics Society.}
 
 \cventry{2005--2010}
         {Diploma degree in computer science with a minor in mathematics}
         {\newline(equivalent to a combined MSc and UG degree) University of Münster}{Germany}{}{}
 \cvline{}{Thesis: \textit{SkelCL --- A Portable Multi-GPU Skeleton Library}}
-\cvline{}{Overall grade in computer science: \textit{very good (85 \%)}}
+%\cvline{}{Overall grade in computer science: \textit{very good (85 \%).}}}
 
 
 
 \section{Honours and Achievements}
-\cvline{}{
-  \begin{itemize}
-    \item \strong{Best Paper Award Winner} at the International Symposium on Code Generation and Optimization \strong{CGO 2018}.
-    \item \strong{HiPEAC Paper Award Winner} for our paper at the International Conference on Architectural Support for Programming Languages and Operating Systems \strong{ASPLOS 2018}.
-    \item \strong{Most cited papers} of the International Conference on Functional Programming \strong{ICFP\,2015} and the International Symposium on Code Generation and Optimization \strong{CGO\,2017} \& \strong{2018}.
-    \item PhD thesis honoured with the highest possible grade \strong{Summa cum laude}
-    \item \strong{Nominated} as one of 34 candidates for the \strong{prize for best dissertation} completed in 2015 in Informatics at a German, Austrian, or Swiss University.
-          This highly prestigious prize is awarded annually by the German Informatics Society (GI).
-  \end{itemize}
-}
-\vspace{-1em}
+\begin{cvitemize}
+    \item \strong{Best Paper Award Winner} at ACM \strong{CGO 2018}.
+    \item \strong{HiPEAC Paper Award Winner} for our paper at \strong{ASPLOS 2018}.
+    \item \strong{Most cited papers} at
+        \begin{inlineItemize}
+        \item \strong{ICFP\,2015}
+        \item \strong{CGO\,2017}
+        \item \strong{2018}
+        \end{inlineItemize}
+    \item PhD thesis honoured with the highest possible grade \strong{Summa cum laude}\newline
+          \strong{Nominated} as one of 34 candidates for the \strong{prize for best dissertation} completed in 2015 in Informatics at a German, Austrian, or Swiss University.
+\end{cvitemize}
 
 \section{Awarded Grants}
-\cvline{}{
-  \begin{itemize}
+\begin{cvitemize}
     \item Nvidia GPU Grant Program (2011, 2016, and 2017) in total of approx. £13.500.
     \item HiPEAC collaboration grants (2016 and 2013) and HPC-Europa2 visitor grant (2012) in total of approx. €15.000.
     \item Intel Hardware Accelerator Research Program (2016) for privileged access to Intel's upcoming CPU+FPGA hardware.
-  \end{itemize}
-}
-%\vspace{-2.5em}
+    \item Access to Google's Tensor Flow Research Cloud (2019)
+\end{cvitemize}
 
 
 \section{Research Community Activities}
-\subsection{Memberships and Participation in Research Networks}
-\cvline{}{
-  \begin{itemize}
-    \item Member of ACM and the German Informatics Society ({\footnotesize GI\@: Gesellschaft f{\"u}r Informatik})
-    \item Member of the UK Manycore Research, Innovation and Opportunities Network (MaRIONet)
-    \item Academic member of the European Network on High Performance and Embedded Architecture and Compilation (HiPEAC)
-    \item Regular participant of the Scottish Programming Language Seminar (SPLS)
-    % \item I represented the University of Edinburgh in the EU \emph{EuroLab-4-HPC\@: Open source in high performance computing} initiative
-  \end{itemize}
-}
+\subsection{Program and Artifact Evaluation Committees \& Reviewing}
+  \begin{cvitemize}
+  \item \strong{Program Committee Member} of
+    \begin{inlineItemize}
+      \item \highlight{ACM \href{http://cgo.org}{CGO}\,\href{http://cgo.org/}{2020}}
+      \item \highlight{\href{http://cgo.org/cgo2019/}{2019}}
+      \item \highlight{ACM CC\,\href{https://cc-conference.github.io/20/}{2020}}
+      \item \highlight{ACM \href{https://conf.researchr.org/series/gpce}{GPCE}\,\href{https://conf.researchr.org/home/gpce-2019}{2019}},
+      \item \highlight{ACM LCTES\,\href{https://conf.researchr.org/home/LCTES-2019}{2019}}
+      \item \highlight{\href{https://conf.researchr.org/track/LCTES-2018/LCTES-2018-papers}{2018}}
+      \item \highlight{ICPP\,\href{https://jnamaral.github.io/icpp20/}{2020}}
+      \item \highlight{\href{http://hlpp.free.fr/}{HLPP}\,\href{https://www.ida.liu.se/conferences/hlpp2019/}{2019}}
+      \item \highlight{\href{https://www.univ-orleans.fr/lifo/equipes/LMV/hlpp2018/index.php}{2018}}
+      \item \highlight{\href{https://hlpp2017.infor.uva.es/}{2017}}
+      \item \highlight{\href{http://hlpp2016.uni-muenster.de/}{2016}}
+      \item \highlight{\href{https://omasew.github.io/}{OMASE Workshop\,2019}}
+      \item \highlight{DHPCC++ Workshop\,\href{http://sycl.tech/distributed-heterogeneous-programming-in-c-cpp-dhpccpp19.html}{2019}}
+      \item \highlight{\href{http://www.iwocl.org/iwocl-2018/dhpcc/}{2018}}
+      \item \highlight{IEEE \href{https://scalcom2016.sciencesconf.org/}{ScalCom\,2016}}
+    \end{inlineItemize}
+\end{cvitemize}
+\begin{cvitemize}
+  \item \strong{Artifact Evaluation Committees} of
+    \begin{inlineItemize}
+      \item \highlight{ACM ICFP\,2017}
+      \item \highlight{ACM CGO\,2017}
+      \item \highlight{ACM PACT\,2016}
+    \end{inlineItemize}
+\end{cvitemize}
+\begin{cvitemize}
+  \item \strong{External reviewer for journals}:
+    \begin{inlineItemize}
+      \item \highlight{Communications of the ACM}
+      \item \highlight{ACM TODS}
+      \item \highlight{ACM TACO}
+      \item \highlight{ACM Computing Surveys}
+      \item \highlight{Science of Computer Programming Journal (Elsevier)}
+      \item \highlight{The Journal of Supercomputing (Springer)}
+      \item \highlight{Software: Practice and Experience (Wiley)}
+    \end{inlineItemize}
+\end{cvitemize}
+\begin{cvitemize}
+  \item \strong{External reviewer for conferences}:
+    \begin{inlineItemize}
+      \item \highlight{CC}
+      \item \highlight{CGO}
+      \item \highlight{Euro-Par}
+      \item \highlight{EuroMPI}
+      \item \highlight{CCGrid}
+      \item \highlight{ParCo}
+      \item \highlight{PaCT}
+    \end{inlineItemize}
+\end{cvitemize}
+
 \subsection{Organisation Committees}
-\cvline{}{
-  \begin{itemize}
-    \item \strong{Artifact Evaluation Chair and Co-Chair} of \highlight{CGO 2020, 2019, 2018}
-    \item \strong{Artifact Evaluation Chair} of \highlight{CC 2020}
-    \item \strong{Artifact Evaluation Chair and Co-Chair} of \highlight{LCTES 2019 and 2018}
-    \item \strong{Local Organisation Co-Chair} of the \highlight{HiPEAC Computer Systems Week} in April 2019
-    \item \strong{Local Organisation Co-Chair} of \highlight{SPLS}, the Scottish Programming Language Seminar, 03/2018
-    \item \strong{Web \& Publicity Chair} of \highlight{CC 2018}
-    \item \strong{Local Organisation Chair} of \highlight{UKMAC 2017}, the 7{\footnotesize th} UK Many-Core Developer Conference
-\end{itemize}
-}
-\subsection{Program Committees}
-\cvline{}{
-  \begin{itemize}
-    \item \strong{\href{http://cgo.org}{CGO}\,\href{http://cgo.org/}{2020} and \href{http://cgo.org/cgo2019/}{2019}}: SIGMICRO/SIGPLAN Intl. Symp. on Code Generation and Optimization
-    \item \strong{ICPP 2020}: International Conference on Parallel Processing
-    \item \strong{CC\,\href{https://cc-conference.github.io/20/}{2020}}: International Conference on Compiler Construction
-    \item \strong{\href{https://conf.researchr.org/series/gpce}{GPCE}\,\href{https://conf.researchr.org/home/gpce-2019}{2019}}: SIGPLAN Intl. Conference on Generative Programming: Concepts \& Experiences
-    \item \strong{LCTES\,\href{https://conf.researchr.org/home/LCTES-2019}{2019} and \href{https://conf.researchr.org/track/LCTES-2018/LCTES-2018-papers}{2018}}: SIGPLAN/SIGBED Conference on Languages, Compilers, Tools and Theory for Embedded Systems
-    \item \strong{\href{http://hlpp.free.fr/}{HLPP}\,\href{https://www.ida.liu.se/conferences/hlpp2019/}{2019}, \href{https://www.univ-orleans.fr/lifo/equipes/LMV/hlpp2018/index.php}{2018}, \href{https://hlpp2017.infor.uva.es/}{2017}, and \href{http://hlpp2016.uni-muenster.de/}{2016}}: Intl. Symp. on High-Level Parallel Programming and Apps.
-    \item \strong{\href{https://omasew.github.io/}{OMASE\,2019}}: Optimization, Modeling, Analysis and Space Exploration Workshop
-    \item \strong{DHPCC++\,\href{http://sycl.tech/distributed-heterogeneous-programming-in-c-cpp-dhpccpp19.html}{2019} and \href{http://www.iwocl.org/iwocl-2018/dhpcc/}{2018}}: Workshop on Distr. and Heterogeneous Programming in C/C++
-    \item \strong{\href{https://scalcom2016.sciencesconf.org/}{ScalCom\,2016}}: IEEE Intl. Conference on Scalable Computing and Communications
-\end{itemize}
-}
-\subsection{Artifact Evaluation Committees}
-\cvline{}{
-  \begin{itemize}
-    \item \strong{ICFP\,2017}: ACM SIGPLAN International Conference on Functional Programming
-    \item \strong{CGO\,2017}: ACM SIGMICRO/SIGPLAN Intl. Symposium on Code Generation and Optimization
-    \item \strong{PACT\,2016}: Intl. Conference on Parallel Architectures and Compilation Techniques
-  \end{itemize}
-}
+\begin{cvitemize}
+    \item \strong{Artifact Evaluation Chair} of
+        \begin{inlineItemize}
+            \item \highlight{CGO 2020, 2019, 2018}
+            \item \highlight{CC 2020}
+            \item \highlight{LCTES 2019, 2018}
+        \end{inlineItemize}
+    \item \strong{Local Organisation Co-Chair} of
+        \begin{inlineItemize}
+            \item \highlight{HiPEAC Computer Systems Week} in April 2019
+            \item \highlight{Scottish Programming Language Seminar} in March 2018
+            \item October 2019
+            \item \highlight{UK Many-Core Developer Conference UKMAC} in May 2016
+        \end{inlineItemize}
+    \item \strong{Web \& Publicity Chair} of
+        \begin{inlineItemize}
+            \item \highlight{CC 2018}
+        \end{inlineItemize}
+\end{cvitemize}
+
+
+\subsection{Memberships in Research Networks}
+\begin{cvitemize}
+    \item \strong{Member} of
+      \begin{inlineItemize}
+        \item \highlight{ACM}
+        \item the German Informatics Society (\highlight{GI}\@: {\footnotesize Gesellschaft f{\"u}r Informatik})
+        \item the UK Manycore Research, Innovation and Opportunities Network (\highlight{MaRIONet})
+        \item the European Network on High Performance and Embedded Architecture and Compilation (\highlight{HiPEAC}) (Academic Member)
+        \item the Glasgow System Section (\highlight{GLASS})
+        \item the Glasgow Parallelism Group (\highlight{GPG})
+        \item the Programming Languages at Glasgow (\highlight{PLUG}) Group
+        \item the Compiler and Architecture Design (\highlight{CArD}) Group at the University of Edinburgh (Visiting Member)
+        \item regular participant of the Scottish Programming Language Seminars (\highlight{SPLS})
+      \end{inlineItemize}
+\end{cvitemize}
+
 \subsection{Local Community Activities}
-\cvline{}{
-  \begin{itemize}
-    \item I organise \emph{Upwards}, a seminar series discussing all aspects of research life to facilitate knowledge sharing among academics and providing career advices.
-    \item I co-organised the \emph{Programming Language Research Programme} at the School of Informatics in Edinburgh together with James Cheney, including a seminar series covering a broad range of topics related to programming languages.
-    \item I organised the \emph{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
-  \end{itemize}
-}
-\newpage
-\subsection{External reviewer}
-\cvline{}{I regularly act as reviewer for journals, funding agencies and external reviewer for conferences.}
-\cvline{}{I have reviewed for the following journals: ACM TODS, ACM TACO, ACM Computing Surveys, Elsevier's Science of Computer Programming Journal, Springer's The Journal of Supercomputing, Wiley's Software: Practice and Experience.}
-\cvline{}{I have been external reviewer for: CC, CGO, Euro-Par, EuroMPI, CCGrid, and ParCo.}
-% \cvline{}{
-%   Reviewer for journals:
-%   \begin{itemize}
-%     \item ACM Transactions on Database Systems (TODS)
-%     \item ACM Transactions on Architecture and Code Optimization (TACO)
-%     \item ACM Computing Surveys
-%     \item Science of Computer Programming Journal (Elsevier)
-%     \item The Journal of Supercomputing (Springer)
-%     \item Software: Practice and Experience (Wiley)
-%   \end{itemize}
-% }
-  % \smallskip
-% \cvline{}{
-%   External reviewer for conferences:
-%   \begin{itemize}
-%     \item International Conference on Compiler Construction (CC)
-%     \item International Symposium on Code Generation and Optimization (CGO)
-%     \item International Conference on Parallel and Distributed Computing (Euro-Par)
-%     \item European MPI Users Group conference (EuroMPI)
-%     \item International Symposium on Cluster, Cloud and Grid Computing (CCGrid)
-%     \item International Parallel Computing Conference (ParCo)
-%     \item Parallel Computing Technologies (PaCT)
-%   \end{itemize}
-% }
+\begin{cvitemize}
+  \item I am the \highlight{research student committee convener} of the School of Computing Science at the University of Glasgow.
+        Overseeing for the academic progression of over 100 PhD students.
+  \item I organise \highlight{Upwards}, a seminar series discussing all aspects of research life to facilitate knowledge sharing among academics and providing career advices.
+  \item I co-organised the \highlight{Programming Language Research Programme} at the School of Informatics in Edinburgh together with James Cheney, including a seminar series covering a broad range of topics related to programming languages.
+  \item I organised the \highlight{Humble C++ Programmer Group}, a group discussing practical programming topics in C++ targeted at PhD students to improve their coding skills.
+\end{cvitemize}
+
+
+\section{Supervised PhD Students}
+\subsection{Currently Active Students}
+\cvline{\since{} 10/2019}{Rongxiao Fu {\footnotesize Main Supervisor together with Ornela Dardha at the University of Glasgow}}
+\cvline{\since{} 10/2019}{Johannes Lenfers {\footnotesize Second Supervisor together with Sergei Gorlatch at the University of M{\"u}nster}}
+\cvline{\since{} 09/2019}{Martin L\"ucke {\footnotesize Second Supervisor together with Aaron Smith at the University of Edinburgh}}
+\cvline{\since{} 11/2018}{Thomas Koehler {\footnotesize Main Supervisor together with Phil Trinder at the University of Glasgow}}
+\cvline{\since{} 10/2018}{Bastian K\"opcke {\footnotesize Second Supervisor together with Sergei Gorlatch at the University of M{\"u}nster}}
+\cvline{\since{} 10/2016}{Bastian Hagedorn {\footnotesize Second Supervisor together with Sergei Gorlatch at the University of M{\"u}nster}}
+\cvline{\since{} 09/2016}{Federico Pizzuti {\footnotesize Second Supervisor together with Christophe Dubach at the University of Edinburgh}}
+\cvline{\since{} 09/2015}{Larisa Stoltzfus {\footnotesize Second Supervisor together with Christophe Dubach at the University of Edinburgh}}
+\subsection{Graduated Students}
+\cvline{2014 - 2019}{Toomas Remmelg {\footnotesize Second Supervisor together with Christophe Dubach at the University of Edinburgh}}
+\cvline{2015 - 2018}{Michael Haidl {\footnotesize Second Supervisor together with Sergei Gorlatch at the University of M{\"u}nster}}
+\cvline{2013 - 2017}{Juan Jos{\'{e}} Fumero {\footnotesize Second Supervisor together with Christophe Dubach at the University of Edinburgh}}
 
 \section{Research Visits}
 \cventry{2019}{Hosting of a visiting researcher (2 Month)}{From the University of Münster}{Germany}{}
@@ -293,37 +342,19 @@
         {Visiting researcher (3 Month)}{The University of Edinburgh/EPCC}{UK}{}
         {Funded by the HPC-Europa2 project}
 
-\section{Research Collaborations}
-\cvline{}{
-  \begin{itemize}
-    \item Sam Lindley, LFCS, University of Edinburgh
-    % \item Alan Gray, EPCC, University of Edinburgh
-    \item Robert Atkey, University of Strathclyde
-    \item Ryan Newton, University of Indiana Bloomington
-    \item Sergei Gorlatch, University of M{\"u}nster
-    \item Nina Dethlefs, University of Hull
-    \item Alastair Murray, Codeplay
-    \item Grigori Fursin and Anton Lokhmotov, dividiti Ltd.
-    % \item Mario Wolczko and Tim Harris, Oracle Labs
-    \item Robert Hundt and Jacques Pienaar, Google
-    \item Aaron Smith, Microsoft Research
-  \end{itemize}
-}
-
-% \vspace{0em}
-
-\newpage
 
 \printbibheading[title={Publications}]
 
 {\small
-In my research communities publications in highly regarded conferences are much higher valued than journal publications.
-I list -- where known to me -- the acceptance rate of the conferences and their ranking using the well established CORE 2018 ranking of computer science conferences.
+ In my research communities publications in highly regarded conferences are much higher valued than journal publications.
+ I list -- where known to me -- the acceptance rate of the conferences and their ranking using the well established CORE 2018 ranking of computer science conferences.
 }
 
 \subsection{Citation Statistics}
-\cvline{}{\strong{Overall citations: 562}, \strong{h-index: 13}, \strong{i-index: 18}}
-\cvline{}{\small (from Google Scholar accessed on the 9th of July 2019)}
+\cvline{}{\strong{Overall citations: 617}, \strong{h-index: 14}, \strong{i-index: 19} \small (from Google Scholar 16th November 2019)}
+% \cvline{}{A list of my publications is also available on \href{https://michel.steuwer.info/publications/}{my website} and my Google Scholar profile.}
+
+\bigskip
 
 \newrefcontext[labelprefix=J]
 \printbibliography[keyword=journal,title={Journal Articles},heading=subbibliography]
@@ -344,27 +375,32 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
 \newrefcontext[labelprefix=B]
 \printbibliography[keyword=book,title={Book Chapter},heading=subbibliography]
 
+
 \section{Talks and Presentations}
+% \cvline{}{\small I have given invited talks and presentations at many venues worldwide. Some highlights are listed here, the full list is available on \href{https://docs.google.com/viewer?url=https://github.com/michel-steuwer/cv/raw/master/latex/michel_steuwer.pdf}{my full cv} and \href{https://michel.steuwer.info/talks/}{my website}.}
+\cvline{09/2019}
+  {\strong{Invited Talk}: \emph{ ELEVATE: a language to write composable program optimizations}\newline
+  \small \strong{Google DeepMind}, London, UK.}
+\cvline{02/2019}
+  {\strong{Invited Talk}: \emph{Lift: Generating High Performance Code with Rewrite Rules}\newline
+  \small Programming Languages and Software Engineering Group, \strong{University of Washington in Seattle}, US.}
   \cvline{02/2019}
   {\strong{Invited Talk}: \emph{Lift: Generating High Performance Code with Rewrite Rules}\newline
-  \small Programming Languages and Software Engineering Group, University of Washington in Seattle, US.}
-  \cvline{02/2019}
-  {\strong{Invited Talk}: \emph{Lift: Generating High Performance Code with Rewrite Rules}\newline
-  \small Microsoft Research in Redmond, US.}
+    \small \strong{Microsoft Research in Redmond}, US.}
   \cvline{12/2018}
          {Talk: \emph{Implementing lambda calculus in Python and C++}\newline
           \small Programming Languages at Glasgow (PLUG), University of Glasgow, UK.}
   \cvline{11/2018}
          {Talk: \emph{High-level Features – Low-level Performance: GPU Performance Prediction of Stencils}\newline
           \small System Seminar, University of Glasgow, UK.}
-  \cvline{09/2018}
-         {\strong{Invited Talk}:\newline
+\cvline{09/2018}
+         {\strong{Invited Talk}:
           \emph{Generating Performance Portable Code with Lift}\newline
-         \small Shonan Meeting No.134: Advances in Heterogeneous Computing from Hardware to Software, Japan.}
-  \cvline{03/2018}
-         {\strong{Invited Talk}:\newline
+         \small \strong{Shonan Meeting No.134}: Advances in Heterogeneous Computing from Hardware to Software, Japan.}
+\cvline{03/2018}
+         {\strong{Invited Talk}:
           \emph{Lift: Code Generation by Rewriting Algorithmic Skeletons}\newline
-         \small Dagstuhl Seminar 18111 on Loop Optimizations, Schloss Dagstuhl, Germany.}
+         \small \strong{Dagstuhl Seminar 18111} on Loop Optimizations, Schloss Dagstuhl, Germany.}
   \cvline{02/2018}
          {\strong{Invited Talk}:\newline
           \emph{Programming GPUs with Eager Actions and Lazy Views}\newline
@@ -375,13 +411,13 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
   \cvline{11/2017}
          {Talk:\emph{Programming GPUs with Eager Actions and Lazy Views}\newline
          \small System Seminar, University of Glasgow, UK.}
-  \cvline{10/2017}
+\cvline{10/2017}
          {Talk:\emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
          \small System Seminar, University of Glasgow, UK.}
   \cvline{10/2017}
-         {\strong{Invited Talk}:\newline
+         {\strong{Invited Talk}:
           \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
-         \small Microsoft Research Labs in Cambridge, UK.}
+         \small \strong{Microsoft Research Labs in Cambridge}, UK.}
   \cvline{09/2017}
          {\strong{Invited Talk}:\newline
           \emph{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}\newline
@@ -402,9 +438,9 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
   \cvline{02/2017}
          {Talk: \emph{Programming GPUs with Eager Actions and Lazy Views}\newline
           \small  International Workshop on Programming Models and Applications for Multicores and Manycores (PMAM) 2017 in Austin, USA.}
-  \cvline{12/2016}
-         {\strong{Invited Talk}:\newline \emph{The Lift Project: Performance Portable GPU Code Generation via Rewrite Rules}\newline
-         Computer Laboratory Systems Research Group Seminar, University of Cambridge, UK.
+\cvline{12/2016}
+         {\strong{Invited Talk}: \emph{The Lift Project: Performance Portable GPU Code Generation via Rewrite Rules}\newline
+         Computer Laboratory Systems Research Group Seminar, \strong{University of Cambridge}, UK.
          }
   \cvline{08/2016}
          {\strong{Invited Talk}:\newline \emph{Structured Parallel Programming --- From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
@@ -416,7 +452,7 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
   \cvline{04/2016}
          {\strong{Invited Talk}: \emph{The lift Project: Performance Portability via Rewrite Rules}\newline
           \small Saarland University, Germany.}
-  \cvline{01/2016}
+\cvline{01/2016}
          {\strong{Invited Talk}: \emph{Performance Portable GPU Code Generation}\newline
          \small Imperial College London, UK.}
   \cvline{12/2015}
@@ -424,7 +460,7 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
          \small Programming Language Interest Group at Edinburgh University, UK.}
   \cvline{10/2015}
          {\strong{Invited Talk}: \emph{Generating Performance Portable Code using Rewrite Rules}\newline
-         \small PENCIL Developer Meeting at Imperial College London, UK.}
+         \small \strong{Imperial College London}, UK.}
   \cvline{09/2015}
          {Talk: \emph{Generating Performance Portable Code using Rewrite Rules:\newline From High-Level Functional Expressions to High-Performance OpenCL Code}\newline
          \small International Conference on Functional Programming (ICFP) 2015 in Vancouver, Canada.}
@@ -490,76 +526,59 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
 
 \cvline{}{\footnotesize As a Lecturer at the University of Glasgow.}
 
-\cvline{\small 2018 - 2019}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2019 - 2020]
+    \item \emph{Systems Programming}, undergraduate course (Level H/M). About 200 students.
+    \item \emph{Professional Software Development Team Project}, undergraduate course (Level H/M), together with  Tim Storer (Course Coordinator), Craig Macdonald, Iadh Ounis, and Lito Michala. About 200 students.
+\end{cvitemize}
+
+\begin{cvitemize}[\small 2018 - 2019]
     \item \emph{Systems Programming}, undergraduate course (Level H/M). About 180 students.
     \item \emph{Professional Software Development Team Project}, undergraduate course (Level H/M), together with  Tim Storer (Course Coordinator), Inah Omoronyia, and Jeff Dalton. About 180 students.
-  \end{itemize}
-  \vspace{-1em}
-}
+\end{cvitemize}
 
-\cvline{\small 2017 - 2018}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2017 - 2018]
     \item \emph{Operating Systems}, undergraduate course (Level H/M), together with Wim Vanderbauwhede. About 80 students.
     \item \emph{Professional Software Development Team Project}, undergraduate course (Level H/M), together with  Tim Storer (Course Coordinator), Inah Omoronyia, and Joemon Jose. About 160 students.
     \item \emph{MSc CS+ Team Project}, topic: \emph{Developing a visual tool for exploring rewriting}. 6 Students.
-  \end{itemize}
-  \vspace{-1em}
-  }
+\end{cvitemize}
 
 \cvline{}{\footnotesize As a postdoctoral researcher at the University of Edinburgh.}
 
-\cvline{\small 2016 - 2017}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2016 - 2017]
     \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course given by James Cheney.
     \item Guest Lecture in the \emph{Compiling Techniques} course given by Christophe Dubach.
     \item Assistance in the tutorials of the \emph{Compiling Techniques} course given by Christophe Dubach.
-  \end{itemize}
-  \vspace{-1em}
-  }
+\end{cvitemize}
 
-\cvline{\small 2015 - 2016}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2015 - 2016]
     \item Organiser and Lecturer of the C++ programming course \emph{The Humble C++ Programmer} aiming to improve PhD students coding skills.
     \item Guest Lecture on \emph{\small DSLs and rewrite-based optimizations for performance-portable parallel programming} in the \emph{Elements of Programming Languages} course given by James Cheney.
     \item Assistance in the tutorials of the \emph{Compiling Techniques} course given by Christophe Dubach.
-  \end{itemize}
-  \vspace{-1em}
-  }
+\end{cvitemize}
 
-\cvline{\small 2014 - 2015}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2014 - 2015]
     \item Guest Lecture in the \emph{Compiling Techniques} course given by Christophe Dubach.
-  \end{itemize}
-  \vspace{-1em}
-}
+\end{cvitemize}
 
 \cvline{}{\footnotesize As a research associate at the University of M{\"u}nster.}
 
-\cvline{\small 2013 - 2014}{%
-\begin{itemize}
+\begin{cvitemize}[\small 2013 - 2014]
   \item Supervised MSc student project:
         \emph{Design and implementation of a high-level API for programming heterogeneous clusters}.
     \item Supervised MSc student project:
         \emph{High-level programming of online games in future generation networks}.
-\end{itemize}
-  \vspace{-1em}
-}
+\end{cvitemize}
 
-\cvline{\small 2012 - 2013}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2012 - 2013]
     \item  Course Design and Lecturer:
         \emph{Introduction to programming with C and C++}.
       \item    Teaching assistant:
         \emph{Multi-core and GPU\@: Parallel Programming}.
     \item Teaching assistant:
         \emph{Operating Systems}.
-    \end{itemize}
-  \vspace{-1em}
-}
+\end{cvitemize}
 
-\cvline{\small 2011 - 2012}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2011 - 2012]
     \item Supervised MSc student project:
         \emph{High-level programming of heterogeneous systems}.
       \item Teaching assistant:
@@ -568,40 +587,41 @@ I list -- where known to me -- the acceptance rate of the conferences and their 
         \emph{Technical aspects of cloud computing} seminar.
       \item Teaching assistant:
         \emph{Operating Systems}.
-    \end{itemize}
-  \vspace{-1em}
-}
+\end{cvitemize}
 
-\cvline{\small 2010 - 2011}{%
-  \begin{itemize}
+\begin{cvitemize}[\small 2010 - 2011]
     \item Supervised UG/MSc student project:
         \emph{Internet- and GPU-based Cloud Computing}.
       \item Course Design and teaching assistant:
         \emph{Multi-core and GPU\@: Parallel Programming}.
     \item Supervised UG student project:
         \emph{High-level GPU programming}.
-    \end{itemize}
-  \vspace{-1em}
-}
-
-\section{Supervised PhD Students}
-\cvline{\since{} 11/2018}{PhD studies of Thomas Koehler on\newline \emph{Practical development of efficient and portable image processing applications in Lift}}
-
-\cvline{}{\footnotesize The following students are co-supervised with Christophe Dubach at the University of Edinburgh.}
-% \cvline{\since{} 09/2016}{PhD studies of Naums Mogers on\newline \emph{Performance Portable Machine Learning Applications}}
-\cvline{\since{} 09/2016}{PhD studies of Federico Pizzuti on\newline \emph{Parallelizing non-associative sequential reductions}}
-\cvline{\since{} 09/2015}{PhD studies of Larisa Stoltzfus on\newline \emph{Stencil-based Acoustic Applications}}
-% \cvline{\since{} 10/2014}{PhD studies of Adam Harries on\newline \emph{Sparse and Irregular Data-Parallel Applications on GPUs}}
-\cvline{\since{} 10/2014}{PhD studies of Toomas Remmelg on\newline \emph{Automatic Performance Optimisations via Provably Correct Rewrite Rules}}
-\cvline{12/2013\\- 08/2017}{PhD studies of Juan Jos{\'{e}} Fumero on\newline \emph{High-Level Just In Time Compilers and Runtime Systems for Efficient Heterogeneous Computing}}
-
-\cvline{}{\strut\newline \footnotesize The following students are co-supervised with Sergei Gorlatch at the University of M{\"u}nster.}
-\cvline{\since{} 10/2018}{PhD studies of Bastian K{\"o}pcke on\newline \emph{Exploiting Specialised Hardware with Lift}}
-\cvline{\since{} 10/2016}{PhD studies of Bastian Hagedorn on\newline \emph{Efficient GPU Code Generation for Stencil Computations in Lift}}
-% \cvline{\since{} 06/2015}{PhD studies of Ari Rasch on\newline \emph{Parametric Algorithmic Skeletons}}
-\cvline{06/2015\\ - 11/2018}{PhD studies of Michael Haidl on\newline \emph{{\scshape pacxx}: A GPU programming model embedded in C++}}
+\end{cvitemize}
 
 \section{Supervised Undergraduate and Master Students}
+
+\cvline{}{\footnotesize As a Lecturer at the University of Glasgow.}
+
+\cvline{09/2019\\ - 03/2020}{Final year project of Xueying Qin on\newline
+  \emph{Proving the correcness of rewrite rules in Agda}}
+\cvline{09/2019\\ - 03/2020}{Final year project of Sarah Ashworth on\newline 
+  \emph{Implementation of pattern-based computations on an FPGA}}
+\cvline{09/2019\\ - 03/2020}{Final year project of Euan Mcgrevey on\newline 
+  \emph{Optimizing image processing applications by rewriting}}
+\cvline{09/2019\\ - 03/2020}{Final year project of Darius Darulis on\newline 
+  \emph{Predicting the performance of rewritten program variations}}
+\cvline{09/2019\\ - 03/2020}{Final year project of David Wood on\newline 
+  \emph{Optimizing the compilation time of the Rust compiler}}
+
+\cvline{06/2018\\ - 09/2019}{Final year project of Ryan Maloney on\newline
+  \emph{UFC Fight Prediction Web App}}
+\cvline{06/2018\\ - 09/2019}{Final year project of Stuart Rawlinson on\newline 
+  \emph{Scansion: A Poetry Analysis Web Application}}
+\cvline{06/2018\\ - 09/2019}{Final year project of Junjie Shentu on\newline 
+  \emph{Development of Ordering Application in Restaurants}}
+\cvline{06/2018\\ - 09/2019}{Final year project of Liam James on\newline
+  \emph{Developing an Android Food Rating Application for Armature Chefs
+}}
 
 \cvline{09/2018\\ - 03/2019}{Final year project of Hansheng Zhang on\newline \emph{Multi-Level Parallel Applications with the C++ Parallel STL}}
 \cvline{09/2018\\ - 03/2019}{Final year project of Dimitar Borisov on\newline \emph{Exploiting specialised hardware for general purpose computing}}
