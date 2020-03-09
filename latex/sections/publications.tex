@@ -1,0 +1,35 @@
+\printbibheading[title={Publications}]
+
+{\small
+ In my research communities publications in highly regarded conferences are much higher valued than journal publications.
+ I list -- where known to me -- the acceptance rate of the conferences and their ranking using the well established CORE 2018 ranking of computer science conferences.
+}
+
+\subsection{Citation Statistics}
+\cvline{}{\strong{Overall citations: 698}, \strong{h-index: 15}, \strong{i-index: 19} \small (from Google Scholar 9th March 2020)}
+% \cvline{}{A list of my publications is also available on \href{https://michel.steuwer.info/publications/}{my website} and my Google Scholar profile.}
+
+\bigskip
+
+\newrefcontext[labelprefix=J]
+\printbibliography[keyword=journal,title={Journal Articles},heading=subbibliography]
+
+\bigskip
+\newrefcontext[labelprefix=C]
+\printbibliography[keyword=conference,title={Conference Papers},heading=subbibliography]
+
+\bigskip
+\newrefcontext[labelprefix=W]
+\printbibliography[keyword=workshop,title={Workshop Papers},heading=subbibliography]
+
+\bigskip
+\newrefcontext[labelprefix=T]
+\printbibliography[keyword=techreport,title={Technical Reports},heading=subbibliography]
+
+\bigskip
+\newrefcontext[labelprefix=TH]
+\printbibliography[keyword=thesis,title={Thesis},heading=subbibliography]
+
+\bigskip
+\newrefcontext[labelprefix=B]
+\printbibliography[keyword=book,title={Book Chapters},heading=subbibliography]
