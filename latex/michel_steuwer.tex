@@ -35,7 +35,8 @@
 % Leaf            R0 G132 B61
 % Moss            R56 G90 B79
 %\definecolor{color0}{RGB}{0,56,101}
-\definecolor{color1}{RGB}{0,56,101}
+% \definecolor{color1}{RGB}{0,56,101}
+\definecolor{color1}{RGB}{11,52,95}
 \definecolor{color2}{RGB}{79,89,97}
 
 \newcommand{\strong}[1]{\textcolor{color1}{\textbf{#1}}}
@@ -64,15 +65,15 @@
 \cfoot{\addressfont\itshape\textcolor{color2}{Last updated on \today}}
 
 % personal data
-\firstname{\hspace{3.5em}\color{color1}Michel}
-\familyname{Steuwer\vspace{.55em}}
+\firstname{\color{color1}Michel}
+\familyname{Steuwer}
 \address{%
-  Sir Alwyn Williams Building\\
-  University of Glasgow\\
-  Glasgow G12 8RZ\
+  Informatics Forum\\
+  10 Crichton Street\\
+  Edinburgh EH8 9AB\\
 }{%
   United Kingdom}
-\email{michel.steuwer@glasgow.ac.uk}
+\email{michel.steuwer@ed.ac.uk}
 
 % divide publications
 \usepackage[style=numeric-verb,
@@ -148,11 +149,11 @@
 \nocite{*} % cite everything ...
 
 \begin{tikzpicture}[remember picture, overlay]
-  \node [anchor=north west, inner ysep=7mm, inner xsep=-3mm]  at (current page.north west)
-    {\includegraphics[width=55mm]{logo.jpg}};
+  \node [anchor=north west, inner ysep=5mm, inner xsep=5mm]  at (current page.north west)
+    {\includegraphics[width=75mm]{logo.jpg}};
 \end{tikzpicture}
 
-\vspace{-3em}
+\vspace{-2.5em}
 \makecvtitle%
 
 \input{sections/professional-experience.tex}
