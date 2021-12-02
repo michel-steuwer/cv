@@ -13,6 +13,9 @@
 ]
 \renewcommand{\familydefault}{\sfdefault}
 
+\usepackage{setspace}
+\onehalfspacing
+
 
 \usepackage[inline]{enumitem}
 \newlist{inlineItemize}{itemize*}{1}
@@ -62,7 +65,8 @@
 
 \usepackage[utf8]{inputenc}
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+% \usepackage[scale=0.8,showframe]{geometry}
+\usepackage[left=3cm,right=3.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \AtBeginDocument{\recomputelengths}
 
 \usepackage{lastpage}
@@ -154,7 +158,7 @@
 \nocite{*} % cite everything ...
 
 \begin{tikzpicture}[remember picture, overlay]
-  \node [anchor=north west, inner ysep=5mm, inner xsep=5mm]  at (current page.north west)
+  \node [anchor=north west, inner ysep=10mm, inner xsep=10mm]  at (current page.north west)
     {\includegraphics[width=75mm]{logo.jpg}};
 \end{tikzpicture}
 
