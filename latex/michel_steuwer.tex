@@ -1,15 +1,22 @@
 \documentclass[11pt,a4paper]{moderncv}
-% \usepackage{mathpazo}
-\usepackage[T1]{fontenc}
 
-\usepackage[sfdefault,scaled=.9]{FiraSans}
-\usepackage[T1]{fontenc}
-\renewcommand*\oldstylenums[1]{{\firaoldstyle{} #1}}
+\usepackage{fontspec}
+% \setmainfont{Heliotrope OT}[%
+%   BoldFont={Heliotrope OT 4 Bold}
+% ]
+\setmainfont{Valkyrie OT}[%
+  BoldFont={Valkyrie OT A Bold}
+]
+\setsansfont{Concourse OT 3}[%
+  BoldFont={Concourse OT 3 Bold},
+  Numbers=OldStyle
+]
+\renewcommand{\familydefault}{\sfdefault}
 
 
 \usepackage[inline]{enumitem}
 \newlist{inlineItemize}{itemize*}{1}
-\setlist[inlineItemize]{label={}, itemjoin={{,}}, itemjoin*={{, and}}, before={\hspace{-.5ex}}, after={.}}
+\setlist[inlineItemize]{label={}, itemjoin={{,} }, itemjoin*={{, and}}, before={\hspace{-.5ex}}, after={.}}
 \setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=.5em}
 
 \usepackage{environ}
@@ -34,19 +41,17 @@
 % Slate           R79 G89 B97
 % Leaf            R0 G132 B61
 % Moss            R56 G90 B79
-%\definecolor{color0}{RGB}{0,56,101}
-% \definecolor{color1}{RGB}{0,56,101}
 \definecolor{color1}{RGB}{11,52,95}
 \definecolor{color2}{RGB}{79,89,97}
 
-\newcommand{\strong}[1]{\textcolor{color1}{\textbf{#1}}}
+\newcommand{\strongHighlight}[1]{\textcolor{color1}{\textbf{#1}}}
 \newcommand{\highlight}[1]{\textcolor{color1}{#1}}
 
 
 \makeatletter
 \renewcommand*{\cventry}[7][.25em]{%
   \cvitem[#1]{#2}{%
-    {\strong{#3}}%
+    {\strongHighlight{#3}}%
     \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
     \ifthenelse{\equal{#5}{}}{}{, #5}%
     \ifthenelse{\equal{#6}{}}{}{, #6}%
@@ -65,7 +70,7 @@
 \cfoot{\addressfont\itshape\textcolor{color2}{Last updated on \today}}
 
 % personal data
-\firstname{\color{color1}Dr. Michel}
+\firstname{\color{color1}\rmfamily\bfseries Dr. Michel}
 \familyname{Steuwer}
 \address{%
   Informatics Forum\\
