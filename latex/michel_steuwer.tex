@@ -1,14 +1,16 @@
 \documentclass[11pt,a4paper]{moderncv}
 
 \usepackage{fontspec}
-\setmainfont{Valkyrie OT}[%
-  BoldFont={Valkyrie OT A Bold}
+\setmainfont{Valkyrie OT B}[%
+  BoldFont={Valkyrie OT B Bold},
+  ItalicFont={Valkyrie OT B Italic},
+  Numbers=OldStyle
 ]
 \setsansfont{Concourse OT 3}[%
   BoldFont={Concourse OT 3 Bold},
+  ItalicFont={Concourse OT 3 Italic},
   Numbers=OldStyle
 ]
-\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage{setspace}
 \onehalfspacing
@@ -31,7 +33,6 @@
 
 \urlstyle{same}
 
-
 \moderncvtheme{classic}
 
 % University Blue R0 G56 B101 
@@ -52,7 +53,7 @@
 \renewcommand*{\cventry}[7][.25em]{%
   \cvitem[#1]{#2}{%
     {\strongHighlight{#3}}%
-    \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#4}{}}{}{, #4}%
     \ifthenelse{\equal{#5}{}}{}{, #5}%
     \ifthenelse{\equal{#6}{}}{}{, #6}%
     .\strut%
@@ -60,25 +61,21 @@
     \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
 \makeatother
 
-\usepackage[utf8]{inputenc}
-% adjust the page margins
-% \usepackage[scale=0.8,showframe]{geometry}
 \usepackage[left=3cm,right=3.5cm,top=2.5cm,bottom=3cm]{geometry}
 \AtBeginDocument{\recomputelengths}
 
 \usepackage{lastpage}
-\rfoot{\addressfont\itshape\textcolor{color2}{Page \thepage\ of \pageref{LastPage}}}
-\cfoot{\addressfont\itshape\textcolor{color2}{Last updated on \today}}
+\rfoot{\addressstyle{Page \thepage\ of \pageref{LastPage}}}
+\cfoot{\addressstyle{Last updated on \today}}
 
 % personal data
-\firstname{\color{color1}\rmfamily\bfseries Dr. Michel}
+\firstname{Dr. Michel}
 \familyname{Steuwer}
 \address{%
   Informatics Forum\\
   10 Crichton Street\\
   Edinburgh EH8 9AB\\
-}{%
-  United Kingdom}
+}{United Kingdom}
 \email{michel.steuwer@ed.ac.uk}
 
 % divide publications
@@ -155,12 +152,18 @@
 \nocite{*} % cite everything ...
 
 \begin{tikzpicture}[remember picture, overlay]
-  \node [anchor=north west, inner ysep=10mm, inner xsep=10mm]  at (current page.north west)
+  \node [anchor=north west, inner ysep=10mm, inner xsep=10mm]
+    at (current page.north west)
     {\includegraphics[width=75mm]{logo.jpg}};
 \end{tikzpicture}
 
-% \vspace{-2.5em}
 \makecvtitle%
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node [anchor=north east, inner ysep=15mm, inner xsep=15mm]
+    at (current page.north east)
+    {\usebox{\makecvtitledetailsbox}};
+\end{tikzpicture}
 
 \input{sections/professional-experience.tex}
 
@@ -172,15 +175,11 @@
 
 \input{sections/research-community-activities.tex}
 
-% \newpage
-
 \input{sections/supervised-phd-students.tex}
 
 \input{sections/phd-examiner.tex}
 
 \input{sections/research-visits.tex}
-
-% \newpage
 
 \input{sections/publications.tex}
 
