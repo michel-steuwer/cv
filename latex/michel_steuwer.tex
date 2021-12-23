@@ -19,6 +19,9 @@
 \setlist[inlineItemize]{label={}, itemjoin={{,} }, itemjoin*={{, and}}, before={\hspace{-.5ex}}, after={.}}
 \setlist[itemize]{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=.5em}
 
+\usepackage{eso-pic}
+\usepackage{tikzpagenodes}
+
 \usepackage{environ}
 \NewEnviron{cvitemize}[1][ ]{%
   \cvline{#1}{\vspace{-1em}
@@ -43,6 +46,7 @@
 % Moss            R56 G90 B79
 \definecolor{color1}{RGB}{11,52,95}
 \definecolor{color2}{RGB}{79,89,97}
+\definecolor{color3}{RGB}{255,255,255}
 
 \newcommand{\strongHighlight}[1]{\textcolor{color1}{\textbf{#1}}}
 \newcommand{\highlight}[1]{\textcolor{color1}{#1}}
@@ -50,7 +54,7 @@
 
 \makeatletter
 \renewcommand*{\cventry}[7][.25em]{%
-  \cvitem[#1]{#2}{%
+  \cvitem[#1]{\textcolor{color3}{#2}}{%
     {\strongHighlight{#3}}%
     \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
     \ifthenelse{\equal{#5}{}}{}{, #5}%
@@ -63,7 +67,7 @@
 \usepackage[utf8]{inputenc}
 % adjust the page margins
 % \usepackage[scale=0.8,showframe]{geometry}
-\usepackage[left=3cm,right=3.5cm,top=2.5cm,bottom=3cm]{geometry}
+\usepackage[left=4.6cm,right=2cm,top=2.5cm,bottom=3cm]{geometry}
 \AtBeginDocument{\recomputelengths}
 
 \usepackage{lastpage}
@@ -71,7 +75,7 @@
 \cfoot{\addressfont\itshape\textcolor{color2}{Last updated on \today}}
 
 % personal data
-\firstname{\color{color1}\rmfamily\bfseries Dr. Michel}
+\firstname{\sffamily\bfseries\textcolor{color3}{~\vspace{1.25em}~~Dr.} \color{color1}Michel}
 \familyname{Steuwer}
 \address{%
   Informatics Forum\\
@@ -91,7 +95,7 @@
 
 \defbibenvironment{bibliography}
   {\list%
-     {\printfield{year}\hspace{1em}\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}
+     {\printfield{year}\hspace{1em}\textcolor{color3}{\printtext[labelnumberwidth]{\printfield{labelprefix}\printfield{labelnumber}}}}
      {\setlength{\topsep}{0pt}% layout parameters from moderncvstyleclassic.sty
       \setlength{\labelwidth}{\hintscolumnwidth}%
       \setlength{\labelsep}{\separatorcolumnwidth}%
@@ -134,7 +138,7 @@
 \DeclareFieldFormat{year}{%
 \ifthenelse{\equal{#1}{\arabic{currentYear}}}%
     {}
-    {\setcounter{currentYear}{#1}{\color{color1}\bfseries #1}}}
+    {\setcounter{currentYear}{#1}{\color{color3}\bfseries #1}}}
 
 \bibliography{michel_steuwer}
 
@@ -148,19 +152,25 @@
 {\par\xdef\tpd{\the\prevdepth}\egroup
  \prevdepth=\tpd}
 
+\AddToShipoutPictureBG{%
+\begin{tikzpicture}[remember picture, overlay]
+    \fill[opacity=1, fill=color1] (0cm, 0cm) rectangle (7cm, 29.7cm);
+    \node[opacity=1, inner sep=0pt, rotate=90, yshift=-70pt]
+        at(current page.west) {
+                  \fontsize{48}{60}\selectfont\sffamily\scshape\color{color3} Michel Steuwer
+        };
+\end{tikzpicture}%
+}
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 \nocite{*} % cite everything ...
 
-\begin{tikzpicture}[remember picture, overlay]
-  \node [anchor=north west, inner ysep=10mm, inner xsep=10mm]  at (current page.north west)
-    {\includegraphics[width=75mm]{logo.jpg}};
-\end{tikzpicture}
-
-% \vspace{-2.5em}
 \makecvtitle%
+
+\vspace{-4em}
 
 \input{sections/professional-experience.tex}
 
@@ -172,15 +182,11 @@
 
 \input{sections/research-community-activities.tex}
 
-% \newpage
-
 \input{sections/supervised-phd-students.tex}
 
 \input{sections/phd-examiner.tex}
 
 \input{sections/research-visits.tex}
-
-% \newpage
 
 \input{sections/publications.tex}
 
