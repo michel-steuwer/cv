@@ -76,7 +76,12 @@
 \cfoot{\addressstyle{Last updated on \today}}
 
 % personal data
-\firstname{\textcolor{color3}{~\vspace{1.25em}~~Dr.} \color{color1}Michel}
+\renewcommand*{\titlefont}{\namefont}
+\renewcommand*{\namestyle}[1]{{\color{color1}\namefont#1}}
+\renewcommand*{\titlestyle}[1]{{\color{color3}\titlefont#1}}
+
+\title{Dr.}
+\firstname{Michel}
 \familyname{Steuwer}
 \address{%
   Informatics Forum\\

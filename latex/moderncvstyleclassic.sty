@@ -133,8 +133,7 @@
     {\setlength{\makecvtitlenamewidth}{\textwidth-\makecvtitledetailswidth-\makecvtitlepicturewidth}}%
     {}%
   \begin{minipage}[b]{\makecvtitlenamewidth}%
-    \namestyle{\@firstname\ \@lastname}%
-    \ifthenelse{\equal{\@title}{}}{}{\\[1.25em]\titlestyle{\@title}}%
+    \strut\vspace{1.25em}\hspace{1.75em}\titlestyle{\@title}\hspace{1em}\namestyle{\@firstname\ \@lastname}\\[1.25em]
   \end{minipage}%
   \hfill%
   % optional detailed information (rendering)
