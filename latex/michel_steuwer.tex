@@ -27,7 +27,7 @@
 \usepackage{environ}
 \NewEnviron{cvitemize}[1][ ]{%
   \cvline{#1}{\vspace{-1em}
-      \begin{itemize}
+      \begin{itemize}[leftmargin=15pt]
               \BODY
       \end{itemize}
       \vspace{-1em}
@@ -93,9 +93,8 @@
 % divide publications
 \usepackage[style=numeric-verb,
             sorting=none, % keep order as in the bib file ...
-            giveninits=true,
+            % giveninits=true,
             defernumbers,
-            backend=biber,
             maxbibnames=50]{biblatex}
 
 \defbibenvironment{bibliography}
@@ -145,11 +144,47 @@
     {}
     {\setcounter{currentYear}{#1}{\color{color3}\bfseries #1}}}
 
-\bibliography{michel_steuwer}
+% supress printing the year additionally after the publisher
+\renewbibmacro*{publisher+location+date}{%
+  \printlist{location}%
+  \iflistundef{publisher}
+  {\setunit*{\addcomma\space}}
+  {\setunit*{\addcolon\space}}%
+  \printlist{publisher}%
+  %\setunit*{\addcomma\space}%
+  %\usebibmacro{date}%
+  \newunit}
+
+% Count total number of entries in each refsection
+\AtDataInput{%
+  \csnumgdef{entrycount:\therefsection}{%
+    \csuse{entrycount:\therefsection}+1}}
+
+% Print the labelnumber as the total number of entries in the
+% current refsection, minus the actual labelnumber, plus one
+\newcounter{Entrycount}
+\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}
+\newrobustcmd*{\mkbibdesc}[1]{%
+  % devide the entryount by 2 as it is initially counted twice
+  \setcounter{Entrycount}{%
+   \the\numexpr% convert back to int
+      \dimexpr\numexpr\csuse{entrycount:\therefsection} + 0\relax sp% convert to "float"
+       / 2\relax% divert by 2
+       \relax%
+  }%
+  \number\numexpr\theEntrycount + 1 - #1\relax%
+  }
+
+\addbibresource[label=journal]{journal.bib}
+\addbibresource[label=conference]{conference.bib}
+\addbibresource[label=workshop]{workshop.bib}
+\addbibresource[label=techreport]{techreport.bib}
+\addbibresource[label=chapter]{chapter.bib}
+\addbibresource[label=thesis]{thesis.bib}
 
 \usepackage{xspace}
 
-\newcommand{\since}{{\small since}\xspace}
+\newcommand{\since}{{\footnotesize since}\xspace}
 
 \newenvironment{absolutelynopagebreak}
 {\par\nobreak\vfil\penalty0\vfilneg
@@ -171,7 +206,6 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-\nocite{*} % cite everything ...
 
 \makecvtitle%
 
@@ -187,11 +221,13 @@
 
 \input{sections/research-community-activities.tex}
 
+\input{sections/research-visits.tex}
+
+\newpage
+
 \input{sections/supervised-phd-students.tex}
 
 \input{sections/phd-examiner.tex}
-
-\input{sections/research-visits.tex}
 
 \input{sections/publications.tex}
 
