@@ -135,7 +135,7 @@
 ◊subsection{Main Supervisor of Graduated PhD Students}
 ◊student-list{
   ◊student[#:name "Bastian Hagedorn"
-           #:date "since 10/2020"
+           #:date "2016 - 2020"
            #:together-with "Sergei Gorlatch"
            #:institution "University of Münster"
            #:now: "Research Engineer at Nvidia"]{
@@ -160,4 +160,20 @@ I have published ◊hl{◊|num-papers| papers}: ◊em{◊|num-journal-papers| Jo
 
 ◊hl{Overall citations: ◊|num-citations|, h-index: ◊|h-index|, i10-index: ◊|i10-index|} (Google Scholar ◊|citations-date|)
 
+◊subsection{Journal Articles}
 ◊|formated-journal-bib|
+
+◊subsection{Conference Papers}
+◊|formated-conference-bib|
+
+◊subsection{Workshop Papers}
+◊|formated-workshop-bib|
+
+◊subsection{Technical Reports and Preprints}
+◊|formated-reports-bib|
+
+
+◊section{Talks and Presentations}
+◊talk-list{
+  ◊talk[#:date "08/2020" #:type "Invited Lectures" #:title "Compiler Intermediate Representations" #:venue "Scottish Programming Language and Verification Summer School" #:host "Hosted by the University of Edinburgh" #:location "Edinburgh, UK"]
+}
