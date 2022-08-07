@@ -375,5 +375,573 @@
 
 ◊section{Talks and Presentations}
 ◊talk-list{
-  ◊talk[#:date "08/2020" #:type "Invited Lectures" #:title "Compiler Intermediate Representations" #:venue "Scottish Programming Language and Verification Summer School" #:host "Hosted by the University of Edinburgh" #:location "Edinburgh, UK"]
+  ◊talk{
+    ◊talk-date{08/2020}
+    ◊talk-type{Invited Lectures}
+    ◊talk-title{Compiler Intermediate Representations}
+    ◊talk-venue{Scottish Programming Language and Verification Summer School}
+    ◊talk-host{Hosted by the University of Edinburgh}
+    ◊talk-location{virtual event}
+  }
+  ◊talk{
+    ◊talk-date{06/2020}
+    ◊talk-type{Talk}
+    ◊talk-title{Achieving High-Performance the Functional Way - Expressing High-Performance Optimizations as Rewrite Strategies}
+    ◊talk-venue{Scottish Programming Language Seminar}
+    ◊talk-host{Hosted by the University of Sterling}
+    ◊talk-location{virtual event}
+  }
+  ◊talk{
+    ◊talk-date{09/2019}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Elevate: a language to write composable program optimizations}
+    ◊talk-host{◊strong{Google DeepMind}}
+    ◊talk-location{London, UK}
+  }
+  ◊talk{
+    ◊talk-date{02/2019}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Lift: Generating High Performance Code with Rewrite Rules}
+    ◊talk-venue{Programming Langauges and Software Engineering Group}
+    ◊talk-host{◊strong{University of Washington}}
+    ◊talk-location{Seattle, USA}
+  }
+  ◊talk{
+    ◊talk-date{02/2019}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Lift: Generating High Performance Code with Rewrite Rules}
+    ◊talk-host{◊strong{Microsoft Research}}
+    ◊talk-location{Redmond, USA}
+  }
+  ◊talk{
+    ◊talk-date{12/2018}
+    ◊talk-type{Talk}
+    ◊talk-title{Implementing lambda calculus in Python and C++}
+    ◊talk-venue{Programming Langauges at Glasgow (PLUG)}
+    ◊talk-host{University of Glasgow}
+    ◊talk-location{Glasgow, UK}
+  }
+  ◊talk{
+    ◊talk-date{11/2018}
+    ◊talk-type{Talk}
+    ◊talk-title{High-level Features - Low-level Performance: GPU Performance Prediction of Stencils}
+    ◊talk-venue{Systems Seminar}
+    ◊talk-host{University of Glasgow}
+    ◊talk-location{Glasgow, UK}
+  }
+  ◊talk{
+    ◊talk-date{09/2018}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Generating Performance Portable Code with Lift}
+    ◊talk-venue{◊strong{Shonan Meeting No. 134}: Advances in Heterogeneous Computing from Hardware to Software}
+    ◊talk-host{Shonan Meeting}
+    ◊talk-location{Japan}
+  }
+  ◊talk{
+    ◊talk-date{03/2018}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Lift: Code Generation by Rewriting Algorithmic Skeletons}
+    ◊talk-venue{◊strong{Dagstuhl Seminar 18111} on Loop Optimizations}
+    ◊talk-host{Schloss Dagstuhl}
+    ◊talk-location{Germany}
+  }
+  ◊talk{
+    ◊talk-date{02/2018}
+    ◊talk-type{Talk}
+    ◊talk-title{Programming GPUs with Eager Actions and Lazy Views}
+    ◊talk-venue{Compiler and Architecture Design Group Seminar}
+    ◊talk-host{University of Edinburgh}
+    ◊talk-location{Edinburgh, UK}
+  }
+  ◊talk{
+    ◊talk-date{02/2018}
+    ◊talk-type{Talk}
+    ◊talk-title{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}
+    ◊talk-venue{Formal Analysis, Theory and Algorithms Seminar}
+    ◊talk-host{University of Glasgow}
+    ◊talk-location{Glasgow, UK}
+  }
+  ◊talk{
+    ◊talk-date{11/2017}
+    ◊talk-type{Talk}
+    ◊talk-title{Programming GPUs with Eager Actions and Lazy Views}
+    ◊talk-venue{System Seminar}
+    ◊talk-host{University of Glasgow}
+    ◊talk-location{Glasgow, UK}
+  }
+  ◊talk{
+    ◊talk-date{10/2017}
+    ◊talk-type{Talk}
+    ◊talk-title{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}
+    ◊talk-venue{System Seminar}
+    ◊talk-host{University of Glasgow}
+    ◊talk-location{Glasgow, UK}
+  }
+  ◊talk{
+    ◊talk-date{10/2017}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}
+    ◊talk-host{◊hl{Microsoft Research}}
+    ◊talk-location{Cambridge, UK}
+  }
+  ◊talk{
+    ◊talk-date{09/2017}
+    ◊talk-type{Talk}
+    ◊talk-title{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}
+    ◊talk-venue{University of Hull HPC Symposium 2017}
+    ◊talk-host{University of Hull}
+    ◊talk-location{Hull, UK}
+  }
+  ◊talk{
+    ◊talk-date{07/2017}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules}
+    ◊talk-host{University of Münster}
+    ◊talk-location{Münster, Germany}
+  }
+  ◊talk{
+    ◊talk-date{06/2017}
+    ◊talk-type{Talk}
+    ◊talk-title{Programming GPUs with Eager Actions and Lazy Views}
+    ◊talk-venue{Scottish Programming Language Seminar}
+    ◊talk-host{University of the West of Scotland}
+    ◊talk-location{Paisley, UK}
+  }
+  ◊talk{
+    ◊talk-date{04/2017}
+    ◊talk-type{Talk}
+    ◊talk-title{Programming GPUs with Eager Actions and Lazy Views}
+    ◊talk-venue{C++ Edinburgh Meetup}
+    ◊talk-location{Edinburgh, UK}
+  }
+  ◊talk{
+    ◊talk-date{02/2017}
+    ◊talk-type{Talk}
+    ◊talk-title{Lift: A Functional Data-Parallel IR for High-Performance GPU Code Generation}
+    ◊talk-venue{International Symposium on Code Generation and Optimization (CGO) 2017}
+    ◊talk-location{Austin, USA}
+  }
+  ◊talk{
+    ◊talk-date{02/2017}
+    ◊talk-type{Talk}
+    ◊talk-title{Programming GPUs with Eager Actions and Lazy Views}
+    ◊talk-venue{International Workshop on Programming Models and Applications for Multicores and Manycores (PMAM) 2017}
+    ◊talk-location{Austin, USA}
+  }
+  ◊talk{
+    ◊talk-date{12/2016}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{The Lift Project: Performance Portable GPU Code Generation via Rewrite Rules}
+    ◊talk-venue{Computer Laboratory Systems Research Group Seminar}
+    ◊talk-host{◊strong{University of Cambridge}}
+    ◊talk-location{Cambridge, UK}
+  }
+  ◊talk{
+    ◊talk-date{08/2016}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Structured Parallel Programming - From High-Level Functional Expressions to High-Performance OpenCL Code}
+    ◊talk-host{Center for Advanced Electronics Dresden, Dresden University of Technology}
+    ◊talk-location{Dresden, Germany}
+  }
+  ◊talk{
+    ◊talk-date{05/2016}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Improving Programmability and Performance Portability on Many-Core Processors}
+    ◊talk-venue{Colloquium of candidates nominated for the prize for best dissertation awarded by the German Informatics Society}
+    ◊talk-host{Schloss Dagstuhl}
+    ◊talk-location{Germany}
+  }
+  ◊talk{
+    ◊talk-date{04/2016}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{The Lift project: Performance Portability via Rewrite Rules}
+    ◊talk-host{Saarland University}
+    ◊talk-location{Saarland, Germany}
+  }
+  ◊talk{
+    ◊talk-date{01/2016}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Performance Portable GPU Code Generation}
+    ◊talk-host{Imperial College London}
+    ◊talk-location{London, UK}
+  }
+  ◊talk{
+    ◊talk-date{12/2015}
+    ◊talk-type{Talk}
+    ◊talk-title{Functional Programming in C++}
+    ◊talk-venue{Programming Language Interest Group}
+    ◊talk-host{University of Edinburgh}
+    ◊talk-location{Edinburgh, UK}
+  }
+  ◊talk{
+    ◊talk-date{10/2015}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Generating Performance Portable Code using Rewrite Rules}
+    ◊talk-host{◊strong{Imperial College London}}
+    ◊talk-location{London, UK}
+  }
+  ◊talk{
+    ◊talk-date{09/2015}
+    ◊talk-type{Talk}
+    ◊talk-title{Generating Performance Portable Code using Rewrite Rules: From High-Level Functional Expressions to High-Performance OpenCL Code}
+    ◊talk-venue{International Conference on Functional Programming (ICFP) 2015}
+    ◊talk-location{Vancouver, Canada}
+  }
+  ◊talk{
+    ◊talk-date{06/2015}
+    ◊talk-type{Talk}
+    ◊talk-title{Generating Performance Portable Code using Rewrite Rules}
+    ◊talk-venue{Scottish Programming Language Seminar}
+    ◊talk-host{University of St. Andrews}
+    ◊talk-location{St. Andrews, UK}
+  }
+  ◊talk{
+    ◊talk-date{05/2014}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{SkelCL: High-Level Programming of Multi-GPU Systems}
+    ◊talk-venue{Institute for Computational and Applied Mathematics}
+    ◊talk-host{University of Münster}
+    ◊talk-location{Münster, Germany}
+  }
+  ◊talk{
+    ◊talk-date{05/2014}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{SkelCL: High-Level Programming of Multi-GPU Systems}
+    ◊talk-venue{Workshop on Fast Data Processing on GPUs}
+    ◊talk-host{Dresden University of Technology}
+    ◊talk-location{Dresden, Germany}
+  }
+  ◊talk{
+    ◊talk-date{01/2014}
+    ◊talk-type{Talk}
+    ◊talk-title{Extending the SkelCL Library for Stencil Computations on Multi-GPU Systems}
+    ◊talk-venue{HiStencils 2014}
+    ◊talk-location{Vienna, Austria}
+  }
+  ◊talk{
+    ◊talk-date{12/2013}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{SkelCL: High-Level Programming of Multi-GPU Systems}
+    ◊talk-venue{Research group on elementary particle physics}
+    ◊talk-host{University of Wuppertal}
+    ◊talk-location{Wuppertal, Germany}
+  }
+  ◊talk{
+    ◊talk-date{07/2013}
+    ◊talk-type{Talk}
+    ◊talk-title{Introducing and Implementing the Allpairs Skeleton for GPU Systems}
+    ◊talk-venue{HLPP 2013 workshop}
+    ◊talk-location{Paris, France}
+  }
+  ◊talk{
+    ◊talk-date{06/2013}
+    ◊talk-type{Talk}
+    ◊talk-title{High-Level Programming for Medical Imaging on Multi-GPU Systems}
+    ◊talk-venue{ICCS 2013 conference}
+    ◊talk-location{Barcelona, Spain}
+  }
+  ◊talk{
+    ◊talk-date{08/2012}
+    ◊talk-type{Talk}
+    ◊talk-title{Using the SkelCL Library for High-Level GPU Programming of 2D Applications}
+    ◊talk-venue{ParaPhrase 2012 workshop held in conjunction with Euro-Par 2012}
+    ◊talk-location{Rhodes, Greece}
+  }
+  ◊talk{
+    ◊talk-date{06/2012}
+    ◊talk-type{Talk}
+    ◊talk-title{High-Level Programming for Heterogeneous Systems with Accelerators}
+    ◊talk-venue{PDESoft 2012 workshop}
+    ◊talk-location{Münster, Germany}
+  }
+  ◊talk{
+    ◊talk-date{05/2012}
+    ◊talk-type{Talk}
+    ◊talk-title{Towards High-Level Programming of Multi-GPU Systems Using the SkelCL Library}
+    ◊talk-venue{AsHES 2012 workshop held in conjunction with IPDPS 2012}
+    ◊talk-location{Shanghai, China}
+  }
+  ◊talk{
+    ◊talk-date{04/2012}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{A Skeleton Library for Heterogeneous Multi-/Many-Core Systems}
+    ◊talk-venue{NAIS workshop}
+    ◊talk-location{Edinburgh, UK}
+  }
+  ◊talk{
+    ◊talk-date{01/2012}
+    ◊talk-type{Talk}
+    ◊talk-title{Towards a High-Level Approach for Programming Distributed Systems with GPUs}
+    ◊talk-venue{COST Action IC0805 (“ComplexHPC”) meeting}
+    ◊talk-location{Timisoara, Romania}
+  }
+  ◊talk{
+    ◊talk-date{12/2011}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{SkelCL — A High-Level Programming Library for GPU Programming}
+    ◊talk-venue{Jülich Supercomputing Centre (JSC)}
+    ◊talk-location{Germany}
+  }
+  ◊talk{
+    ◊talk-date{05/2011}
+    ◊talk-type{Talk}
+    ◊talk-title{SkelCL — A Portable Skeleton Library for High-Level GPU Programming}
+    ◊talk-venue{HIPS 2011 workshop held in conjunction with IPDPS 2011}
+    ◊talk-location{Anchorange, USA}
+  }
+  ◊talk{
+    ◊talk-date{09/2008}
+    ◊talk-type{Invited Talk}
+    ◊talk-title{Development of an Online Game as a Student Project}
+    ◊talk-venue{ITSoftTEAM workshop}
+    ◊talk-location{Chernihiv, Ukraine}
+  }
+}
+
+
+◊section{Teaching Experience}
+◊subsection{As a Lecturer at the University of Edinburgh}
+◊date-list{
+  ◊date-item[#:date "2021 - 2022"]{
+    ◊item-list{
+      ◊item{
+        Lecturer for ◊em{Compiling Techniques}, undergraduate course, course lead by Tobias Grosser, About 100 students.
+      }
+      ◊item{
+        ◊em{Operating Systems}, undergraduate course, course lead by Antonio Barbalace. About 150 students.
+      }
+    }
+  }
+  ◊date-item[#:date "2020 - 2021"]{
+    ◊item-list{
+      ◊item{
+        ◊em{Operating Systems}, undergraduate course, course lead by Antonio Barbalace. About 150 students.
+      }
+    }
+  }
+}
+
+◊subsection{As a Lecturer at the University of Glasgow}
+◊date-list{
+  ◊date-item[#:date "2019 - 2020"]{
+    ◊item-list{
+      ◊item{
+        ◊em{Systems Programming}, undergraduate course. About 200 students.
+      }
+      ◊item{
+        ◊em{Professional Software Development Team Project}, undergraduate course,
+        together with Tim Storer, Craig Macdonald, Iadh Ounis, and Lito Michala. About 200 students.
+      }
+    }
+  }
+  ◊date-item[#:date "2018 - 2019"]{
+    ◊item-list{
+      ◊item{
+        ◊em{Systems Programming}, undergraduate course. About 180 students.
+      }
+      ◊item{
+        ◊em{Professional Software Development Team Project}, undergraduate course,
+        together with Tim Storer, Inah Omoronyia, and Jeff Dalton. About 180 students.
+      }
+    }
+  }
+  ◊date-item[#:date "2017 - 2018"]{
+    ◊item-list{
+      ◊item{
+        ◊em{Operating Systems}, undergraduate course, togehter with Wim Vanderbauwhede. About 80 students.
+      }
+      ◊item{
+        ◊em{Professional Software Development Team Project}, undergraduate course,
+        together with Tim Storer, Inah Omoronyia, and Jomeon Jose. About 160 students.
+      }
+      ◊item{
+        ◊em{MSc CS+ Team Project}, topic: ◊em{Developing a visual tool for exploring rewriting}. 6 students.
+      }
+    }
+  }
+}
+
+◊subsection{As a postdoctoral researcher at the University of Edinburgh}
+◊date-list{
+  ◊date-item[#:date "2016 - 2017"]{
+    ◊item-list{
+      ◊item{
+        ◊em{Guest Lecture} on ◊em{DSLs and rewrite-based optimizations for performance portable parallel programming} in the ◊em{Elements of Programming Languages} course given by James Cheney.
+      }
+      ◊item{
+        ◊em{Guest Lecture} in the ◊em{Compiling Techniques} course given by Christophe Dubach.
+      }
+      ◊item{
+        Assistance in the tutorials of the ◊em{Compiling Techniques} course given by Christophe Dubach.
+      }
+    }
+  }
+  ◊date-item[#:date "2015 - 2016"]{
+    ◊item-list{
+      ◊item{
+        Organiser and Lecturer of the C++ programming course ◊em{The Humble C++ Programmer} aiming to improve PhD students coding skills.
+      }
+      ◊item{
+        ◊em{Guest Lecture} on ◊em{DSLs and rewrite-based optimizations for performance portable parallel programming} in the ◊em{Elements of Programming Languages} course given by James Cheney.
+      }
+      ◊item{
+        Assistance in the tutorials of the ◊em{Compiling Techniques} course given by Christophe Dubach.
+      }
+    }
+  }
+  ◊date-item[#:date "2014 - 2015"]{
+    ◊item-list{
+      ◊item{
+        ◊em{Guest Lecture} in the ◊em{Compiling Techniques} course given by Christophe Dubach.
+      }
+    }
+  }
+}
+
+◊subsection{As a research associate at the University of Münster}
+◊date-list{
+  ◊date-item[#:date "2013 - 2014"]{
+    ◊item-list{
+      ◊item{
+        Supervised MSc student projects: ◊em{Design and implementation of a high-level API for programming heterogeneous clusters and High-level programming of online games in future generation networks}.
+      }
+    }
+  }
+  ◊date-item[#:date "2012 - 2013"]{
+    ◊item-list{
+      ◊item{Course Design and Lecturer: ◊em{Introduction to programming with C and C++}.}
+      ◊item{Teaching assistant: ◊em{Multi-core and GPU: Parallel Programming}.}
+      ◊item{Teaching assistant: ◊em{Operating Systems}.}
+    }
+  }
+  ◊date-item[#:date "2011 - 2012"]{
+    ◊item-list{
+      ◊item{Supervised MSc student project: ◊em{High-level programming of heterogeneous systems}.}
+      ◊item{Teaching assistant: ◊em{Multi-core and GPU: Parallel Programming}.}
+      ◊item{Teaching assistant: ◊em{Technical aspects of cloud computing seminar}.}
+      ◊item{Teaching assistant: ◊em{Operating Systems}.}
+    }
+  }
+  ◊date-item[#:date "2010 - 2011"]{
+    ◊item-list{
+      ◊item{Supervised UG/MSc student project: ◊em{Internet- and GPU-based Cloud Computing}.}
+      ◊item{Course Design and teaching assistant: ◊em{Multi-core and GPU: Parallel Programming}.}
+      ◊item{Supervised UG student project: ◊em{High-level GPU programming}.}
+    }
+  }
+}
+
+◊section{Supervised Undergraduate and Master Students}
+◊subsection{As a Lecturer at the University of Edinburgh}
+◊date-list{
+  ◊date-item[#:date "09/2021 - 08/2022"]{
+    MInf project of Limrod Libman on ◊i{Applying the K Framework to specify the semantics of Domain-Speicifc Languages}
+  }
+  ◊date-item[#:date "06/2021 - 08/2021"]{
+    MSc project of Pingru Chen on ◊i{Templates for making correct graphs in research papers in the robotics domain}
+  }
+  ◊date-item[#:date "06/2021 - 08/2021"]{
+    MSc project of Zairan Xu on ◊i{Developing templates for better visualisation in machine learning research papers}
+  }
+  ◊date-item[#:date "06/2021 - 08/2021"]{
+    MSc project of Siqi Zong on ◊i{Templates for making correct graphs in research papers in the NLP domain}
+  }
+}
+
+◊subsection{As a Lecturer at the University of Glasgow}
+◊date-list{
+  ◊date-item[#:date "09/2019 - 03/2020"]{
+    Final year project of Xueying Qin on ◊i{Proving the correcness of rewrite rules in Agda}
+  }
+  ◊date-item[#:date "09/2019 - 03/2020"]{
+    Final year project of Sarah Ashworth on ◊i{Implementation of pattern-based computations on an FPGA}
+  }
+  ◊date-item[#:date "09/2019 - 03/2020"]{
+    Final year project of Euan Mcgrevey on ◊i{Optimizing image processing applications by rewriting}
+  }
+  ◊date-item[#:date "09/2019 - 03/2020"]{
+    Final year project of Darius Darulis on ◊i{Predicting the performance of rewritten program variations}
+  }
+  ◊date-item[#:date "09/2019 - 03/2020"]{
+    Final year project of David Wood on ◊i{Optimizing the compilation time of the Rust compiler}
+  }
+  ◊date-item[#:date "06/2018 - 09/2019"]{
+    Final year project of Ryan Maloney on ◊i{UFC Fight Prediction Web App}
+  }
+  ◊date-item[#:date "06/2018 - 09/2019"]{
+    Final year project of Stuart Rawlinson on ◊i{Scansion: A Poetry Analysis Web Application}
+  }
+  ◊date-item[#:date "06/2018 - 09/2019"]{
+    Final year project of Junjie Shentu on ◊i{Development of Ordering Application in Restaurants}
+  }
+  ◊date-item[#:date "06/2018 - 09/2019"]{
+    Final year project of Liam James on ◊i{Developing an Android Food Rating Application for Armature Chefs}
+  }
+  ◊date-item[#:date "09/2018 - 03/2019"]{
+    Final year project of Hansheng Zhang on ◊i{Multi-Level Parallel Applications with the C++ Parallel STL}
+  }
+  ◊date-item[#:date "09/2018 - 03/2019"]{
+    Final year project of Dimitar Borisov on ◊i{Exploiting specialised hardware for general purpose computing}
+  }
+  ◊date-item[#:date "09/2017 - 03/2018"]{
+    Final year project of Domantas Jurkus on ◊i{Computer Vision Applications with the Parallel STL}
+  }
+  ◊date-item[#:date "09/2017 - 03/2018"]{
+    Final year project of Matthew Cornetto on ◊i{Sorting Algorithms on GPUs}
+  }
+}
+
+◊subsection{As a research associate at the University of Münster}
+◊date-list{
+  ◊date-item[#:date "09/2016"]{
+    MSc thesis of Bastian Hagedorn on ◊i{Efficient GPU Code Generation for Stencil Computations via Parallel Patterns}
+  }
+  ◊date-item[#:date "07/2014"]{
+    Bachelor thesis of André Lüers on ◊i{Evaluation of the Skeleton Library FastFlow}
+  }
+  ◊date-item[#:date "07/2014"]{
+    Bachelor thesis of Lars Klein on ◊i{A Parallel Implementation of the T-CUP Software using the SkelCL Library}
+  }
+  ◊date-item[#:date "01/2014"]{
+    Bachelor thesis of Michael Olejnik on ◊i{A GPU-based Classification Framework for HIV Resistance Prediction}
+  }
+  ◊date-item[#:date "01/2014"]{
+    Bachelor thesis of Stefan Breuer on ◊i{Extending the SkelCL Library for Stencil Computations}
+  }
+  ◊date-item[#:date "11/2013"]{
+    Diploma thesis of Wadim Hamm on ◊i{Development of a Divide & Conquer Skeleton for SkelCL}
+  }
+  ◊date-item[#:date "07/2013"]{
+    Bachelor thesis of Matthias Droste on ◊i{Evaluation of the Skeleton Library SkePU}
+  }
+  ◊date-item[#:date "06/2013"]{
+    Bachelor thesis of Kai Kientopf on ◊i{Implementation of the Needleman-Wunsch Algorithm and the Breath-First-Search with SkelCL}
+  }
+  ◊date-item[#:date "06/2013"]{
+    Master thesis of Florian Quinkert on ◊i{A Model for Predicting Work Distribution in Heterogeneous Systems and its Implementation in SkelCL}
+  }
+  ◊date-item[#:date "03/2013"]{
+    Master thesis of Malte Friese on ◊i{Extending the Skeleton Library SkelCL with a Skeleton for Allpairs Computations}
+  }
+  ◊date-item[#:date "03/2013"]{
+    Bachelor thesis of Sebastian Mißbach on ◊i{Implementing the LU-Decomposition and the Mersenne-Twister with the SkelCL Library}
+  }
+  ◊date-item[#:date "03/2013"]{
+    Bachelor thesis of Patrick Schiffler on ◊i{Performance Analysis of SkelCL using B+ Tree Traversal and 3D Jacobi Stencil Computation}
+  }
+  ◊date-item[#:date "01/2013"]{
+    Diploma thesis of Markus Blank-Burian on ◊i{Simulation and Analysis of Two-Dimensional Turbulences on Parallel Computer Architectures}
+  }
+  ◊date-item[#:date "06/2012"]{
+    Diploma thesis of Matthias Buß on ◊i{Adding Multidimensional Data Types to the Multi-GPU Skeleton Library SkelCL}
+  }
+  ◊date-item[#:date "09/2011"]{
+    Bachelor thesis of Michael Olejnik on ◊i{Investigating the Use of GPUs for Radix Sort}
+  }
+  ◊date-item[#:date "09/2011"]{
+    Bachelor thesis of Jan Gerd Tenberge on ◊i{Extending the SkelCL Library with Iterators}
+  }
+  ◊date-item[#:date "08/2011"]{
+    Bachelor thesis of Stefan Breuer on ◊i{Enhancing SkelCL’s MapOverlap Skeleton}
+  }
 }

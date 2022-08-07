@@ -117,7 +117,7 @@
                                     number booktitle publisher year note editor school )
           (append
             (list (format-names author) ".")
-            (list " “" title "”.")
+            (list " “" (txexpr '@ empty (translate-bibtex-text title)) "”.")
             (if journal (list " In: " (txexpr 'i empty (translate-bibtex-text journal))) empty)
             (if volume (list " " volume ".") empty)
             (if school (list " " (txexpr '@ empty (translate-bibtex-text school)) ".") empty)
@@ -279,9 +279,29 @@
   (txexpr 'dl attrs elems))
 
 (define-tag-function (talk attrs elems)
-  (txexpr '@ empty
-    (list (txexpr 'dt empty (list (attr-ref attrs 'date)))
-          (txexpr 'dd empty (list (attr-ref attrs 'title))))))
+  (let ([lst (filter (compose not string?) elems)])
+    (txexpr '@ empty (list
+      (car lst)
+      (txexpr 'dd empty (cdr lst))))))
+
+(define-tag-function (talk-date attrs elems)
+  (txexpr 'dt empty elems))
+
+(define-tag-function (talk-type attrs elems)
+  ; highlight invited talks
+  (txexpr '@ empty (append elems (list ": "))))
+
+(define-tag-function (talk-title attrs elems)
+  (txexpr 'i empty (append elems (list ", "))))
+
+(define-tag-function (talk-venue attrs elems)
+  (txexpr '@ empty (append elems (list ", "))))
+
+(define-tag-function (talk-host attrs elems)
+  (txexpr '@ empty (append elems (list ", "))))
+
+(define-tag-function (talk-location attrs elems)
+  (txexpr '@ empty (append elems (list "."))))
 
 (define-tag-function (student-list attrs elems)
   (txexpr 'dl attrs elems))
@@ -293,11 +313,13 @@
             (txexpr 'div '((class "left")) (list (attr-ref attrs 'name)))
             (txexpr 'div '((class "right")) (list
               (if (attrs-have-key? attrs 'together-with)
-                (txexpr 'span '((class "even-smaller")) (list "together with " (attr-ref attrs 'together-with) ", "))
+                (txexpr 'span '((class "even-smaller")) (list
+                  "together with " (attr-ref attrs 'together-with) ", "))
                 (txexpr '@ empty empty)
               )
               (if (attrs-have-key? attrs 'main-supervisor)
-                (txexpr 'span '((class "even-smaller")) (list "main supervisor " (attr-ref attrs 'main-supervisor) ", "))
+                (txexpr 'span '((class "even-smaller")) (list
+                  "main supervisor " (attr-ref attrs 'main-supervisor) ", "))
                 (txexpr '@ empty empty)
               )
               (attr-ref attrs 'institution)
@@ -316,6 +338,7 @@
 
 (define-tag-function (line attrs elems)
   (txexpr 'div '((class "line")) elems))
+
 ;;; (define (root . elements)
 ;;;    (txexpr 'root empty (decode-elements elements
 ;;;      #:txexpr-elements-proc decode-paragraphs)))

@@ -88,11 +88,11 @@ dt {
   color: white;
   width: 9vw;
   text-align: right;
-  font-size: 1.25vw;
+  font-size: .75em;
 }
 
 dt.label {
-  font-size: 1.75vw;
+  font-size: 1em;
 }
 
 dd {
@@ -102,6 +102,7 @@ dd {
 ul {
   font-family: valkyrie_ot_b;
   margin-left: 1rem;
+  color: black;
 }
 
 ul li {
