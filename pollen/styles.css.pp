@@ -1,5 +1,13 @@
-root {
-  letter-spacing: 0.0125em;
+#lang pollen
+
+◊(define bright-color "rgb(240, 240, 240)")
+◊(define dark-color   "rgb( 11,  52,  95)")
+◊(define gray-color   "rgb( 79,  89,  97)")
+
+#root {
+  line-height: 1.45;
+  text-rendering: optimizeLegibility;
+  padding-top: 4em;
 }
 
 #header .name {
@@ -10,12 +18,12 @@ root {
   width: 8em;
   font-variant: small-caps;
   transform: translateX(-50%) rotate(-90deg);
-  color: rgb(240, 240, 240);
+  color: ◊bright-color;
 }
 
 h1, h2, h3, h4, h5 {
   font-variant: normal;
-  color: rgb(11, 52, 95);
+  color: ◊dark-color;
   background-color: transparent;
   margin-bottom: 0.5em;
 }
@@ -67,7 +75,7 @@ h3 {
   line-height: 1.35;
   padding-top: 1rem;
   font-size: 95%;
-  color: rgb(79, 89, 97);
+  color: ◊gray-color;
 }
 
 #heading address a {
@@ -86,17 +94,20 @@ dt {
   position: absolute;
   right: calc(70% + .5rem);
   color: white;
-  width: 9vw;
+  width: 14vw;
   text-align: right;
-  font-size: .75em;
+  font-size: .85em;
+  padding-top: .25rem;
 }
 
 dt.label {
   font-size: 1em;
+  padding-top: 0;
 }
 
 dd {
   padding-left: .5rem;
+  margin-bottom: .5em;
 }
 
 ul {
@@ -107,7 +118,9 @@ ul {
 
 ul li {
   padding-left: 0;
-  margin-bottom: .75em;
+  margin-bottom: .25em;
+  list-style-type: disc;
+  color: ◊dark-color;
 }
 
 ul.inline {
@@ -123,18 +136,19 @@ dd div.right {
 }
 
 em {
-  color: rgb(11, 52, 95);
+  color: ◊dark-color;
   font-style: inherit;
 }
 
 strong {
-  color: rgb(11, 52, 95);
+  color: ◊dark-color;
   font-weight: bold;
 }
 
 .line {
   font-family: valkyrie_ot_b;
   padding-left: .5rem;
+  margin-bottom: .75em;
 }
 
 .smaller {

@@ -11,26 +11,27 @@
           "bibtex/main.rkt")
 (provide (all-defined-out))
 
+(define name "Michel Steuwer")
+
 
 (define (format-names names)
   ; split string at "and", trim them, and reverse author order
-  (let ([reversed-list
-          (reverse (map string-trim (string-split names #rx"and")))])
-    (if (equal? (length reversed-list) 1)
-      ; if only one author, return it
-      (car reversed-list)
-      ; else, ...
-      (let* ( [rest (cdr reversed-list)]
+  (let* ( [reversed-list
+            (reverse (map string-trim (string-split names #rx"and")))]
+          [lst (map (lambda (s)
+                      (if (string=? s name)
+                         (txexpr 'strong empty (list name))
+                         s)) reversed-list)] )
+    (if (equal? (length lst) 1)
+      lst                                         ; if only one author, return it
+      (let* ( [rest (cdr lst)]                    ;  else, ...
               [with-and
-                ; add "and" after the last author
-                (append (list (car reversed-list) "and")
+                (append (list (car lst) " and ")  ; add "and" after the last author
                         (if (equal? (length rest) 1)
-                          ; if onle one additional author, done
-                          rest
-                          ; else, add "," afer each additional author
-                          (map (lambda (name) (string-append name ",")) rest)))] )
-        ; combine all names, separated by comma and "and", re-reversed
-        (string-join (reverse with-and))))))
+                          rest ; if onle one additional author, done
+                               ; else, add "," afer each additional author
+                          (append (list ", ") (add-between rest ", "))))] )
+        (reverse with-and)))))
 
 (define (translate-bibtex-text text)
   (let ([parts (string-split text #rx"\\\\")])
@@ -81,7 +82,7 @@
       (format-item item (lambda ( author title journal series volume
                                   number booktitle publisher year note editor school )
         (append
-          (list (format-names author) ".")
+          (append (format-names author) (list "."))
           (list " “" title "”.")
           (list " In: " (txexpr 'i empty (translate-bibtex-text journal)))
           (list " " (txexpr '@ empty (translate-bibtex-text volume)))
@@ -99,7 +100,7 @@
         (format-item item (lambda ( author title journal series volume
                                     number booktitle publisher year note editor school )
           (append
-            (list (format-names author) ".")
+            (append (format-names author) (list "."))
             (list " “" title "”.")
             (if booktitle (list " In: " (txexpr 'i empty (translate-bibtex-text booktitle)) ".") empty)
             (if volume (list " Vol. " volume ".") empty)
@@ -116,7 +117,7 @@
         (format-item item (lambda ( author title journal series volume
                                     number booktitle publisher year note editor school )
           (append
-            (list (format-names author) ".")
+            (append (format-names author) (list "."))
             (list " “" (txexpr '@ empty (translate-bibtex-text title)) "”.")
             (if journal (list " In: " (txexpr 'i empty (translate-bibtex-text journal))) empty)
             (if volume (list " " volume ".") empty)
@@ -133,7 +134,7 @@
         (format-item item (lambda ( author title journal series volume
                                     number booktitle publisher year note editor school )
           (append
-            (list (format-names author) ".")
+            (append (format-names author) (list "."))
             (list " “" title "”.")
             (if booktitle (list " In: " (txexpr 'i empty (translate-bibtex-text booktitle)) ".") empty)
             (if editor (list " Ed. by" editor ".") empty)
@@ -288,7 +289,7 @@
   (txexpr 'dt empty elems))
 
 (define-tag-function (talk-type attrs elems)
-  ; highlight invited talks
+  ; TODO: highlight invited talks
   (txexpr '@ empty (append elems (list ": "))))
 
 (define-tag-function (talk-title attrs elems)
@@ -339,6 +340,5 @@
 (define-tag-function (line attrs elems)
   (txexpr 'div '((class "line")) elems))
 
-;;; (define (root . elements)
-;;;    (txexpr 'root empty (decode-elements elements
-;;;      #:txexpr-elements-proc decode-paragraphs)))
+(define (root . elements)
+   (txexpr 'div '((id "root")) elements))

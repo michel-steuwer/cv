@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>◊(select 'name doc)</title>
+    <title>◊|name|</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://michel.steuwer.info/assets/css/fonts.css">
@@ -14,7 +14,7 @@
   </head>
   <body>
     <div id="header">
-      <div class="name">Michel Steuwer</div>
+      <div class="name">◊|name|</div>
     </div>
     <div id="main">
       ◊(->html doc)

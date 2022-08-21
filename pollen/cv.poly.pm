@@ -209,7 +209,7 @@
     I am the ◊hl{undergraduate year 1 organiser} coordinating the teaching of about 400 students at the School of Informatics in Edinburgh.
   }
   ◊item{
-    Iwas the ◊hl{research student committee convener} of the School of Computing Science at the University of Glasgow (2019-20). Overseeing the academic progression of over 100 PhD students.
+    I was the ◊hl{research student committee convener} of the School of Computing Science at the University of Glasgow (2019-20). Overseeing the academic progression of over 100 PhD students.
   }
   ◊item{
     I organised various seminar series and discussion groups at Glasgow and Edinburgh, including: ◊inline-list{
