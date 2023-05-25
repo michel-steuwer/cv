@@ -12,6 +12,10 @@
 (provide (all-defined-out))
 
 (define name "Michel Steuwer")
+(define num-citations (format "~a" 1300))
+(define h-index (format "~a" 18))
+(define i10-index (format "~a" 26))
+(define citations-date "09.02.2023")
 
 
 (define (format-names names)
@@ -20,7 +24,7 @@
             (reverse (map string-trim (string-split names #rx"and")))]
           [lst (map (lambda (s)
                       (if (string=? s name)
-                         (txexpr 'strong empty (list name))
+                         (txexpr 'em empty (list name))
                          s)) reversed-list)] )
     (if (equal? (length lst) 1)
       lst                                         ; if only one author, return it
@@ -44,7 +48,7 @@
                 (list (if (equal? hl "highlight")
                         (txexpr 'em     empty (list (car ms)))
                         (txexpr 'strong empty (list (car ms))))
-                      (txexpr 'span empty (cdr ms)))))
+                      (txexpr '@ empty (cdr ms)))))
           part)))
     (map replaceHighlight parts)))
 
@@ -81,16 +85,40 @@
     (txexpr 'dd empty
       (format-item item (lambda ( author title journal series volume
                                   number booktitle publisher year note editor school )
-        (append
-          (append (format-names author) (list "."))
-          (list " “" title "”.")
-          (list " In: " (txexpr 'i empty (translate-bibtex-text journal)))
-          (list " " (txexpr '@ empty (translate-bibtex-text volume)))
-          (list "." (txexpr '@ empty (translate-bibtex-text number)))
-          (list " (" year ").")
-          (if note
-            (list " " (txexpr '@ empty (translate-bibtex-text note)) ".")
-            empty))))))))
+        ;;; (append
+        ;;;   (list " “" title "”.")
+        ;;;   (append (format-names author) (list "."))
+        ;;;   (list " In: " (txexpr 'i empty (translate-bibtex-text journal)))
+        ;;;   (list " " (txexpr '@ empty (translate-bibtex-text volume)))
+        ;;;   (list "." (txexpr '@ empty (translate-bibtex-text number)))
+        ;;;   (list " (" year ").")
+        ;;;   (if note
+        ;;;     (list " " (txexpr '@ empty (translate-bibtex-text note)) ".")
+        ;;;     empty))
+        (list
+          (txexpr 'div '((class "bib-item")) (list
+            (txexpr 'div '((class "bib-item-header")) (list
+              (txexpr 'h1 empty (list title))
+            ))
+            (txexpr 'div '((class "bib-item-body")) (list
+              (txexpr 'div '((class "authors")) (format-names author))
+              (txexpr 'div '((class "journal")) (list
+                (txexpr 'i empty (translate-bibtex-text journal))
+                " ("
+                (txexpr '@ empty (translate-bibtex-text volume))
+                "."
+                (txexpr '@ empty (translate-bibtex-text number))
+                ") "
+                (txexpr '@ empty (list year))
+              ))
+              (txexpr 'div '((class "notes")) (if note
+                (list (txexpr '@ empty (translate-bibtex-text note)))
+                empty
+              ))
+            ))
+          ))
+        )
+      ))))))
 
 (define (format-paper prefix)
   (lambda (item count)
@@ -195,11 +223,6 @@
 
 (define num-papers
   (+ num-journal-papers num-conference-papers num-workshop-papers num-reports num-chapters))
-
-(define num-citations (format "~a" 1168))
-(define h-index (format "~a" 18))
-(define i10-index (format "~a" 23))
-(define citations-date "26.17.2022")
 
 (module setup racket/base
   (provide (all-defined-out))

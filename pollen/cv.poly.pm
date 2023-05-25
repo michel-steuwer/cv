@@ -44,10 +44,10 @@
 ◊section{Honours and Achievements}
 ◊item-list{
   ◊item{
-    Our ◊hl{ICFP 2020} paper has been selected as a ◊hl{ACM SIGPLAN Research Highlight} in September 2021 and will be published as a ◊hl{Communications of the ACM Research Highlight} in 2022.
+    Our ◊hl{ICFP 2020} paper has been selected as a ◊hl{ACM SIGPLAN Research Highlight} in September 2021 and is published as a ◊hl{Communications of the ACM Research Highlight} in March 2023.
   }
   ◊item{
-    ◊hl{Best Paper Award Winner} at ACM ◊hl{CGO 2018}.
+    ◊hl{Best Paper Award Winner} at ◊hl{CGO 2018} and ◊hl{SLE 2022}.
   }
   ◊item{
     ◊hl{HiPEAC Paper Award Winner} for ◊hl{ASPLOS 2018} and ◊hl{ICFP 2020} papers.
@@ -94,6 +94,8 @@
       ACM LCTES 2019
       2018
       ICPP 2020
+      Haskell Symposium 2023
+      DRAGSTERS 2023
       FHPNC 2021
       2020
       HLPP 2020
@@ -130,11 +132,12 @@
     ◊hl{External reviewer for conferences}:
     ◊inline-list{
       CC
+      CC-Grid
       CGO
       EuroPar
       EuroMPI
-      CC-Grid
       ParCo
+      SysML
     }
   }
   ◊item{
@@ -144,6 +147,7 @@
       Netherlands Organisation for Scientific Research
       Natural Sciences and Engineering Research Council Canada
       German Federal Ministry of Education and Research (BMBF)
+      German Research Foundation (DFG)
     }
   }
 }
@@ -250,9 +254,6 @@
   ◊student[#:name "Martin Lücke"
            #:date "since 09/2019"
            #:institution "University of Edinburgh"]
-  ◊student[#:name "Thomas Kœhler"
-           #:date "since 11/2018"
-           #:institution "University of Glasgow"]
   ◊student[#:name "Bastian Köpcke"
            #:date "since 10/2018"
            #:together-with "Sergei Gorlatch"
@@ -273,6 +274,10 @@
 
 ◊subsection{Main Supervisor of Graduated PhD Students}
 ◊student-list{
+  ◊student[#:name "Thomas Kœhler"
+           #:date "2018 - 2022"
+           #:institution "University of Glasgow"
+           #:now "Postdoctoral Researcher at INRIA Strasbourg"]
   ◊student[#:name "Bastian Hagedorn"
            #:date "2016 - 2020"
            #:together-with "Sergei Gorlatch"

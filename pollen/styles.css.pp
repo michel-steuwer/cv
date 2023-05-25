@@ -2,12 +2,15 @@
 
 ◊(define bright-color "rgb(240, 240, 240)")
 ◊(define dark-color   "rgb( 11,  52,  95)")
+◊(define dark-color-05 "rgba( 11,  52,  95, 0.5)")
 ◊(define gray-color   "rgb( 79,  89,  97)")
+◊(define text-color   "rgb( 66,  66,  66)")
 
 #root {
   line-height: 1.45;
   text-rendering: optimizeLegibility;
   padding-top: 4em;
+  color: ◊text-color;
 }
 
 #header .name {
@@ -87,7 +90,57 @@ dl {
 }
 
 dl.bib dd {
+  margin-bottom: 2em;
+}
+
+dl.bib dd div.bib-item {
+  box-shadow: 0 4px 8px 0 ◊dark-color-05;
+}
+
+dl.bib dd div.bib-item-header {
+  padding: .5rem 1rem;
+  background: ◊dark-color;
+  color: ◊bright-color;
+}
+
+dl.bib dd div.bib-item-body {
+  padding: .5rem 1rem;
+}
+
+dl.bib dd div.bib-item-header h1 {
+  padding-left: 0;
+  font-family: valkyrie_ot_b;
+  font-size: 1em;
+  font-weight: bold;
+  color: ◊bright-color;
+  margin-bottom: 0;
+}
+
+dl.bib dd div.bib-item div.title {
+  background: ◊dark-color;
+  color: ◊bright-color;
+}
+
+dl.bib dd div.bib-item div.authors {
+  font-style: italic;
   margin-bottom: .5em;
+}
+
+dl.bib dd div.bib-item div.journal {
+  margin-bottom: .5em;
+}
+
+◊; dl.bib dd div.bib-item div.journal span {
+◊;   background: ◊dark-color;
+◊;   color: ◊bright-color;
+◊;   padding: 0 .25rem;
+◊; }
+
+◊; dl.bib dd div.bib-item div.journal span em {
+◊;   color: ◊bright-color;
+◊; }
+
+dl.bib dd div.bib-item div.notes {
 }
 
 dt {
