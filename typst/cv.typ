@@ -83,7 +83,7 @@
     let venue = if pub.at("parent", default: none) != none {
       assert.eq(pub.at("parent").len(), 1)
       let venue = pub.at("parent").first()
-      "In: "
+      // "In: "
       text(style: "italic", venue.title)
 
       let volume = venue.at("volume", default: none)
@@ -124,8 +124,6 @@
       let note = pub.at("note", default: none)
       if note == none { none } else {
         [
-          // add newline
-          #v(-0.25em)
           // highlight all mentions of citations
           #show regex("\d+ citations"): set text(fill: accent)
           // strongly highlight all citations over 30
@@ -136,11 +134,28 @@
       }
     }
 
-    entry(date: [#text(weight: "bold")[#date] #h(1fr) #label])[
-      #emph["#pub.at("title")"] by #authors.
-      #venue
-      #publisher
-      #note
+    entry(date: [#v(5pt)#text(weight: "bold")[#date] #h(1fr) #label])[
+      #stack(
+        dir: ttb,
+        rect(fill: accent, width: 100%, inset: 5pt, outset: 1pt,
+          text(fill: bright, weight: "bold", [
+            #pub.at("title")
+          ])),
+        rect(stroke: 2pt + accent, width: 100%, inset: 5pt)[
+            #authors
+            
+            #venue
+            #publisher
+
+            #note
+        ]
+      )
+      //
+      // #emph["#pub.at("title")"] by #authors.
+      // #venue
+      // #publisher
+      // #note
+      // 
     ]
     v(.5em)
     n.update(x => x - 1)

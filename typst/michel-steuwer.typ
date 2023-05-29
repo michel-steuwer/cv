@@ -15,10 +15,22 @@
   date: [May 29, 2023]
 )
 
+// ComPL
+// ComPiLe
+
+// Chair of Programming Languages Design and Implemenation
+// Chair of Compiler Construction and Programming Language Design
+
 = Professional Experience
-#entry(date: [since\ July 2020])[
+// #entry(date: [since\ July 2023])[
+//   *Professor, Chair of Compilers and Programming Languages*,\
+//   TU Berlin, Germany.]
+
+// #entry(date: [2020--2023])[
+//    *Lecturer (Assistant professor)*, University of Edinburgh, UK.]
+#entry(date: [since\ July 2023])[
   *Lecturer (Assistant professor) in Compilers and Runtime Systems*,
-  University of Edinburgh, Uk.]
+  University of Edinburgh, UK.]
 
 #entry(date: [2017--2020])[
   *Lecturer (Assistant professor)*, University of Glasgow, UK.]
@@ -49,7 +61,7 @@
 - *Most cited papers* at *ICFP 2015* and *CGO 2017*.
 
 - *PhD thesis* honoured with the highest possible grade *Summa cum laude*.
-  *Nominated* as one of 34 candidates for the *prize for the best dissertation* of 2015 in
+  *Nominated* as one of 34 for the *prize for the best dissertation* of 2015 in
   Informatics from Germany, Austria, or Switzerland.
 
 = Research Projects and Grants
@@ -57,8 +69,6 @@
 - Co-Investigator on the *EPSRC funded project* _Efficient Cross-Domain DSL Development for Exascale (EP/W007940/1)_, £1M, August 2021 - August 2024. Together with Tobias Grosser (PI), Nick Brown, Amy Krause at Edinburgh and Gerard Gorman and Paul Kelly at Imperial.
 
 - *Google Faculty Award 2019*, _A functional Intermediate Representation for MLIR_, \$50K, sponsored by Jacques Pienaar and Albert Cohen.
-
-#pagebreak()
 
 - Collaborator on a project funded as part of the *Software Defined Hardware (SDH) programme by DARPA*.
   Together with Michael O'Boyle and Murray Cole at Edinburgh and collaborators at the University of Michigan, Arizoina State in the US, and McGill in Canada.
@@ -70,10 +80,10 @@
 - *Program Committee Member* of
   Haskell 2023,
   Euro-Par 2023,
-  ACM CGO 2022, 2020, 2019,
-  ACM CC 2020,
-  ACM GPCE 2020, 2019,
-  ACM LCTES 2019, 2018,
+  CGO 2022, 2020, 2019,
+  CC 2020,
+  GPCE 2020, 2019,
+  LCTES 2019, 2018,
   ICPP 2020,
   FHPNC 2021, 2020,
   HLPP 2020, 2019, 2018, 2017, 2016,
@@ -82,10 +92,10 @@
   IEEE ScalCom 2016.
 
 - *Artifact Evaluation Commitee Member* of 
-  ACM ICFP 2017,
-  ACM CGO 2017,
+  ICFP 2017,
+  CGO 2017,
   and,
-  ACM PACT 2016.
+  PACT 2016.
 
 - *External reviewer for journals*:
   Communications of the ACM,
@@ -134,6 +144,8 @@
   UK Many-Core Developer Conference May 2016.
 
 - *Web Chair* of Euro-Par 2022 and CC 2018.
+
+#pagebreak(weak: true)
 
 == Memberships in Research Networks
 - Member of *ACM*,
@@ -322,10 +334,10 @@ In my research communities publications in highly regarded conferences are much 
 == Technical Reports and Preprints
 #text(size: .95em, printPubs(yaml("techreport.yaml"), "T"))
 
+#pagebreak(weak: true)
+
 == Book Chapter
 #text(size: .95em, printPubs(yaml("chapter.yaml"), "B"))
-
-#pagebreak(weak: true)
 
 == Thesis
 #text(size: .95em, printPubs(yaml("thesis.yaml"), "TH"))
