@@ -1,0 +1,186 @@
+"DBLP:journals/corr/abs-2305-03448":
+  type: article
+  title: "Descend: A Safe GPU Systems Programming Language"
+  author:
+    - Bastian Köpcke
+    - Sergei Gorlatch
+    - Michel Steuwer
+  date: 2023
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2305.03448
+
+"DBLP:journals/corr/abs-2304-14154":
+  type: article
+  title: "Traced Types for Safe Strategic Rewriting"
+  author:
+    - Rongxiao Fu
+    - Ornela Dardha
+    - Michel Steuwer
+  date: 2023
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2304.14154
+
+"DBLP:journals/corr/abs-2304-08267":
+  type: article
+  title: "Structural Subtyping as Parametric Polymorphism"
+  author:
+    - Wenhao Tang
+    - Daniel Hillerström
+    - James McKinna
+    - Michel Steuwer
+    - Ornela Dardha
+    - Rongxiao Fu
+    - Sam Lindley
+  date: 2023
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2304.08267
+
+"DBLP:journals/corr/abs-2212-11142":
+  type: article
+  title: "BaCO: A Fast and Portable Bayesian Compiler Optimization Framework"
+  author:
+    - Erik Hellsten
+    - Artur L. F. Souza
+    - Johannes Lenfers
+    - Rubens Lacouture
+    - Olivia Hsu
+    - Adel Ejjeh
+    - Fredrik Kjolstad
+    - Michel Steuwer
+    - Kunle Olukotun
+    - Luigi Nardi
+  date: 2022
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2212.11142
+
+"DBLP:journals/corr/abs-2205-09655":
+  type: article
+  title: "Primrose: Selecting Container Data Types by their Properties"
+  author:
+    - Xueying Qin
+    - Liam O'Connor
+    - Michel Steuwer
+  date: 2022
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2205.09655
+
+"DBLP:journals/corr/abs-2201-03611":
+  type: article
+  title: "RISE & Shine: Language-Oriented Compiler Design"
+  author:
+    - Michel Steuwer
+    - Thomas Koehler
+    - Bastian Köpcke
+    - Federico Pizzuti
+  date: 2022
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2201.03611
+
+"DBLP:journals/corr/abs-2111-13040":
+  type: article
+  title: "Sketch-Guided Equality Saturation: Scaling Equality Saturation to Complex Optimizations in Languages with Bindings"
+  author:
+    - Thomas Koehler
+    - Phil Trinder
+    - Michel Steuwer
+  date: 2021
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2111.13040
+
+"DBLP:journals/corr/abs-2103-13390":
+  type: article
+  title: "Row-Polymorphic Types for Strategic Rewriting"
+  author:
+    - Rongxiao Fu
+    - Xueying Qin
+    - Ornela Dardha
+    - Michel Steuwer
+  date: 2021
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2103.13390
+
+"DBLP:journals/corr/abs-2002-02268":
+  type: article
+  title: "A Language for Describing Optimization Strategies"
+  author:
+    - Bastian Hagedorn
+    - Johannes Lenfers
+    - Thomas Koehler
+    - Sergei Gorlatch
+    - Michel Steuwer
+  date: 2020
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2002.02268
+
+"BrownBHRRSW18":
+  type: article
+  title: "P0836R0 Introduce Parallelism to the Ranges TS"
+  author:
+    - Gordon Brown
+    - Christopher Di Bella
+    - Michael Haidl
+    - Toomas Remmelg
+    - Ruyman Reyes
+    - Michel Steuwer
+    - Michael Wong
+  date: 2018
+  note: "*C++ Standards Committee Papers*."
+
+"DBLP:journals/corr/abs-1710-08332":
+  type: article
+  title: "Strategy Preserving Compilation for Parallel Functional Code"
+  author:
+    - Robert Atkey
+    - Michel Steuwer
+    - Sam Lindley
+    - Christophe Dubach
+  date: 2017
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/1710.08332
+
+"DBLP:journals/corr/SteuwerFD15":
+  type: article
+  title: "Patterns and Rewrite Rules for Systematic Code Generation (From High-Level Functional Patterns to High-Performance OpenCL Code)"
+  author:
+    - Michel Steuwer
+    - Christian Fensch
+    - Christophe Dubach
+  date: 2015
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/1502.02389
+
+"DBLP:journals/corr/CumminsPSL15":
+  type: article
+  title: "Autotuning OpenCL Workgroup Size for Stencil Patterns"
+  author:
+    - Chris Cummins
+    - Pavlos Petoumenos
+    - Michel Steuwer
+    - Hugh Leather
+  date: 2015
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/1511.02490

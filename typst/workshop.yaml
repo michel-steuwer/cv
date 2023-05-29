@@ -1,0 +1,353 @@
+"DBLP:conf/ppopp/SiefkeKGS22":
+  type: article
+  title: "Systematically extending a high-level code generator with support for tensor cores"
+  author:
+    - Lukas Siefke
+    - Bastian Köpcke
+    - Sergei Gorlatch
+    - Michel Steuwer
+  date: 2022
+  parent:
+    - type: proceedings
+      title: "GPGPU@PPoPP 2022: Proceedings of the 14th Workshop on General Purpose Processing Using GPU, Virtual Event, Seoul, Republic of Korea, 3 April 2022"
+      publisher: ACM
+
+"DBLP:conf/icfp/PizzutiSD21":
+  type: article
+  title: "Generating high performance code for irregular data structures using dependent types"
+  author:
+    - Federico Pizzuti
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2021
+  parent:
+    - type: proceedings
+      title: "FHPNC 2021: Proceedings of the 9th ACM SIGPLAN International Workshop on Functional High-Performance and Numerical Computing, FHPNC@ICFP 2021, Virtual Event, Korea, August 22, 2021"
+      publisher: ACM
+
+"DBLP:conf/ppopp/RemmelgHLSGD20":
+  type: article
+  title: "High-level hardware feature extraction for GPU performance prediction of stencils"
+  author:
+    - Toomas Remmelg
+    - Bastian Hagedorn
+    - Lu Li
+    - Michel Steuwer
+    - Sergei Gorlatch
+    - Christophe Dubach
+  date: 2020
+  parent:
+    - type: proceedings
+      title: "GPGPU@PPoPP '20: 13th Annual Workshop on General Purpose Processing using Graphics Processing Unit colocated with 25th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, San Diego, California, USA, February 23, 2020"
+      publisher: ACM
+
+"LuckeSS20":
+  type: article
+  title: "A functional pattern-based language in MLIR"
+  author:
+    - Martin Lücke
+    - Michel Steuwer
+    - Aaron Smith
+  date: 2020
+  parent:
+    - type: proceedings
+      title: "AccML@HiPEAC 2020: Proceeding of the workshop on Accelerated Machine Learning, Bologna, Italy, January 20, 2020"
+
+"DBLP:conf/icfp/KopckeSG19":
+  type: article
+  title: "Generating efficient FFT GPU code with Lift"
+  author:
+    - Bastian Köppcke
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2019
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 8th ACM SIGPLAN International Workshop on Functional High-Performance and Numerical Computing, FHPNC@ICFP 2019, Berlin, Germany, August 18, 2019"
+      publisher: ACM
+
+"DBLP:conf/icfp/PizzutiSD19":
+  type: article
+  title: "Position-dependent arrays and their application for high performance code generation"
+  author:
+    - Federico Pizzuti
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2019
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 8th ACM SIGPLAN International Workshop on Functional High-Performance and Numerical Computing, FHPNC@ICFP 2019, Berlin, Germany, August 18, 2019"
+      publisher: ACM
+
+"KoepkeSG19":
+  type: article
+  title: "Generating Fast FFT Code for GPU from High-Level Pattern-Based Abstractions"
+  author:
+    - Bastian Köpke
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2019
+  parent:
+    - type: proceedings
+      title: "Proceedings of the International Symposium on High-Level Parallel Programming and Applications, HLPP 2019, Linköping, Sweden, July 3-5, 2019"
+
+"DBLP:conf/pldi/KristienBSD19":
+  type: article
+  title: High-level synthesis of functional patterns with Lift
+  author:
+    - Martin Kristien
+    - Bruno Bodin
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2019
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 6th ACM SIGPLAN International Workshop on Libraries, Languages and Compilers for Array Programming, ARRAY@PLDI 2019, Phoenix, AZ, USA, June 22, 2019"
+      publisher: ACM
+
+"MogersSVSDT19":
+  type: article
+  title: Towards Mapping Lift to Deep Neural Network Accelerators
+  author:
+    - Naums Mogers
+    - Aaron Smith
+    - Dimitrios Vytiniotis
+    - Michel Steuwer
+    - Christophe Dubach
+    - Ryota Tomioka
+  date: 2019
+  parent:
+    - type: proceedings
+      title: "Proceedings of the Workshop on Emerging Deep Learning Accelerators, EDLA@HiPEAC 2019, Valencia, Spain, January 21, 2019"
+
+"DBLP:conf/iwocl/BrownBHRRS18":
+  type: article
+  title: Introducing Parallelism to the Ranges TS
+  author:
+    - Gordon Brown
+    - Christopher Di Bella
+    - Michael Haidl
+    - Toomas Remmelg
+    - Ruymán Reyes
+    - Michel Steuwer
+  date: 2018
+  parent:
+    - type: proceedings
+      title: "Proceedings of the International Workshop on OpenCL, IWOCL 2018, Oxford, United Kingdom, May 14-16, 2018"
+      publisher: ACM
+
+"StoltzfusDSGB17":
+  type: article
+  title: A Modular Approach to Performance, Portability and Productivity for 3D Wave Models
+  author:
+    - Larisa Stoltzfus
+    - Christophe Dubach
+    - Michel Steuwer
+    - Alan Gray
+    - Stefan Bilbao
+  date: 2017
+  parent:
+    - type: proceedings
+      title: "Proceedings of the Seventh International Workshop on Domain-Specific Languages and High-Level Frameworks for High Performance Computing, WOLFHPC@SC 2017, Denver, CO, USA, November 17, 2017"
+
+"FumeroSSD17":
+  type: article
+  title: OpenCL JIT Compilation for Dynamic Programming Languages
+  author:
+    - Juan José Fumero
+    - Michel Steuwer
+    - Lukas Stadler
+    - Christophe Dubach
+  date: 2017
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 2017 Workshop on Modern Language Runtimes, Ecosystems, and VMs, MoreVMs@<Programming> 2017, Brussels, Belgium, April 3, 2017"
+
+"DBLP:conf/ppopp/HaidlSDHG17":
+  type: article
+  title: "Towards Composable GPU Programming: Programming GPUs with Eager Actions and Lazy Views"
+  author:
+    - Michael Haidl
+    - Michel Steuwer
+    - Hendrik Dirks
+    - Tim Humernbrum
+    - Sergei Gorlatch
+  date: 2017
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 8th International Workshop on Programming Models and Applications for Multicores and Manycores, PMAM@PPoPP 2017, Austin, TX, USA, February 5, 2017"
+      publisher: ACM
+
+"DBLP:conf/ppopp/RemmelgLSD16":
+  type: article
+  title: "Performance portable GPU code generation for matrix multiplication"
+  author:
+    - Toomas Remmelg
+    - Thibaut Lutz
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2016
+  note: 38 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 9th Annual Workshop on General Purpose Processing using Graphics Processing Unit, GPGPU@PPoPP 2016, Barcelona, Spain, March 12 - 16, 2016"
+      publisher: ACM
+
+"DBLP:conf/ppopp/HaidlSHG16":
+  type: article
+  title: "Multi-stage programming for GPUs in C++ using PACXX"
+  author:
+    - Michael Haidl
+    - Michel Steuwer
+    - Tim Humernbrum
+    - Sergei Gorlatch
+  date: 2016
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 9th Annual Workshop on General Purpose Processing using Graphics Processing Unit, GPGPU@PPoPP 2016, Barcelona, Spain, March 12 - 16, 2016"
+      publisher: ACM
+
+"HarriesSCGD16":
+  type: article
+  title: "Compositional Compilation for Sparse, Irregular Data Parallelism"
+  author:
+    - Adam Harries
+    - Michel Steuwer
+    - Murray Cole
+    - Alan Gray
+    - Christophe Dubach
+  date: 2016
+  parent:
+    - type: proceedings
+      title: "Proceedings of the Workshop on High-Level Programming for Heterogeneous and Hierarchical Parallel Systems, HLPGPGPU@HiPEAC 2016, Prague, Czech Republic, January 19, 2016"
+
+"CumminsPSL16a":
+  type: article
+  title: "Towards Collaborative Performance Tuning of Algorithmic Skeletons"
+  author:
+    - Chris Cummins
+    - Pavlos Petoumenos
+    - Michel Steuwer
+    - Hugh Leather
+  date: 2016
+  parent:
+    - type: proceedings
+      title: "Proceedings of the Workshop on High-Level Programming for Heterogeneous and Hierarchical Parallel Systems, HLPGPGPU@HiPEAC 2016, Prague, Czech Republic, January 19, 2016"
+
+"CumminsPSL16b":
+  type: article
+  title: "Autotuning OpenCL Workgroup Size for Stencil Patterns"
+  author:
+    - Chris Cummins
+    - Pavlos Petoumenos
+    - Michel Steuwer
+    - Hugh Leather
+  date: 2016
+  note: 33 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 2016 International Workshop on Adaptive Self-tuning Computing Systems, ADAPT@HiPEAC 2016, Prague, Czech Republic, January 18, 2016"
+
+"DBLP:conf/pldi/FumeroSD14":
+  type: article
+  title: "A Composable Array Function Interface for Heterogeneous Computing in Java"
+  author:
+    - Juan José Fumero
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2014
+  note: 25 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "ARRAY'14: Proceedings of the 2014 ACM SIGPLAN International Workshop on Libraries, Languages, and Compilers for Array Programming, Edinburgh, United Kingdom, June 12-13, 2014"
+      publisher: ACM
+
+"BreuerSG14":
+  type: article
+  title: Extending the SkelCL Skeleton Library for Stencil Computations on Multi-GPU Systems
+  author:
+    - Stefan Breuer
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2014
+  note: 19 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 1st International Workshop on High-Performance Stencil Computations, HiStencils@HiPEAC 2014, Vienna, Austria, January 22, 2014"
+
+"DBLP:conf/europar/SteuwerGBB12":
+  type: article
+  title: "Using the SkelCL Library for High-Level GPU Programming of 2D Applications"
+  author:
+    - Michel Steuwer
+    - Sergei Gorlatch
+    - Matthias Buß
+    - Stefan Breuer
+  date: 2012
+  parent:
+    - type: proceedings
+      title: "Euro-Par 2012: Parallel Processing Workshops - BDMC, CGWS, HeteroPar, HiBB, OMHI, Paraphrase, PROPER, Resilience, UCHPC, VHPC, Rhodes Islands, Greece, August 27-31, 2012. Revised Selected Papers"
+      publisher: Springer
+      parent:
+        - type: periodical
+          title: Lecture Notes in Computer Science
+          volume: 7640
+
+"DBLP:conf/hpc/KegelSG12":
+  type: article
+  title: "Uniform High-Level Programming of Many-Core and Multi-GPU Systems"
+  author:
+    - Philipp Kegel
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2012
+  parent:
+    - type: proceedings
+      title: "Transition of HPC Towards Exascale Computing - Selected Papers from the High Performance Computing Workshop, Cetraro, Italy, June 25-29, 2012"
+      publisher: IOS Press
+      parent:
+      - type: periodical
+        title: Advances in Parallel Computing
+        volume: 24
+
+"DBLP:conf/ipps/SteuwerKG12":
+  type: article
+  title: Towards High-Level Programming of Multi-GPU Systems Using the SkelCL Library
+  author:
+    - Michel Steuwer
+    - Philipp Kegel
+    - Sergei Gorlatch
+  date: 2012
+  note: 23 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "26th IEEE International Parallel and Distributed Processing Symposium Workshops & PhD Forum, IPDPS 2012, Shanghai, China, May 21-25, 2012"
+      publisher: IEEE Computer Society
+
+"DBLP:conf/ipps/KegelSG12":
+  type: article
+  title: "dOpenCL: Towards a Uniform Programming Approach for Distributed Heterogeneous Multi-/Many-Core Systems"
+  author:
+    - Philipp Kegel
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2012
+  note: 54 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "26th IEEE International Parallel and Distributed Processing Symposium Workshops & PhD Forum, IPDPS 2012, Shanghai, China, May 21-25, 2012"
+      publisher: IEEE Computer Society
+
+"DBLP:conf/ipps/SteuwerKG11":
+  type: article
+  title: "SkelCL - A Portable Skeleton Library for High-Level GPU Programming"
+  author:
+    - Michel Steuwer
+    - Philipp Kegel
+    - Sergei Gorlatch
+  date: 2011
+  note: 194 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "25th IEEE International Symposium on Parallel and Distributed Processing, IPDPS 2011, Anchorage, Alaska, USA, 16-20 May 2011 - Workshop Proceedings"
+      publisher: IEEE

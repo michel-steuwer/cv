@@ -1,0 +1,415 @@
+- type: invited-talk
+  title: "On bringing a functional pearl into practice: An MLIR-based implementation of the strategy language ELEVATE"
+  date: 03/2023
+  parent:
+    - type: seminar
+      title: LAIV/DSG seminar at Heriot-Watt University
+      location: Edinburgh, UK
+      
+- type: invited-talk
+  title: "On bringing a functional pearl into practice: An MLIR-based implementation of the strategy language ELEVATE"
+  date: 01/2023
+  parent:
+    - type: seminar
+      title: Programming Languages at Glasgow (PLUG) seminar at the University of Glasgow
+      location: Glasgow, UK
+
+- type: invited-talk
+  title: Modern DSL Compiler Development with MLIR
+  date: 11/2022
+  parent:
+    - type: conference
+      title: Huawei TRC Innovation Summit 2022
+      location: Tel Aviv, Israel
+
+- type: invited-talk
+  title: How to Design the Next 700 Optimizing Compilers
+  date: 06/2022
+  parent:
+    - type: seminar
+      title: High-efficiency computer graphics group at MIT CSAIL
+      location: Cambridge, MA, USA
+
+- type: talk
+  title: "Achieving High-Performance the Functional Way: Expressing High-Performance Optimizations as Rewrite Strategies"
+  date: 06/2022
+  parent:
+    - type: conference
+      title: SIGPLAN Track at the SIGPLAN Conference on Programming Language Design and Implementation (PLDI)
+      location: San Diego, CA, USA
+
+- type: invited-talk
+  title: "RISE & Shine: Language-Oriented Compiler Design"
+  date: 06/2022
+  parent:
+    - type: seminar
+      title: Compiler Design Lab Seminar at Saarland University
+      location: Saarland, Germany
+
+- type: talk
+  title: Systematically Extending a High-Level Code Generator with Sup- port for Tensor Cores
+  date: 04/2022
+  parent:
+    - type: conference
+      title: Workshop on General Purpose Processing using GPU (GPGPU)
+      location: virtual
+
+- type: talk
+  title: FHPNC Community Update
+  date: 09/2021
+  parent:
+    - type: conference
+      title: Workshop on Functional High- Performance and Numerical Computing (FHPNC)
+      location: virtual
+
+- type: invited-talk
+  title: "Achieving High-Performance the Functional Way - Expressing High-Performance Optimizations as Rewrite Strategies"
+  date: 12/2020
+  parent:
+    - type: seminar
+      title: "Programming Languages and Systems Research Group (PLAS) group seminar at the University of Kent"
+      location: virtual
+
+- type: invited-talk
+  title: "Compiler Intermediate Representations"
+  date: 08/2020
+  parent:
+    - type: summer-school
+      title: "Scottish Programming Languages and Verification Summer School 2020 (SPLV 2020)"
+      location: virtual
+
+- type: talk
+  title: "Achieving High-Performance the Functional Way - Expressing High-Performance Optimizations as Rewrite Strategies"
+  date: 17/2020
+  parent:
+    - type: seminar
+      title: "Scottish Programming Languages Seminar (SPLS)"
+      location: virtual
+
+- type: invited-talk
+  title: "ELEVATE: a language to write composable program optimizations"
+  date: 09/2019
+  parent:
+    - type: seminar
+      title: Google DeepMind
+      location: London, UK
+
+- type: invited-talk
+  title: "Lift: Generating High Performance Code with Rewrite Rules"
+  date: 02/2019
+  parent:
+    - type: seminar
+      title: "Programming Languages and Software Engineering Group seminar at the University of Washington"
+      location: Seattle, WA, USA
+
+- type: invited-talk
+  title: "Lift: Generating High Performance Code with Rewrite Rules"
+  date: 02/2019
+  parent:
+    - type: seminar
+      title: Microsoft Research
+      location: Redmond, WA, USA
+
+- type: talk
+  title: "Implementing lambda calculus in Python and C++"
+  date: 12/2018
+  parent:
+    - type: seminar
+      title: Programming Languages at Glasgow (PLUG) seminar at the University of Glasgow
+      location: Glasgow, UK
+
+- type: talk
+  title: "High-level Features - Low-level Performance: GPU Performance Pre- diction of Stencils"
+  date: 11/2018
+  parent:
+    - type: seminar
+      title: System Seminar at the University of Glasgow
+      location: Glasgow, UK
+
+- type: invited-talk
+  title: "Generating Performance Portable Code with Lift"
+  date: 09/2018
+  parent:
+    - type: seminar
+      title: "Shonan Meeting No.134: Advances in Heterogeneous Computing from Hardware to Software"
+      location: Shōnan, Japan
+
+- type: invited-talk
+  title: "Lift: Code Generation by Rewriting Algorithmic Skeletons"
+  date: 03/2018
+  parent:
+    - type: seminar
+      title: "Dagstuhl Seminar 18111 on Loop Optimizations"
+      location: Schloss Dagstuhl, Germany
+
+- type: invited-talk
+  title: "Programming GPUs with Eager Actions and Lazy Views"
+  date: 03/2018
+  parent:
+    - type: seminar
+      title: "Compiler and Architecture Design Group Seminar at the University of Edinburgh"
+      location: Edinburgh, UK
+
+- type: talk
+  title: "The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules"
+  date: 02/2018
+  parent:
+    - type: seminar
+      title: "Formal Analysis, Theory and Algorithms Seminar at the University of Glasgow"
+      location: Glasgow, UK
+
+- type: talk
+  title: "Programming GPUs with Eager Actions and Lazy Views"
+  date: 11/2017
+  parent:
+    - type: seminar
+      title: "System Seminar at the University of Glasgow"
+      location: Glasgow, UK
+
+- type: talk
+  title: "The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules"
+  date: 11/2017
+  parent:
+    - type: seminar
+      title: "System Seminar at the University of Glasgow"
+      location: Glasgow, UK
+
+- type: invited-talk
+  title: "The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules"
+  date: 10/2017
+  parent:
+    - type: seminar
+      title: Microsoft Research
+      location: Cambridge, UK
+
+- type: talk
+  title: "The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules"
+  date: 09/2017
+  parent:
+    - type: conference
+      title: "University of Hull HPC Symposium 2017"
+      location: Hull, UK
+
+- type: invited-talk
+  title: "The Lift Project: Performance Portable Parallel Code Generation via Rewrite Rules"
+  date: 07/2017
+  parent:
+    - type: seminar
+      title: "University of Münster"
+      location: Münster, Germany
+
+- type: talk
+  title: "Programming GPUs with Eager Actions and Lazy Views"
+  date: 06/2017
+  parent:
+    - type: seminar
+      title: "Scottish Programming Languages Seminar (SPLS) at the University of the West of Scotland"
+      location: Paisley, UK
+
+- type: talk
+  title: "Programming GPUs with Eager Actions and Lazy Views"
+  date: 04/2017
+  parent:
+    - type: seminar
+      title: C++ Edinburgh Meetup
+      location: Edinburgh, UK
+
+- type: talk
+  title: "Lift: A Functional Data-Parallel IR for High-Performance GPU Code Generation"
+  date: 02/2017
+  parent:
+    - type: conference
+      title: International Symposium on Code Generation and Optimization (CGO) 2017
+      location: Austin, TX, USA
+
+- type: talk
+  title: "Programming GPUs with Eager Actions and Lazy Views"
+  date: 02/2017
+  parent:
+    - type: conference
+      title: International Workshop on Programming Models and Applications for Multicores and Manycores (PMAM) 2017
+      location: Austin, TX, USA
+
+- type: invited-talk
+  title: "The Lift Project: Performance Portable GPU Code Genera- tion via Rewrite Rules"
+  date: 12/2016
+  parent:
+    - type: seminar
+      title: Computer Laboratory Systems Research Group Seminar at the University of Cambridge
+      location: Cambridge, UK
+
+- type: invited-talk
+  title: "Structured Parallel Programming - From High-Level Func- tional Expressions to High-Performance OpenCL Code"
+  date: 08/2016
+  parent:
+    - type: seminar
+      title: Center for Advanced Electornics at TU Dresden
+      location: Dresden, Germany
+
+- type: invited-talk
+  title: "Improving Programmability and Performance Portability on Many-Core Processors"
+  date: 05/2016
+  parent:
+    - type: seminar
+      title: "Colloquium of candidates nominated for the prize for best dissertation awarded by the German Informatics Society"
+      location: Scholss Dagstuhl, Germany
+
+- type: invited-talk
+  title: "The Lift Project: Performance Portability via Rewrite Rules"
+  date: 04/2016
+  parent:
+    - type: seminar
+      title: Compiler Design Lab Seminar at Saarland University
+      location: Saarland, Germany
+
+- type: invited-talk
+  title: "Performance Portable GPU Code Generation"
+  date: 01/2016
+  parent:
+    - type: seminar
+      title: Multicore Programming Group seminar at Imperial College
+      location: London, UK
+
+- type: talk
+  title: "Functional Programming in C++"
+  date: 12/2015
+  parent:
+    - type: seminar
+      title: Programming Language Interest Group at the University of Edinburgh
+      location: Edinburgh, UK
+
+- type: invited-talk
+  title: "Generating Performance Portable Code using Rewrite Rules"
+  date: 10/2015
+  parent:
+    - type: seminar
+      title: Multicore Programming Group seminar at Imperial College
+      location: London, UK
+
+- type: talk
+  title: "Generating Performance Portable Code using Rewrite Rules: From High-Level Functional Expressions to High-Performance OpenCL Code"
+  date: 09/2015
+  parent:
+    - type: conference
+      title: International Conference on Functional Programming (ICFP) 2015
+      location: Vancouver, Canada
+
+- type: talk
+  title: "Generating Performance Portable Code using Rewrite Rules"
+  date: 06/2015
+  parent:
+    - type: conference
+      title: "Scottish Programming Languages Seminar (SPLS) at the University of St. Andrews"
+      location: St. Andrews, UK
+
+- type: invited-talk
+  title: "SkelCL: High-Level Programming of Multi-GPU Systems"
+  date: 05/2014
+  parent:
+    - type: seminar
+      title: Institute for Computational and Applied Mathematics at the University of Münster
+      location: Münster, Germany
+
+- type: invited-talk
+  title: "SkelCL: High-Level Programming of Multi-GPU Systems"
+  date: 05/2014
+  parent:
+    - type: conference
+      title: Workshop on Fast Data Processing on GPUs
+      location: Dresden, Germany
+
+- type: talk
+  title: "Extending the SkelCL Library for Stencil Computations on Multi-GPU Systems"
+  date: 01/2014
+  parent:
+    - type: conference
+      title: HiStencils 2014 workshop
+      location: Vienna, Austria
+
+- type: invited-talk
+  title: " SkelCL: High-Level Programming of Multi-GPU Systems"
+  date: 12/2013
+  parent:
+    - type: seminar
+      title: Research group on elementary particle physics at the University of Wuppertal
+      location: Wuppertal, Germany
+
+- type: talk
+  title: "Introducing and Implementing the Allpairs Skeleton for GPU Systems"
+  date: 07/2013
+  parent:
+    - type: conference
+      title: HLPP 2013 workshop
+      location: Paris, France
+
+- type: talk
+  title: "High-Level Programming for Medical Imaging on Multi-GPU Systems using the SkelCL Library"
+  date: 06/2013
+  parent:
+    - type: conference
+      title: ICCS 2013 conference
+      location: Barcelona, Spain
+
+- type: talk
+  title: "Using the SkelCL Library for High-Level GPU Programming of 2D Applications"
+  date: 08/2012
+  parent:
+    - type: conference
+      title: ParaPhrase 2012 workshop
+      location: Rhodes, Greece
+
+- type: talk
+  title: "High-Level Programming for Heterogeneous Systems with Accelerators"
+  date: 06/2012
+  parent:
+    - type: conference
+      title: PDESoft 2012 workshop
+      location: Münster, Germany
+
+- type: talk
+  title: "Towards High-Level Programming of Multi-GPU Systems Using the SkelCL Library"
+  date: 05/2012
+  parent:
+    - type: conference
+      title: AsHES 2012 workshop
+      location: Shanghai, China
+
+- type: invited-talk
+  title: "A Skeleton Library for Heterogeneous Multi-/Many-Core Systems"
+  date: 04/2012
+  parent:
+    - type: conference
+      title: NAIS workshop
+      location: Edinburgh, UK
+
+- type: talk
+  title: "Towards a High-Level Approach for Programming Distributed Systems with GPUs"
+  date: 01/2012
+  parent:
+    - type: conference
+      title: COST Action IC0805 (“ComplexHPC”) meeting
+      location: Timisoara, Romania
+
+- type: invited-talk
+  title: "SkelCL - A High-Level Programming Library for GPU Pro- gramming"
+  date: 12/2011
+  parent:
+    - type: seminar
+      title: Jülich Supercomputing Centre (JSC)
+      location: Jülich, Germany
+
+- type: talk
+  title: "SkelCL - A Portable Skeleton Library for High-Level GPU Programming"
+  date: 05/2011
+  parent:
+    - type: conference
+      title: HIPS 2011 workshop
+      location: Anchorage, AK, USA
+
+- type: invited-talk
+  title: "Development of an Online Game as a Student Project"
+  date: 09/2008
+  parent:
+    - type: conference
+      title: ITSoft-TEAM workshop
+      location: Chernihiv, Ukraine

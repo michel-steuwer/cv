@@ -1,0 +1,30 @@
+"DBLP:conf/gi/Steuwer15":
+  type: chapter
+  title: "Verbesserung der Programmierbarkeit und Performance-Portabilität von Manycore-Prozessoren (Improving Programmability and Performance Portability on Many-Core Processors)"
+  author:
+    - Michel Steuwer
+  date: 2015
+  parent:
+    - type: book
+      title: "Ausgezeichnete Informatikdissertationen 2015 (Distinguished Dissertations in Informatics 2015)"
+      publisher: GI
+      parent:
+        - type: periodical
+          title: LNI
+          volume: D-16
+
+"KeGEDSK13":
+  type: chapter
+  title: "Skeleton Programming for Portable Many-Core Computing"
+  author:
+    - Christopher Kessler
+    - Sergei Gorlatch
+    - Johan Emmyren
+    - Usman Dastgeer
+    - Michel Steuwer
+    - Philipp Kegel
+  date: 2014
+  parent:
+    - type: book
+      title: "Programming Multi-core and Many-core Computing Systems"
+      publisher: Wiley

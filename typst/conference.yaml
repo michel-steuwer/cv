@@ -1,0 +1,324 @@
+"DBLP:conf/asplos/HellstenSLLHEKSON24":
+  type: article
+  title: "BaCO: A Fast and Portable Bayesian Compiler Optimization Framework"
+  author:
+    - Erik Hellsten
+    - Artur L. F. Souza
+    - Johannes Lenfers
+    - Rubens Lacouture
+    - Olivia Hsu
+    - Adel Ejjeh
+    - Fredrik Kjolstad
+    - Michel Steuwer
+    - Kunle Olukotun
+    - Luigi Nardi
+  date: 2024
+  parent:
+    - type: proceedings
+      title: "Proceedings of the Twenty-Eighth International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2024, CA, USA, April, 2024"
+      publisher: ACM
+
+"DBLP:conf/sle/FrankeLMS22":
+  type: article
+  title: "Collection Skeletons: Declarative Abstractions for Data Collections"
+  author:
+    - Björn Franke
+    - Zhibo Li
+    - Magnus Morton
+    - Michel Steuwer
+  date: 2022
+  note: "*Best Research Paper Award*"
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 15th ACM SIGPLAN International Conference on Software Language Engineering, SLE 2022, Auckland, New Zealand, December 6-7, 2022"
+      publisher: ACM
+
+"DBLP:conf/haskell/HollenbeckOS22":
+  type: article
+  title: "Investigating magic numbers: improving the inlining heuristic in the Glasgow Haskell Compiler"
+  author:
+    - Celeste Hollenbeck
+    - Michael F. P. O'Boyle
+    - Michel Steuwer
+  date: 2022
+  parent:
+    - type: proceedings
+      title: "Haskell '22: 15th ACM SIGPLAN International Haskell Symposium, Ljubljana, Slovenia, September 15 - 16, 2022"
+      publisher: ACM
+
+"DBLP:conf/europar/PizzutiSD22":
+  type: article
+  title: Generating Work Efficient Scan Implementations for GPUs the Functional Way
+  author:
+    - Federico Pizzuti
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2022
+  parent:
+    - type: proceedings
+      title: "Euro-Par 2022: Parallel Processing - 28th International Conference on Parallel and Distributed Computing, Glasgow, UK, August 22-26, 2022, Proceedings"
+      publisher: Springer
+      parent:
+        - type: periodical
+          title: Lecture Notes in Computer Science
+          volume: 13440
+
+"DBLP:conf/ipps/StoltzfusHSLD21":
+  type: article
+  title: Code Generation for Room Acoustics Simulations with Complex Boundary Conditions
+  author:
+    - Larisa Stoltzfus
+    - Brian Hamilton
+    - Michel Steuwer
+    - Lu Li
+    - Christophe Dubach
+  date: 2021
+  parent:
+    - type: proceedings
+      title: "35th IEEE International Parallel and Distributed Processing Symposium, IPDPS 2021, Portland, OR, USA, May 17-21, 2021"
+      publisher: IEEE
+
+"DBLP:conf/cc/LuckeSS21":
+  type: article
+  title: Integrating a functional pattern-based IR into MLIR
+  author:
+    - Martin Lücke
+    - Michel Steuwer
+    - Aaron Smith
+  date: 2021
+  parent:
+    - type: proceedings
+      title: "CC '21: 30th ACM SIGPLAN International Conference on Compiler Construction, Virtual Event, Republic of Korea, March 2-3, 2021"
+      publisher: ACM
+
+"DBLP:conf/cgo/KoehlerS21":
+  type: article
+  title: "Towards a Domain-Extensible Compiler: Optimizing an Image Processing Pipeline on Mobile CPUs"
+  author:
+    - Thomas Kœhler
+    - Michel Steuwer
+  date: 2021
+  parent:
+    - type: proceedings
+      title: "IEEE/ACM International Symposium on Code Generation and Optimization, CGO 2021, Seoul, South Korea, February 27 - March 3, 2021"
+      publisher: IEEE
+
+"DBLP:conf/dls/MortonKLSDSCO20":
+  type: article
+  title: "DelayRepay: delayed execution for kernel fusion in Python"
+  author:
+    - John Magnus Morton
+    - Kuba Kaszyk
+    - Lu Li
+    - Jiawen Sun
+    - Christophe Dubach
+    - Michel Steuwer
+    - Murray Cole
+    - Michael F. P. O'Boyle
+  date: 2020
+  parent:
+    - type: proceedings
+      title: "DLS 2020: Proceedings of the 16th ACM SIGPLAN International Symposium on Dynamic Languages, Virtual Event, USA, November 17, 2020"
+      publisher: ACM
+
+"DBLP:conf/cc/PizzutiSD20":
+  type: article
+  title: Generating fast sparse matrix vector multiplication from a high level generic functional IR
+  author:
+    - Federico Pizzuti
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2020
+  parent:
+    - type: proceedings
+      title: "CC '20: 29th International Conference on Compiler Construction, San Diego, CA, USA, February 22-23, 2020"
+      publisher: ACM
+
+"DBLP:conf/asplos/GinsbachRSBDO18":
+  type: article
+  title: "Automatic Matching of Legacy Code to Heterogeneous APIs: An Idiomatic Approach"
+  author:
+    - Philip Ginsbach
+    - Toomas Remmelg
+    - Michel Steuwer
+    - Bruno Bodin
+    - Christophe Dubach
+    - Michael F. P. O'Boyle
+  date: 2018
+  note: "*HiPEAC Paper Award*. 32 citations on Google Scholar."
+  parent:
+    - type: proceedings
+      title: "Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2018, Williamsburg, VA, USA, March 24-28, 2018"
+      publisher: ACM
+
+"DBLP:conf/cgo/HagedornSSGD18":
+  type: article
+  title: High performance stencil code generation with Lift
+  author:
+    - Bastian Hagedorn
+    - Larisa Stoltzfus
+    - Michel Steuwer
+    - Sergei Gorlatch
+    - Christophe Dubach
+  date: 2018
+  note: "*Best Paper Award Winner*. 114 citations on Google Scholar."
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 2018 International Symposium on Code Generation and Optimization, CGO 2018, Vösendorf / Vienna, Austria, February 24-28, 2018"
+      publisher: ACM
+
+"DBLP:conf/ershov/HagedornSG17":
+  type: article
+  title: A Transformation-Based Approach to Developing High-Performance GPU Programs
+  author:
+    - Bastian Hagedorn
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2017
+  parent:
+    - type: proceedings
+      title: "Perspectives of System Informatics - 11th International Andrei P. Ershov Informatics Conference, PSI 2017, Moscow, Russia, June 27-29, 2017, Revised Selected Papers"
+      publisher: Springer
+      parent:
+        - type: periodical
+          title: Lecture Notes in Computer Science
+          volume: 10742
+
+"DBLP:conf/vee/FumeroSSD17":
+  type: article
+  title: Just-In-Time GPU Compilation for Interpreted Languages with Partial Evaluation
+  author:
+    - Juan José Fumero
+    - Michel Steuwer
+    - Lukas Stadler
+    - Christophe Dubach
+  date: 2017
+  note: 37 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 13th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments, VEE 2017, Xi'an, China, April 8-9, 2017"
+      publisher: ACM
+
+"DBLP:conf/cgo/SteuwerRD17":
+  type: article
+  title: "Lift: a functional data-parallel IR for high-performance GPU code generation"
+  author:
+    - Michel Steuwer
+    - Toomas Remmelg
+    - Christophe Dubach
+  date: 2017
+  note: 203 citations on Google Scholar, *most cited paper of CGO 2017*.
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 2017 International Symposium on Code Generation and Optimization, CGO 2017, Austin, TX, USA, February 4-8, 2017"
+      publisher: ACM
+
+"DBLP:conf/cases/SteuwerRD16":
+  type: article
+  title: "Matrix multiplication beyond auto-tuning: rewrite-based GPU code generation"
+  author:
+    - Michel Steuwer
+    - Toomas Remmelg
+    - Christophe Dubach
+  date: 2016
+  note: 34 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "2016 International Conference on Compilers, Architectures and Synthesis for Embedded Systems, CASES 2016, Pittsburgh, Pennsylvania, USA, October 1-7, 2016"
+      publisher: ACM
+
+"DBLP:conf/icfp/SteuwerFLD15":
+  type: article
+  title: "Generating performance portable code using rewrite rules: from high-level functional expressions to high-performance OpenCL code"
+  author:
+    - Michel Steuwer
+    - Christian Fensch
+    - Sam Lindley
+    - Christophe Dubach
+  date: 2015
+  note: 176 citations on Google Scholar, *most cited paper of ICFP 2015*.
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming, ICFP 2015, Vancouver, BC, Canada, September 1-3, 2015"
+      publisher: ACM
+
+"DBLP:conf/pppj/FumeroRSD15":
+  type: article
+  title: "Runtime Code Generation and Data Management for Heterogeneous Computing in Java"
+  author:
+    - Juan José Fumero
+    - Toomas Remmelg
+    - Michel Steuwer
+    - Christophe Dubach
+  date: 2015
+  note: 27 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "Proceedings of the Principles and Practices of Programming on The Java Platform, PPPJ 2015, Melbourne, FL, USA, September 8-11, 2015"
+      publisher: ACM
+
+"DBLP:conf/ershov/GorlatchS14":
+  type: article
+  title: "Towards High-Level Programming for Systems with Many Cores"
+  author:
+    - Sergei Gorlatch
+    - Michel Steuwer
+  date: 2014
+  parent:
+    - type: proceedings
+      title: "Perspectives of System Informatics - 9th International Ershov Informatics Conference, PSI 2014, St. Petersburg, Russia, June 24-27, 2014. Revised Selected Papers"
+      publisher: Springer
+      parent:
+        - type: periodical
+          title: Lecture Notes in Computer Science
+          volume: 8974
+
+"DBLP:conf/iccS/SteuwerG13":
+  type: article
+  title: "High-Level Programming for Medical Imaging on Multi-GPU Systems Using the SkelCL Library"
+  author:
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2013
+  parent:
+    - type: proceedings
+      title: "Proceedings of the International Conference on Computational Science, ICCS 2013, Barcelona, Spain, 5-7 June, 2013"
+      publisher: Elsevier
+      parent:
+        - type: periodical
+          title: Procedia Computer Science
+          volume: 18
+
+"DBLP:conf/pact/SteuwerG13":
+  type: article
+  title: "SkelCL: Enhancing OpenCL for High-Level Programming of Multi-GPU Systems"
+  author:
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2013
+  note: 37 citations on Google Scholar.
+  parent:
+    - type: proceedings
+      title: "Parallel Computing Technologies - 12th International Conference, PaCT 2013, St. Petersburg, Russia, September 30 - October 4, 2013. Proceedings"
+      publisher: Springer
+      parent:
+      - type: periodical
+        title: Lecture Notes in Computer Science
+        volume: 7979
+
+"DBLP:conf/somet/SteuwerKG12":
+  type: article
+  title: "A High-Level Programming Approach for Distributed Systems with Accelerators"
+  author:
+    - Michel Steuwer
+    - Philipp Kegel
+    - Sergei Gorlatch
+  date: 2012
+  parent:
+    - type: proceedings
+      title: "New Trends in Software Methodologies, Tools and Techniques - Proceedings of the Eleventh SoMeT '12, Genoa, Italy, September 26 - 28, 2012"
+      publisher: IOS Press
+      parent:
+      - type: periodical
+        title: Frontiers in Artificial Intelligence and Applications
+        volume: 246
