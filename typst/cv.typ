@@ -320,7 +320,7 @@
 
   show list: it => {
     it
-    v(1em)
+    v(.75em)
   }
 
   doc

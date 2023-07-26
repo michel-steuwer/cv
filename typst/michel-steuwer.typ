@@ -6,13 +6,13 @@
   title: "Dr.",
   name: "Michel Steuwer",
   address: (
-    "Informatics Forum",
-    "10 Crichton Street",
-    "Edinburgh EH8 9AB",
-    "United Kingdom"
+    "Chair of Compilers and Programming Languages",
+    "Room E-N 367",
+    "Einsteinufer 17",
+    "10587 Berlin, Germany"
   ),
-  email: "michel.steuwer@ed.ac.uk",
-  date: [May 29, 2023]
+  email: "michel.steuwer@tu-berlin.de",
+  date: [July 26, 2023]
 )
 
 // ComPL
@@ -22,18 +22,15 @@
 // Chair of Compiler Construction and Programming Language Design
 
 = Professional Experience
-// #entry(date: [since\ July 2023])[
-//   *Professor, Chair of Compilers and Programming Languages*,\
-//   TU Berlin, Germany.]
-
-// #entry(date: [2020--2023])[
-//    *Lecturer (Assistant professor)*, University of Edinburgh, UK.]
 #entry(date: [since\ July 2023])[
-  *Lecturer (Assistant professor) in Compilers and Runtime Systems*,
-  University of Edinburgh, UK.]
+  *Professor, Chair of Compilers and Programming Languages*,\
+  Technische Universität Berlin, Germany.]
+
+#entry(date: [2020--2023])[
+   *Lecturer / Senior Lecturer*, University of Edinburgh, UK.]
 
 #entry(date: [2017--2020])[
-  *Lecturer (Assistant professor)*, University of Glasgow, UK.]
+  *Lecturer*, University of Glasgow, UK.]
 
 #entry(date: [2014--2017])[
   *Postdoctoral Research Associate*, University of Edinburg, UK.]
@@ -156,7 +153,7 @@
   and regular participant of the Scottish Programming Language Seminars (*SPLS*).
 
 == Local University Activities
-- I am the *undergraduate year 1 organizer* coordinating the teaching of about 400 students at the School of Informatics in Edinburgh.
+- I was the *undergraduate year 1 organizer* coordinating the teaching of about 400 students at the School of Informatics in Edinburgh.
 
 - I was the *research student committee convener* of the School of Computing Science at the University of Glasgow (2019-20). Overseeing the academic progression of over 100 PhD students.
 
@@ -295,15 +292,13 @@ In my research communities publications in highly regarded conferences are much 
 
 == Publication Statistics
 #{
-  let j = yaml("journal.yaml").len()
   let c = yaml("conference.yaml").len()
   let w = yaml("workshop.yaml").len()
   let t = yaml("techreport.yaml").len()
   let b = yaml("chapter.yaml").len()
   [
-    I have published *#(j + c + w + t + b) papers*:
-    _#j Journal Articles_,
-    _#c Conference Papers_,
+    I have published *#(c + w + t + b) papers*:
+    _#c Journal and Conference Papers_,
     _#w Workshop Papers_,
     _#t Technical Reports_,
     and,
@@ -321,12 +316,8 @@ In my research communities publications in highly regarded conferences are much 
   ]
 }
 
-
-== Journal Articles
-#text(size: .95em, printPubs(yaml("journal.yaml"), "J"))
-
-== Conference Papers
-#text(size: .95em, printPubs(yaml("conference.yaml"), "C"))
+== Journal and Conference Papers
+#text(size: .95em, printPubs(yaml("conference.yaml"), ""))
 
 == Workshop Papers
 #text(size: .95em, printPubs(yaml("workshop.yaml"), "W"))

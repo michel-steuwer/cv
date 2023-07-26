@@ -13,10 +13,61 @@
     - Kunle Olukotun
     - Luigi Nardi
   date: 2024
+  note: "(accepted for publication)"
   parent:
     - type: proceedings
       title: "Proceedings of the Twenty-Eighth International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2024, CA, USA, April, 2024"
       publisher: ACM
+
+"DBLP:journals/pacmpl/TangHMSDFL23":
+  type: article
+  title: "Structural Subtyping as Parametric Polymorphism"
+  author:
+    - Wenhao Tang
+    - Daniel Hillerström
+    - James McKinna
+    - Michel Steuwer
+    - Ornela Dardha
+    - Rongxiao Fu
+    - Sam Lindley
+  date: 2023
+  note: "(accepted for publication)"
+  parent:
+    - type: periodical
+      title: Proc. ACM Program. Lang. (PACMPL)
+      volume: 7
+      issue: OOPSLA
+
+"DBLP:journals/cacm/HagedornLKQGS23":
+  type: article
+  title: "Achieving High Performance the Functional Way: Expressing High-Performance Optimizations as Rewrite Strategies"
+  author:
+    - Bastian Hagedorn
+    - Johannes Lenfers
+    - Thomas Kœhler
+    - Xueying Qin
+    - Sergei Gorlatch
+    - Michel Steuwer
+  date: 2023
+  parent:
+    - type: periodical
+      title: Commun. ACM (CACM)
+      volume: 66
+      issue: 3
+
+"DBLP:journals/programming/QinOS23":
+  type: article
+  title: "Primrose: Selecting Container Data Types by Their Properties"
+  author:
+    - Xueying Qin
+    - Liam O'Connor
+    - Michel Steuwer
+  date: 2023
+  parent:
+    - type: periodical
+      title: Art Sci. Eng. Program. (<Programming>)
+      volume: 7
+      issue: 3
 
 "DBLP:conf/sle/FrankeLMS22":
   type: article
@@ -103,6 +154,22 @@
       title: "IEEE/ACM International Symposium on Code Generation and Optimization, CGO 2021, Seoul, South Korea, February 27 - March 3, 2021"
       publisher: IEEE
 
+"DBLP:journals/taco/RaschSSG21":
+  type: article
+  title: Efficient Auto-Tuning of Parallel Programs with Interdependent Tuning Parameters via Auto-Tuning Framework (ATF)
+  author: 
+    - Ari Rasch
+    - Richard Schulze
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2021
+  note: 15 citations on Google Scholar.
+  parent:
+    - type: periodical
+      title: ACM Trans. Archit. Code Optim. (TACO)
+      volume: 18
+      issue: 1
+
 "DBLP:conf/dls/MortonKLSDSCO20":
   type: article
   title: "DelayRepay: delayed execution for kernel fusion in Python"
@@ -120,6 +187,40 @@
     - type: proceedings
       title: "DLS 2020: Proceedings of the 16th ACM SIGPLAN International Symposium on Dynamic Languages, Virtual Event, USA, November 17, 2020"
       publisher: ACM
+
+"DBLP:journals/pacmpl/HagedornLKQGS20":
+  type: article
+  title: "Achieving high-performance the functional way: a functional pearl on expressing high-performance optimizations as rewrite strategies"
+  author: 
+    - Bastian Hagedorn
+    - Johannes Lenfers
+    - Thomas Kœhler
+    - Xueying Qin
+    - Sergei Gorlatch
+    - Michel Steuwer
+  date: 2020
+  note: "37 citations on Google Scholar, *selected as only 1 of 4 ACM SIGPLAN Research Highlights from 2020*, _HiPEAC Paper Award_, *selected for publication as a Communications of the ACM Research Highlight*."
+  parent:
+    - type: periodical
+      title: Proc. ACM Program. Lang. (PACMPL)
+      volume: 4
+      issue: ICFP
+
+"DBLP:journals/taco/StoltzfusHSGD20":
+  type: article
+  title: Tiling Optimizations for Stencil Computations Using Rewrite Rules in Lift
+  author:
+    - Larisa Stoltzfus
+    - Bastian Hagedorn
+    - Michel Steuwer
+    - Sergei Gorlatch
+    - Christophe Dubach
+  date: 2020
+  parent:
+    - type: periodical
+      title: ACM Trans. Archit. Code Optim. (TACO)
+      volume: 16
+      issue: 4
 
 "DBLP:conf/cc/PizzutiSD20":
   type: article
@@ -145,7 +246,7 @@
     - Christophe Dubach
     - Michael F. P. O'Boyle
   date: 2018
-  note: "*HiPEAC Paper Award*. 32 citations on Google Scholar."
+  note: "*HiPEAC Paper Award*. 35 citations on Google Scholar."
   parent:
     - type: proceedings
       title: "Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2018, Williamsburg, VA, USA, March 24-28, 2018"
@@ -161,7 +262,7 @@
     - Sergei Gorlatch
     - Christophe Dubach
   date: 2018
-  note: "*Best Paper Award Winner*. 114 citations on Google Scholar."
+  note: "*Best Paper Award Winner*. 113 citations on Google Scholar."
   parent:
     - type: proceedings
       title: "Proceedings of the 2018 International Symposium on Code Generation and Optimization, CGO 2018, Vösendorf / Vienna, Austria, February 24-28, 2018"
@@ -193,7 +294,7 @@
     - Lukas Stadler
     - Christophe Dubach
   date: 2017
-  note: 37 citations on Google Scholar.
+  note: 38 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 13th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments, VEE 2017, Xi'an, China, April 8-9, 2017"
@@ -221,7 +322,7 @@
     - Toomas Remmelg
     - Christophe Dubach
   date: 2016
-  note: 34 citations on Google Scholar.
+  note: 33 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "2016 International Conference on Compilers, Architectures and Synthesis for Embedded Systems, CASES 2016, Pittsburgh, Pennsylvania, USA, October 1-7, 2016"
@@ -236,7 +337,7 @@
     - Sam Lindley
     - Christophe Dubach
   date: 2015
-  note: 176 citations on Google Scholar, *most cited paper of ICFP 2015*.
+  note: 177 citations on Google Scholar, *most cited paper of ICFP 2015*.
   parent:
     - type: proceedings
       title: "Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming, ICFP 2015, Vancouver, BC, Canada, September 1-3, 2015"
@@ -257,6 +358,68 @@
       title: "Proceedings of the Principles and Practices of Programming on The Java Platform, PPPJ 2015, Melbourne, FL, USA, September 8-11, 2015"
       publisher: ACM
 
+"DBLP:journals/ppl/SteuwerHBG14":
+  type: article
+  title: High-Level Programming of Stencil Computations on Multi-GPU Systems Using the SkelCL Library
+  author:
+    - Michel Steuwer
+    - Michael Haidl
+    - Stefan Breuer
+    - Sergei Gorlatch
+  date: 2014
+  note: 20 citations on Google Scholar.
+  parent:
+    - type: periodical
+      title: Parallel Processing Letters
+      volume: 24
+      issue: 3
+
+"DBLP:journals/bioinformatics/OlejnikSGH14":
+  type: article
+  title: "gCUP: Rapid GPU-based HIV-1 Coreceptor Usage Prediction for Next-Generation Sequencing"
+  author:
+    - Michael Olejnik
+    - Michel Steuwer
+    - Sergei Gorlatch
+    - Dominik Heider
+  date: 2014
+  note: 11 citations on Google Scholar.
+  parent:
+    - type: periodical
+      title: Bioinformatics
+      volume: 30
+      issue: 22
+
+"DBLP:journals/tjs/SteuwerG14":
+  type: article
+  title: "SkelCL: A High-Level Extension of OpenCL for Multi-GPU Systems"
+  author:
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2014
+  note: 23 citations on Google Scholar.
+  parent:
+    - type: periodical
+      title: The Journal of Supercomputing
+      volume: 69
+      issue: 1
+
+"DBLP:journals/ijpp/SteuwerFAG14":
+  type: article
+  title: Introducing and Implementing the Allpairs Skeleton for Programming Multi-GPU Systems
+  author:
+    - Michel Steuwer
+    - Malte Friese
+    - Sebastian Albers
+    - Sergei Gorlatch
+  date: 2014
+  note: 15 citations on Google Scholar.
+  parent:
+    - type: periodical
+      title: Int. J. Parallel Program.
+      volume: 42
+      issue: 4
+
 "DBLP:conf/ershov/GorlatchS14":
   type: article
   title: "Towards High-Level Programming for Systems with Many Cores"
@@ -272,6 +435,21 @@
         - type: periodical
           title: Lecture Notes in Computer Science
           volume: 8974
+
+"DBLP:journals/jpdc/KegelSG13":
+  type: article
+  title: "dOpenCL: Towards uniform programming of distributed heterogeneous multi-/many-core systems"
+  author:
+    - Philipp Kegel
+    - Michel Steuwer
+    - Sergei Gorlatch
+  date: 2013
+  note: 16 citations on Google Scholar.
+  parent:
+    - type: periodical
+      title: J. Parallel Distributed Comput.
+      volume: 73
+      issue: 12
 
 "DBLP:conf/iccS/SteuwerG13":
   type: article
