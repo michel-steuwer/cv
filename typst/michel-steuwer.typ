@@ -3,7 +3,7 @@
 #set text(lang: "en")
 
 #show: cv.with(
-  title: "Dr.",
+  title: "Prof. Dr.",
   name: "Michel Steuwer",
   address: (
     "Chair of Compilers and Programming Languages",
