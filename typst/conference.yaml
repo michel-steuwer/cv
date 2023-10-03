@@ -19,6 +19,42 @@
       title: "Proceedings of the Twenty-Eighth International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2024, CA, USA, April, 2024"
       publisher: ACM
 
+"DBLP:conf/pacmpl/KoehlerGBGTS24":
+  type: article
+  title: "Guided Equality Saturation"
+  author:
+    - Thomas Kœhler
+    - Andrés Goens
+    - Siddharth Bhat
+    - Tobias Grosser
+    - Phil Trinder
+    - Michel Steuwer
+  date: 2024
+  note: "(conditionally accepted for publication)"
+  parent:
+    - type: periodical
+      title: Proc. ACM Program. Lang. (PACMPL)
+      volume: 8
+      issue: POPL
+
+"DBLP:conf/pacmpl/QinCGHKS24":
+  type: article
+  title: "Shoggoth - A Formal Foundation for Strategic Rewriting"
+  author:
+    - Xueying Qin
+    - Liam O'Connor
+    - Rob van Glabbeek
+    - Peter Hoefner
+    - Ohad Kammar
+    - Michel Steuwer
+  date: 2024
+  note: "(conditionally accepted for publication)"
+  parent:
+    - type: periodical
+      title: Proc. ACM Program. Lang. (PACMPL)
+      volume: 8
+      issue: POPL
+
 "DBLP:journals/pacmpl/TangHMSDFL23":
   type: article
   title: "Structural Subtyping as Parametric Polymorphism"
@@ -31,7 +67,6 @@
     - Rongxiao Fu
     - Sam Lindley
   date: 2023
-  note: "(accepted for publication)"
   parent:
     - type: periodical
       title: Proc. ACM Program. Lang. (PACMPL)
@@ -246,7 +281,7 @@
     - Christophe Dubach
     - Michael F. P. O'Boyle
   date: 2018
-  note: "*HiPEAC Paper Award*. 35 citations on Google Scholar."
+  note: "*HiPEAC Paper Award*. 36 citations on Google Scholar."
   parent:
     - type: proceedings
       title: "Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2018, Williamsburg, VA, USA, March 24-28, 2018"
@@ -262,7 +297,7 @@
     - Sergei Gorlatch
     - Christophe Dubach
   date: 2018
-  note: "*Best Paper Award Winner*. 113 citations on Google Scholar."
+  note: "*Best Paper Award Winner*. 117 citations on Google Scholar."
   parent:
     - type: proceedings
       title: "Proceedings of the 2018 International Symposium on Code Generation and Optimization, CGO 2018, Vösendorf / Vienna, Austria, February 24-28, 2018"
@@ -294,7 +329,7 @@
     - Lukas Stadler
     - Christophe Dubach
   date: 2017
-  note: 38 citations on Google Scholar.
+  note: 40 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 13th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments, VEE 2017, Xi'an, China, April 8-9, 2017"
@@ -308,7 +343,7 @@
     - Toomas Remmelg
     - Christophe Dubach
   date: 2017
-  note: 203 citations on Google Scholar, *most cited paper of CGO 2017*.
+  note: 208 citations on Google Scholar, *most cited paper of CGO 2017*.
   parent:
     - type: proceedings
       title: "Proceedings of the 2017 International Symposium on Code Generation and Optimization, CGO 2017, Austin, TX, USA, February 4-8, 2017"
@@ -337,7 +372,7 @@
     - Sam Lindley
     - Christophe Dubach
   date: 2015
-  note: 177 citations on Google Scholar, *most cited paper of ICFP 2015*.
+  note: 178 citations on Google Scholar, *most cited paper of ICFP 2015*.
   parent:
     - type: proceedings
       title: "Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming, ICFP 2015, Vancouver, BC, Canada, September 1-3, 2015"
@@ -352,7 +387,7 @@
     - Michel Steuwer
     - Christophe Dubach
   date: 2015
-  note: 27 citations on Google Scholar.
+  note: 29 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the Principles and Practices of Programming on The Java Platform, PPPJ 2015, Melbourne, FL, USA, September 8-11, 2015"
@@ -367,7 +402,7 @@
     - Stefan Breuer
     - Sergei Gorlatch
   date: 2014
-  note: 20 citations on Google Scholar.
+  note: 21 citations on Google Scholar.
   parent:
     - type: periodical
       title: Parallel Processing Letters
@@ -397,7 +432,7 @@
     - Michel Steuwer
     - Sergei Gorlatch
   date: 2014
-  note: 23 citations on Google Scholar.
+  note: 28 citations on Google Scholar.
   parent:
     - type: periodical
       title: The Journal of Supercomputing
@@ -444,7 +479,7 @@
     - Michel Steuwer
     - Sergei Gorlatch
   date: 2013
-  note: 16 citations on Google Scholar.
+  note: 15 citations on Google Scholar.
   parent:
     - type: periodical
       title: J. Parallel Distributed Comput.

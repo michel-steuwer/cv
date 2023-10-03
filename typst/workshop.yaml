@@ -100,7 +100,7 @@
     - Michel Steuwer
     - Christophe Dubach
   date: 2019
-  note: 20 citations on Google Scholar.
+  note: 22 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 6th ACM SIGPLAN International Workshop on Libraries, Languages and Compilers for Array Programming, ARRAY@PLDI 2019, Phoenix, AZ, USA, June 22, 2019"
@@ -244,7 +244,7 @@
     - Michel Steuwer
     - Hugh Leather
   date: 2016
-  note: 35 citations on Google Scholar.
+  note: 36 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 2016 International Workshop on Adaptive Self-tuning Computing Systems, ADAPT@HiPEAC 2016, Prague, Czech Republic, January 18, 2016"
@@ -271,7 +271,7 @@
     - Michel Steuwer
     - Sergei Gorlatch
   date: 2014
-  note: 20 citations on Google Scholar.
+  note: 21 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 1st International Workshop on High-Performance Stencil Computations, HiStencils@HiPEAC 2014, Vienna, Austria, January 22, 2014"
@@ -333,7 +333,7 @@
     - Michel Steuwer
     - Sergei Gorlatch
   date: 2012
-  note: 53 citations on Google Scholar.
+  note: 55 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "26th IEEE International Parallel and Distributed Processing Symposium Workshops & PhD Forum, IPDPS 2012, Shanghai, China, May 21-25, 2012"
