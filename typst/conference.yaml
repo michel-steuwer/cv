@@ -13,7 +13,6 @@
     - Kunle Olukotun
     - Luigi Nardi
   date: 2024
-  note: "(accepted for publication)"
   parent:
     - type: proceedings
       title: "Proceedings of the Twenty-Eighth International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2024, CA, USA, April, 2024"
@@ -30,12 +29,14 @@
     - Phil Trinder
     - Michel Steuwer
   date: 2024
-  note: "(conditionally accepted for publication)"
   parent:
-    - type: periodical
-      title: Proc. ACM Program. Lang. (PACMPL)
-      volume: 8
-      issue: POPL
+    - type: proceedings
+      title: "Prcoeedings of the 51st ACM SIGPLAN Symposium on Principles of Programming Languages, POPL 2024, London, UK, January 14-20, 2024"
+      parent:
+        - type: periodical
+          title: Proceedings of the ACM on Programming Languages (PACMPL)
+          volume: 8
+          issue: POPL
 
 "DBLP:conf/pacmpl/QinCGHKS24":
   type: article
@@ -48,12 +49,14 @@
     - Ohad Kammar
     - Michel Steuwer
   date: 2024
-  note: "(conditionally accepted for publication)"
   parent:
-    - type: periodical
-      title: Proc. ACM Program. Lang. (PACMPL)
-      volume: 8
-      issue: POPL
+    - type: proceedings
+      title: "Prcoeedings of the 51st ACM SIGPLAN Symposium on Principles of Programming Languages, POPL 2024, London, UK, January 14-20, 2024"
+      parent:
+        - type: periodical
+          title: Proceedings of the ACM on Programming Languages (PACMPL)
+          volume: 8
+          issue: POPL
 
 "DBLP:journals/pacmpl/TangHMSDFL23":
   type: article
@@ -68,10 +71,13 @@
     - Sam Lindley
   date: 2023
   parent:
-    - type: periodical
-      title: Proc. ACM Program. Lang. (PACMPL)
-      volume: 7
-      issue: OOPSLA
+    - type: proceedings
+      title: "Proceedings of OOPSLA 2023, Cascais, Portugal, October 22-27, 2023"
+      parent:
+        - type: periodical
+          title: Proceedings of the ACM on Programming Languages (PACMPL)
+          volume: 7
+          issue: OOPSLA
 
 "DBLP:journals/cacm/HagedornLKQGS23":
   type: article
@@ -86,7 +92,7 @@
   date: 2023
   parent:
     - type: periodical
-      title: Commun. ACM (CACM)
+      title: Communications of the ACM (CACM)
       volume: 66
       issue: 3
 
@@ -100,7 +106,7 @@
   date: 2023
   parent:
     - type: periodical
-      title: Art Sci. Eng. Program. (<Programming>)
+      title: Art, Science, and Engineering of Programming (<Programming>)
       volume: 7
       issue: 3
 
@@ -201,7 +207,7 @@
   note: 15 citations on Google Scholar.
   parent:
     - type: periodical
-      title: ACM Trans. Archit. Code Optim. (TACO)
+      title: ACM Transactions on Architecture and Code Optimization (TACO)
       volume: 18
       issue: 1
 
@@ -236,10 +242,13 @@
   date: 2020
   note: "37 citations on Google Scholar, *selected as only 1 of 4 ACM SIGPLAN Research Highlights from 2020*, _HiPEAC Paper Award_, *selected for publication as a Communications of the ACM Research Highlight*."
   parent:
-    - type: periodical
-      title: Proc. ACM Program. Lang. (PACMPL)
-      volume: 4
-      issue: ICFP
+    - type: proceedings
+      title: "Proceedings of the 25th ACM SIGPLAN International Conference on Functional Programming, ICFP 2020, Virtual Event, USA, August 23-26, 2020"
+      parent:
+        - type: periodical
+          title: Proceedings of the ACM on Programming Languages (PACMPL)
+          volume: 4
+          issue: ICFP
 
 "DBLP:journals/taco/StoltzfusHSGD20":
   type: article
@@ -253,7 +262,7 @@
   date: 2020
   parent:
     - type: periodical
-      title: ACM Trans. Archit. Code Optim. (TACO)
+      title: ACM Transactions on Architecture and Code Optimization (TACO)
       volume: 16
       issue: 4
 
@@ -451,7 +460,7 @@
   note: 15 citations on Google Scholar.
   parent:
     - type: periodical
-      title: Int. J. Parallel Program.
+      title: International Journal on Parallel Programming
       volume: 42
       issue: 4
 

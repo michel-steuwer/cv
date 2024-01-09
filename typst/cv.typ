@@ -100,7 +100,7 @@
       if series != none {
         assert.eq(series.len(), 1)
         series = series.first()
-        [ #series.title #series.volume.]
+        [ In #series.title #series.volume.]
       }
     }
 

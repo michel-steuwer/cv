@@ -12,7 +12,7 @@
     "10587 Berlin, Germany"
   ),
   email: "michel.steuwer@tu-berlin.de",
-  date: [July 26, 2023]
+  date: [January 9, 2024]
 )
 
 // ComPL
@@ -72,7 +72,7 @@
 
 = Research Community Activities
 == Program Commitees, Artifact Evaluation Comitees & Reviewing
-- *Program Committee Chair* of CGO 2024.
+- *Program Committee Co-Chair* of CGO 2024.
 
 - *Program Committee Member* of
   Haskell 2023,
@@ -128,7 +128,7 @@
 
 - *Steering Committee Member* of CGO since 2021.
 
-- *Artifact Evaluation Chair* of
+- *Artifact Evaluation Co-Chair* of
   CGO 2021, 2020, 2019, 2018,
   CC 2021, 2020,
   and,
@@ -175,33 +175,33 @@
 == Main Supervisor of Currently Active PhD Students
 #studentEntry(
   [Xueying Qin],
-  [since 09/2020],
+  [#small[since 09/2020]],
   [University of Edinburgh])
 #studentEntry(
   [Rongxiao Fu],
-  [since 10/2019],
+  [#small[since 10/2019]],
   [University of Edinburgh])
 #studentEntry(
   [Johannes Lenfers],
-  [since 10/2019],
+  [#small[since 10/2019]],
   [#small[together with Sergei Gorlatch], University of Münster])
 #studentEntry(
   [Martin Lücke],
-  [since 09/2019],
+  [#small[since 09/2019]],
   [University of Edinburgh])
 #studentEntry(
   [Bastian Köpcke],
-  [since 10/2018],
+  [#small[since 10/2018]],
   [#small[together with Sergei Gorlatch], University of Münster])
 
 == Second Supervisor of Currently Active PhD Students
 #studentEntry(
   [Zhibo Li],
-  [since 10/2020],
+  [#small[since 10/2020]],
   [#small[main supervisor Björn Franke], University of Edinburgh])
 #studentEntry(
   [Celeste Hollenbeck],
-  [since 09/2020],
+  [#small[since 09/2020]],
   [#small[#small[main supervisor Michael O'Boyle]], University of Edinburgh])
 
 == Main Supervisor of Graduated PhD Students
@@ -325,13 +325,13 @@ In my research communities publications in highly regarded conferences are much 
 == Technical Reports and Preprints
 #text(size: .95em, printPubs(yaml("techreport.yaml"), "T"))
 
-#pagebreak(weak: true)
-
 == Book Chapter
 #text(size: .95em, printPubs(yaml("chapter.yaml"), "B"))
 
 == Thesis
 #text(size: .95em, printPubs(yaml("thesis.yaml"), "TH"))
+
+#pagebreak(weak: true)
 
 = Talks and Presentations
 #[
@@ -366,7 +366,7 @@ In my research communities publications in highly regarded conferences are much 
     lead: [Vijay Nagarajan],
     [250])
   #teachingEntry(
-    [ompiling Techniques],
+    [Compiling Techniques],
     [undergraduate],
     lead: [Tobias Grosser],
     [100])]

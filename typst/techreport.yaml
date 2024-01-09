@@ -1,3 +1,21 @@
+"DBLP:record journals/corr/abs-2311-07422":
+  type: article
+  title: "Sidekick compilation with xDSL"
+  author:
+    - Mathieu Fehr
+    - Michel Weber
+    - Christian Ulmann
+    - Alexandre Lopoukhine
+    - Martin Lücke
+    - Théo Degioanni
+    - Michel Steuwer
+    - Tobias Grosser
+  date: 2023
+  parent:
+    - type: proceedings
+      title: arXiv
+      volume: abs/2311.07422
+
 "DBLP:journals/corr/abs-2305-03448":
   type: article
   title: "Descend: A Safe GPU Systems Programming Language"
