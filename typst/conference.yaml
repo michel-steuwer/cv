@@ -1,22 +1,19 @@
-"DBLP:conf/asplos/HellstenSLLHEKSON24":
+"DBLP:conf/pacmpl/KoepckeGS24":
   type: article
-  title: "BaCO: A Fast and Portable Bayesian Compiler Optimization Framework"
+  title: "Descend: A Safe GPU Systems Programming Language"
   author:
-    - Erik Hellsten
-    - Artur L. F. Souza
-    - Johannes Lenfers
-    - Rubens Lacouture
-    - Olivia Hsu
-    - Adel Ejjeh
-    - Fredrik Kjolstad
+    - Bastian Köpcke
+    - Sergei Gorlatch
     - Michel Steuwer
-    - Kunle Olukotun
-    - Luigi Nardi
   date: 2024
   parent:
     - type: proceedings
-      title: "Proceedings of the Twenty-Eighth International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2024, CA, USA, April, 2024"
-      publisher: ACM
+      title: "PLDI' 24: 45th ACM SIGPLAN International Conference on Programming Language Design and Implementation, Copenhagen, Denmark, June 24-28, 2024"
+      parent:
+        - type: periodical
+          title: Proceedings of the ACM on Programming Languages (PACMPL)
+          volume: 8
+          issue: PLDI
 
 "DBLP:conf/pacmpl/KoehlerGBGTS24":
   type: article
@@ -57,6 +54,26 @@
           title: Proceedings of the ACM on Programming Languages (PACMPL)
           volume: 8
           issue: POPL
+
+"DBLP:conf/asplos/HellstenSLLHEKSON23":
+  type: article
+  title: "BaCO: A Fast and Portable Bayesian Compiler Optimization Framework"
+  author:
+    - Erik Hellsten
+    - Artur L. F. Souza
+    - Johannes Lenfers
+    - Rubens Lacouture
+    - Olivia Hsu
+    - Adel Ejjeh
+    - Fredrik Kjolstad
+    - Michel Steuwer
+    - Kunle Olukotun
+    - Luigi Nardi
+  date: 2023
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 4, ASPLOS 2023, Vancouver, BC, Canada, March 25-29, 2023"
+      publisher: ACM
 
 "DBLP:journals/pacmpl/TangHMSDFL23":
   type: article
@@ -204,7 +221,7 @@
     - Michel Steuwer
     - Sergei Gorlatch
   date: 2021
-  note: 15 citations on Google Scholar.
+  note: 18 citations on Google Scholar.
   parent:
     - type: periodical
       title: ACM Transactions on Architecture and Code Optimization (TACO)
@@ -240,7 +257,7 @@
     - Sergei Gorlatch
     - Michel Steuwer
   date: 2020
-  note: "37 citations on Google Scholar, *selected as only 1 of 4 ACM SIGPLAN Research Highlights from 2020*, _HiPEAC Paper Award_, *selected for publication as a Communications of the ACM Research Highlight*."
+  note: "48 citations on Google Scholar, *selected as only 1 of 4 ACM SIGPLAN Research Highlights from 2020*, _HiPEAC Paper Award_, *selected for publication as a Communications of the ACM Research Highlight*."
   parent:
     - type: proceedings
       title: "Proceedings of the 25th ACM SIGPLAN International Conference on Functional Programming, ICFP 2020, Virtual Event, USA, August 23-26, 2020"
@@ -290,7 +307,7 @@
     - Christophe Dubach
     - Michael F. P. O'Boyle
   date: 2018
-  note: "*HiPEAC Paper Award*. 36 citations on Google Scholar."
+  note: "*HiPEAC Paper Award*. 41 citations on Google Scholar."
   parent:
     - type: proceedings
       title: "Proceedings of the Twenty-Third International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2018, Williamsburg, VA, USA, March 24-28, 2018"
@@ -306,7 +323,7 @@
     - Sergei Gorlatch
     - Christophe Dubach
   date: 2018
-  note: "*Best Paper Award Winner*. 117 citations on Google Scholar."
+  note: "*Best Paper Award Winner*. 127 citations on Google Scholar."
   parent:
     - type: proceedings
       title: "Proceedings of the 2018 International Symposium on Code Generation and Optimization, CGO 2018, Vösendorf / Vienna, Austria, February 24-28, 2018"
@@ -352,7 +369,7 @@
     - Toomas Remmelg
     - Christophe Dubach
   date: 2017
-  note: 208 citations on Google Scholar, *most cited paper of CGO 2017*.
+  note: 220 citations on Google Scholar, *most cited paper of CGO 2017*.
   parent:
     - type: proceedings
       title: "Proceedings of the 2017 International Symposium on Code Generation and Optimization, CGO 2017, Austin, TX, USA, February 4-8, 2017"
@@ -366,7 +383,7 @@
     - Toomas Remmelg
     - Christophe Dubach
   date: 2016
-  note: 33 citations on Google Scholar.
+  note: 36 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "2016 International Conference on Compilers, Architectures and Synthesis for Embedded Systems, CASES 2016, Pittsburgh, Pennsylvania, USA, October 1-7, 2016"
@@ -381,7 +398,7 @@
     - Sam Lindley
     - Christophe Dubach
   date: 2015
-  note: 178 citations on Google Scholar, *most cited paper of ICFP 2015*.
+  note: 185 citations on Google Scholar, *most cited paper of ICFP 2015*.
   parent:
     - type: proceedings
       title: "Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming, ICFP 2015, Vancouver, BC, Canada, September 1-3, 2015"
@@ -441,7 +458,7 @@
     - Michel Steuwer
     - Sergei Gorlatch
   date: 2014
-  note: 28 citations on Google Scholar.
+  note: 30 citations on Google Scholar.
   parent:
     - type: periodical
       title: The Journal of Supercomputing
@@ -457,7 +474,7 @@
     - Sebastian Albers
     - Sergei Gorlatch
   date: 2014
-  note: 15 citations on Google Scholar.
+  note: 16 citations on Google Scholar.
   parent:
     - type: periodical
       title: International Journal on Parallel Programming
@@ -491,7 +508,7 @@
   note: 15 citations on Google Scholar.
   parent:
     - type: periodical
-      title: J. Parallel Distributed Comput.
+      title: Journal on Parallel and Distributed Computing
       volume: 73
       issue: 12
 
@@ -518,7 +535,7 @@
     - Michel Steuwer
     - Sergei Gorlatch
   date: 2013
-  note: 37 citations on Google Scholar.
+  note: 39 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Parallel Computing Technologies - 12th International Conference, PaCT 2013, St. Petersburg, Russia, September 30 - October 4, 2013. Proceedings"

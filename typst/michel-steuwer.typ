@@ -12,7 +12,7 @@
     "10587 Berlin, Germany"
   ),
   email: "michel.steuwer@tu-berlin.de",
-  date: [January 9, 2024]
+  date: [February 27, 2024]
 )
 
 // ComPL
@@ -55,7 +55,9 @@
 
 - *#text(spacing: 50%)[HiPEAC Paper Award Winner]* for *#text(spacing: 25%)[ASPLOS 2018]* and *#text(spacing: 25%)[ICFP 2020]* papers.
 
-- *Most cited papers* at *ICFP 2015* and *CGO 2017*.
+- *Most cited papers* at *ICFP 2015* and *CGO 2017* by February 2024.
+
+- *Most downloaded research paper* of the _Proceedings of the ACM on Programming Languages (PACMPL)_ with over *14,400 downloads from the ACM Digital Library* by February 2024.
 
 - *PhD thesis* honoured with the highest possible grade *Summa cum laude*.
   *Nominated* as one of 34 for the *prize for the best dissertation* of 2015 in
@@ -126,7 +128,7 @@
 
 - *General Chair* of PPoPP 2024.
 
-- *Steering Committee Member* of CGO since 2021.
+- *Steering Committee Member* of CGO (since 2021) and PPoPP (2024).
 
 - *Artifact Evaluation Co-Chair* of
   CGO 2021, 2020, 2019, 2018,
@@ -141,8 +143,6 @@
   UK Many-Core Developer Conference May 2016.
 
 - *Web Chair* of Euro-Par 2022 and CC 2018.
-
-#pagebreak(weak: true)
 
 == Memberships in Research Networks
 - Member of *ACM*,
@@ -174,12 +174,12 @@
     #if now != none {[\ #small[Now #now]]}]
 == Main Supervisor of Currently Active PhD Students
 #studentEntry(
+  [Rudi Schneider],
+  [#small[since 02/2024]],
+  [Technische Universität Berlin])
+#studentEntry(
   [Xueying Qin],
   [#small[since 09/2020]],
-  [University of Edinburgh])
-#studentEntry(
-  [Rongxiao Fu],
-  [#small[since 10/2019]],
   [University of Edinburgh])
 #studentEntry(
   [Johannes Lenfers],
@@ -205,6 +205,11 @@
   [#small[#small[main supervisor Michael O'Boyle]], University of Edinburgh])
 
 == Main Supervisor of Graduated PhD Students
+#studentEntry(
+  [Rongxiao Fu],
+  [2019-2024],
+  [University of Edinburgh],
+  now: [Programming Language Researcher at Huawei Research China])
 #show "Koehler": "Kœhler"
 #studentEntry(
   [Thomas Koehler],
@@ -215,7 +220,7 @@
   [Bastian Hagedorn],
   [2016--2020],
   [#small[together with Sergei Gorlatch], University of Münster],
-  now: [Research Engineer at NVIDIA],
+  now: [Senior Deep Learning Compiler Engineer at NVIDIA],
   notes: [
     *Only European receipient of the NVIDIA Graduate Fellowship 2019 worth \$50K.*\
     *Selected as participant of the Heidelberg Laureate Forum 2019.*\
@@ -231,24 +236,24 @@
   [Larisa Stoltzfus],
   [2015--2021],
   [#small[#small[main supervisor Christophe Dubach]], University of Edinburgh],
-  now: [Software Engineer])
+  now: [HPC Benchmark Specialist at Eviden])
 #studentEntry(
   [Toomas Remmelg],
   [2014--2019],
   [#small[#small[main supervisor Christophe Dubach]], University of Edinburgh],
-  now: [Senior Graphics Software Engineer at ARM],
+  now: [Senior Compiler Engineer at ARM],
   notes: [
     *Winner of the Estonian national contest for university students for his doctoral thesis*])
 #studentEntry(
   [Michael Haidl],
   [2015--2018],
   [#small[main supervisor Sergei Gorlatch], University of Münster],
-  now: [Senior Compiler Engineer at NVIDIA])
+  now: [System Software Manager at NVIDIA])
 #studentEntry(
   [Juan José Fumero],
   [2015--2021],
   [#small[#small[main supervisor Christophe Dubach]], University of Edinburgh],
-  now: [Postdoctoral Research Associate at the University of Manchester])
+  now: [Research Fellow at the University of Manchester])
 
 = PhD Examinations
 #let examinationEntry(date,name,details,examiner) = entry(date: date)[
@@ -284,8 +289,6 @@
   [University of Glasgow, UK],
   [Internal Examiner])
 
-#pagebreak()
-
 = Publications
 
 In my research communities publications in highly regarded conferences are much higher valued than journal publications.
@@ -316,6 +319,47 @@ In my research communities publications in highly regarded conferences are much 
   ]
 }
 
+#[
+#show "Communications of the ACM": strong
+// SIGPLAN Conferences: Top
+#show regex("\<PACMPL\>"): strong
+#show regex("\<PLDI\>"): strong
+#show regex("\<POPL\>"): strong
+#show regex("\<OOPSLA\>"): strong
+#show regex("\<ICFP\>"): strong
+#show regex("\<ASPLOS\>"): strong
+#show regex("\<CGO\>"): strong
+#show regex("\<PPoPP\>"): strong
+// SIGPLAN Conferences: Good
+#show regex("\<CC\>"): emph
+#show regex("\<DLS\>"): emph
+#show regex("\<GPCE\>"): emph
+#show regex("\<ISMM\>"): emph
+#show regex("\<LCTES\>"): emph
+#show regex("\<Haskell\>"): emph
+#show regex("\<MPLR\>"): emph
+#show regex("\<SLE\>"): emph
+#show regex("\<VEE\>"): emph
+#show regex("\<CPP\>"): emph
+// Other top PL / compiler venues
+#show regex("\<PACT\>"): strong
+#show regex("\<IPDPS\>"): strong
+// Other good PL / compiler venues
+#show regex("\<Euro-Par\>"): emph
+#show regex("\<CASES\>"): emph
+#show regex("\<ICCS\>"): emph
+#show regex("\<<Programming>\>"): emph
+#show regex("\<TACO\>"): emph
+#show "Journal of Supercomputing": emph
+#show "International Journal on Parallel Programming": emph
+#show "Journal on Parallel and Distributed Computing": emph
+#show regex("\<GPGPU\>"): emph
+#show regex("\<FHPNC\>"): emph
+#show regex("\<AccML\>"): emph
+#show regex("\<HLPP\>"): emph
+#show regex("\<ARRAY\>"): emph
+#show regex("\<PMAM\>"): emph
+
 == Journal and Conference Papers
 #text(size: .95em, printPubs(yaml("conference.yaml"), ""))
 
@@ -330,6 +374,8 @@ In my research communities publications in highly regarded conferences are much 
 
 == Thesis
 #text(size: .95em, printPubs(yaml("thesis.yaml"), "TH"))
+
+]
 
 #pagebreak(weak: true)
 

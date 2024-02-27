@@ -100,7 +100,7 @@
     - Michel Steuwer
     - Christophe Dubach
   date: 2019
-  note: 22 citations on Google Scholar.
+  note: 24 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 6th ACM SIGPLAN International Workshop on Libraries, Languages and Compilers for Array Programming, ARRAY@PLDI 2019, Phoenix, AZ, USA, June 22, 2019"
@@ -188,7 +188,7 @@
     - Michel Steuwer
     - Christophe Dubach
   date: 2016
-  note: 38 citations on Google Scholar.
+  note: 40 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 9th Annual Workshop on General Purpose Processing using Graphics Processing Unit, GPGPU@PPoPP 2016, Barcelona, Spain, March 12 - 16, 2016"
@@ -244,7 +244,7 @@
     - Michel Steuwer
     - Hugh Leather
   date: 2016
-  note: 36 citations on Google Scholar.
+  note: 37 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "Proceedings of the 2016 International Workshop on Adaptive Self-tuning Computing Systems, ADAPT@HiPEAC 2016, Prague, Czech Republic, January 18, 2016"
@@ -319,7 +319,7 @@
     - Philipp Kegel
     - Sergei Gorlatch
   date: 2012
-  note: 23 citations on Google Scholar.
+  note: 24 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "26th IEEE International Parallel and Distributed Processing Symposium Workshops & PhD Forum, IPDPS 2012, Shanghai, China, May 21-25, 2012"
@@ -347,7 +347,7 @@
     - Philipp Kegel
     - Sergei Gorlatch
   date: 2011
-  note: 192 citations on Google Scholar.
+  note: 196 citations on Google Scholar.
   parent:
     - type: proceedings
       title: "25th IEEE International Symposium on Parallel and Distributed Processing, IPDPS 2011, Anchorage, Alaska, USA, 16-20 May 2011 - Workshop Proceedings"

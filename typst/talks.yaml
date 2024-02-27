@@ -1,4 +1,11 @@
 - type: invited-talk
+  title: "Guided Equality Saturation"
+  date: 10/2024
+  parent:
+    - type: seminar
+      title: Seminar of the Chair of Compiler Construction at TU Dresden
+      location: Desden, Germany
+- type: invited-talk
   title: "On bringing a functional pearl into practice: An MLIR-based implementation of the strategy language ELEVATE"
   date: 03/2023
   parent:
