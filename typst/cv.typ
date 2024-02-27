@@ -1,5 +1,7 @@
 #let mainfont = "Valkyrie OT B"
 #let sansfont = "Concourse OT 3"
+#let sansfontMedium = "Concourse OT 4"
+#let sansfontThin = "Concourse OT 2"
 // #let accent   = rgb(11, 52, 95) /* dark blue */
 #let accent   = rgb(177, 41, 41) /* TU Rot */
 // #let accent   = rgb(234, 117, 47) /* TU Sekundär Orange */
@@ -229,7 +231,7 @@
           rotate(-90deg,
             text(
               fill: bright,
-              font: sansfont,
+              font: sansfontThin,
               size: 48pt,
               box(width: pageHeight, align(center, smallcaps(name))))
           )
@@ -242,9 +244,8 @@
     columns: (65%, 35%),
     text(
       fill: accent,
-      font: sansfont,
+      font: sansfontMedium,
       size: 34pt,
-      weight: "bold",
       style(styles => {
         let titleSize = measure(title, styles)
         move(dx: -(titleSize.width + leftMargin + .125em),
