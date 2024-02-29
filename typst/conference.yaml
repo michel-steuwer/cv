@@ -15,6 +15,27 @@
           volume: 8
           issue: PLDI
 
+"DBLP:conf/asplos/BisbasLBBFMRJKSG24":
+  type: article
+  title: "A shared compilation stack for distributed-memory parallelism in stencil DSLs"
+  author:
+    - George Bisbas
+    - Anton Lydike
+    - Emilien Bauer
+    - Nick Brown
+    - Mathieu Fehr
+    - Lawrence Mitchell
+    - Gabriel Rodriguez-Canal
+    - Maurice Jamieson
+    - Paul H.J. Kelly
+    - Michel Steuwer
+    - Tobias Grosser
+  date: 2024
+  parent:
+    - type: proceedings
+      title: "Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS 2024, San Diego, CA, USA, April 27 - May 1, 2024"
+      publisher: ACM
+
 "DBLP:conf/pacmpl/KoehlerGBGTS24":
   type: article
   title: "Guided Equality Saturation"
@@ -70,6 +91,7 @@
     - Kunle Olukotun
     - Luigi Nardi
   date: 2023
+  note: "Presented at ASPLOS 2024"
   parent:
     - type: proceedings
       title: "Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 4, ASPLOS 2023, Vancouver, BC, Canada, March 25-29, 2023"
