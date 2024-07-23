@@ -1,3 +1,19 @@
+"cgo/LueckeSCMZ25":
+  type: article
+  title: "The MLIR Transform Dialect - Your compiler is more powerful than you think"
+  author:
+    - Martin Lücke
+    - Michel Steuwer
+    - Albert Cohen
+    - William Moses
+    - Alex Zinenko
+  date: 2025
+  note: (accepted for publication)
+  parent:
+    - type: proceedings
+      title: "CGO '25: ACM/IEEE International Symposium on Code Generation and Optimization, Las Vegas, USA, March 1-5, 2025"
+      publisher: ACM
+
 "DBLP:conf/pacmpl/KoepckeGS24":
   type: article
   title: "Descend: A Safe GPU Systems Programming Language"
@@ -47,6 +63,7 @@
     - Phil Trinder
     - Michel Steuwer
   date: 2024
+  note: Selected for the MIT Programming Languages Review
   parent:
     - type: proceedings
       title: "Prcoeedings of the 51st ACM SIGPLAN Symposium on Principles of Programming Languages, POPL 2024, London, UK, January 14-20, 2024"
@@ -75,6 +92,20 @@
           title: Proceedings of the ACM on Programming Languages (PACMPL)
           volume: 8
           issue: POPL
+
+"FrankeLMS24":
+  type: article
+  title: "Collection skeletons: Declarative abstractions for data collections"
+  author:
+    - Björn Franke
+    - Zhibo Li
+    - Magnus Morton
+    - Michel Steuwer
+  date: 2024
+  parent:
+    - type: periodical
+      title: Journal of Systems and Software
+      volume: 2024
 
 "DBLP:conf/asplos/HellstenSLLHEKSON23":
   type: article

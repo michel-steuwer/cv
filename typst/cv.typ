@@ -12,7 +12,7 @@
 #let gray     = rgb(79, 89, 97)
 #let pageHeight   = 29.7cm
 #let pageWidth    = 21cm
-#let sidebar      = pageWidth/3
+#let sidebar      = pageWidth/4
 #let leftMargin   = 0.25cm
 #let rightMargin  = 2cm;
 #let topMargin    = 2.5cm;
@@ -227,7 +227,7 @@
         width: sidebar,
         height: pageHeight,
         fill: accent,
-        move(dx: -1cm, dy: pageHeight - 4.05cm, // generalize ...
+        move(dx: -1cm, dy: pageHeight - 18cm, // generalize ...
           rotate(-90deg,
             text(
               fill: bright,

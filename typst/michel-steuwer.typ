@@ -12,7 +12,7 @@
     "10587 Berlin, Germany"
   ),
   email: "michel.steuwer@tu-berlin.de",
-  date: [February 27, 2024]
+  date: [April 18, 2024]
 )
 
 // ComPL
@@ -48,20 +48,27 @@
   #small[(equivalent to combined MSc and BSc)] University of Münster, Germany.]
 
 = Honours and Achievements
+#set list(spacing: 1.75em)
 
 - Our *ICFP 2020* paper has been selected as a *ACM SIGPLAN Research Highlight* in September 2021 and has been published as a *Communications of the ACM Research Highlight* in March 2023.
 
+- Our *POPL 2024* paper has been selected as one of nine for the _MIT Programming Languages Review 2024_ highlighting papers #text(style: "italic")[believed to have significant potential to shape the future direction of PL research].
+
 - *Best Paper Award Winner* at *CGO 2018* and *SLE 2022*.
 
-- *#text(spacing: 50%)[HiPEAC Paper Award Winner]* for *#text(spacing: 25%)[ASPLOS 2018]* and *#text(spacing: 25%)[ICFP 2020]* papers.
+- *6 HiPEAC Paper Awards* for\ *ASPLOS 2018, 2023, 2024, POPL 2024 (2x)*, and *#text[PLDI 2024]* papers.
 
-- *Most cited papers* at *ICFP 2015* and *CGO 2017* by February 2024.
+- *Most cited papers* at *ICFP 2015* and *CGO 2017* by July 2024.
 
-- *Most downloaded research paper* of the _Proceedings of the ACM on Programming Languages (PACMPL)_ with over *14,400 downloads from the ACM Digital Library* by February 2024.
+- *Most downloaded research paper* of the _Proceedings of the ACM on Programming Languages (PACMPL)_ with over *14,700 downloads from the ACM Digital Library* by July 2024 #small[(see https://dl.acm.org/journal/pacmpl)].
 
-- *PhD thesis* honoured with the highest possible grade *Summa cum laude*.
+- *PhD thesis* honoured with the highest possible grade *Summa cum laude*.\
   *Nominated* as one of 34 for the *prize for the best dissertation* of 2015 in
   Informatics from Germany, Austria, or Switzerland.
+
+#pagebreak()
+
+#set list(spacing: 1.5em)
 
 = Research Projects and Grants
 
@@ -72,16 +79,20 @@
 - Collaborator on a project funded as part of the *Software Defined Hardware (SDH) programme by DARPA*.
   Together with Michael O'Boyle and Murray Cole at Edinburgh and collaborators at the University of Michigan, Arizoina State in the US, and McGill in Canada.
 
+#set list(spacing: 1em)
+
 = Research Community Activities
 == Program Commitees, Artifact Evaluation Comitees & Reviewing
+
 - *Program Committee Co-Chair* of CGO 2024.
 
 - *Program Committee Member* of
+  SLE 2024,
   Haskell 2023,
   Euro-Par 2023,
   CGO 2022, 2020, 2019,
   CC 2020,
-  GPCE 2020, 2019,
+  GPCE 2024, 2020, 2019,
   LCTES 2019, 2018,
   ICPP 2020,
   FHPNC 2021, 2020,
@@ -93,7 +104,6 @@
 - *Artifact Evaluation Commitee Member* of 
   ICFP 2017,
   CGO 2017,
-  and,
   PACT 2016.
 
 - *External reviewer for journals*:
@@ -147,117 +157,27 @@
 == Memberships in Research Networks
 - Member of *ACM*,
   the German Informatics Society (*GI*: #small[Gesellschaft für Informatik]),
-  the UK Manycore Research, Innovation and Opportunities Network (*MaRIONet*),
-  the European Network on High Performance and Embedded Architecture and Compilation (*HiPEAC*) (Academic Member),
-  the Institute for Computer Systems Architecture (*ICSA*) at the University of Edinburgh,
-  and regular participant of the Scottish Programming Language Seminars (*SPLS*).
+  the European Network on High Performance and Embedded Architecture and Compilation (*HiPEAC*).
 
 == Local University Activities
 - I was the *undergraduate year 1 organizer* coordinating the teaching of about 400 students at the School of Informatics in Edinburgh.
 
 - I was the *research student committee convener* of the School of Computing Science at the University of Glasgow (2019-20). Overseeing the academic progression of over 100 PhD students.
 
-- I organized various seminar series and discussion groups at Glasgow and Edinburgh, including: *Upwards*, a seminar series discussing all aspects of research life to facilitate knowledge sharing among academics and providing career advice; the *Programming Language Research Programme* at Edinburgh with a popular seminar series; the *Humble C++ Programmer Group* discussing practical programming in C++ targeted at PhD students to improve their coding skills.
+- I organized seminar series and discussion groups at Glasgow and Edinburgh, including: *Upwards*, a seminar series discussing all aspects of research life to facilitate knowledge sharing among academics and providing career advice; the *Programming Language Research Programme* at Edinburgh with a popular seminar series; the *Humble C++ Programmer Group* discussing practical programming in C++ targeted at PhD students to improve their coding skills.
 
 
 = Research Visits
 - Hosting multiple visiting researchers from the University of Münster, Germany and the University of Zagreb, Croatia for multi-month in- person visits. Funded from 2016—2023 by EuroLab-4-HPC, HPC- Europa3 and HiPEAC.
 
-- Visiting researcher at dividiti Ltd. in Cambridge, UK 2016 (3 month, funded by HiPEAC).
+- Visiting researcher at dividiti Ltd., UK 2016 (3 month, funded by HiPEAC).
 
 - Visiting researcher at the University of Edinburgh, Scotland, UK 2012 (3 month, funded by HPC-Europa2), 2013 (4 month, funded by HiPEAC), and 2014 (4 month).
 
-= Supervised PhD Students
-#let studentEntry(name,date,details,notes:none,now: none) = entry(date: small[#date])[
-    #name #h(1fr) #small(details)
-    #if notes != none {[\ #small[#small[#notes]]]}
-    #if now != none {[\ #small[Now #now]]}]
-== Main Supervisor of Currently Active PhD Students
-#studentEntry(
-  [Rudi Schneider],
-  [#small[since 02/2024]],
-  [Technische Universität Berlin])
-#studentEntry(
-  [Xueying Qin],
-  [#small[since 09/2020]],
-  [University of Edinburgh])
-#studentEntry(
-  [Johannes Lenfers],
-  [#small[since 10/2019]],
-  [#small[together with Sergei Gorlatch], University of Münster])
-#studentEntry(
-  [Martin Lücke],
-  [#small[since 09/2019]],
-  [University of Edinburgh])
-#studentEntry(
-  [Bastian Köpcke],
-  [#small[since 10/2018]],
-  [#small[together with Sergei Gorlatch], University of Münster])
-
-== Second Supervisor of Currently Active PhD Students
-#studentEntry(
-  [Zhibo Li],
-  [#small[since 10/2020]],
-  [#small[main supervisor Björn Franke], University of Edinburgh])
-#studentEntry(
-  [Celeste Hollenbeck],
-  [#small[since 09/2020]],
-  [#small[#small[main supervisor Michael O'Boyle]], University of Edinburgh])
-
-== Main Supervisor of Graduated PhD Students
-#studentEntry(
-  [Rongxiao Fu],
-  [2019-2024],
-  [University of Edinburgh],
-  now: [Programming Language Researcher at Huawei Research China])
-#show "Koehler": "Kœhler"
-#studentEntry(
-  [Thomas Koehler],
-  [2018--2022],
-  [University of Glasgow],
-  now: [Postdoctoral Researcher at INRIA Strasbourg])
-#studentEntry(
-  [Bastian Hagedorn],
-  [2016--2020],
-  [#small[together with Sergei Gorlatch], University of Münster],
-  now: [Senior Deep Learning Compiler Engineer at NVIDIA],
-  notes: [
-    *Only European receipient of the NVIDIA Graduate Fellowship 2019 worth \$50K.*\
-    *Selected as participant of the Heidelberg Laureate Forum 2019.*\
-    *Winner of the disseration award 2021 at the University of Münster.*])
-
-== Second Supervisor of Graduate PhD Students
-#studentEntry(
-  [Federico Pizzuti],
-  [2016--2022],
-  [#small[#small[main supervisor Christophe Dubach]], University of Edinburgh],
-  now: [Researcher at Huawei Research Edinburgh])
-#studentEntry(
-  [Larisa Stoltzfus],
-  [2015--2021],
-  [#small[#small[main supervisor Christophe Dubach]], University of Edinburgh],
-  now: [HPC Benchmark Specialist at Eviden])
-#studentEntry(
-  [Toomas Remmelg],
-  [2014--2019],
-  [#small[#small[main supervisor Christophe Dubach]], University of Edinburgh],
-  now: [Senior Compiler Engineer at ARM],
-  notes: [
-    *Winner of the Estonian national contest for university students for his doctoral thesis*])
-#studentEntry(
-  [Michael Haidl],
-  [2015--2018],
-  [#small[main supervisor Sergei Gorlatch], University of Münster],
-  now: [System Software Manager at NVIDIA])
-#studentEntry(
-  [Juan José Fumero],
-  [2015--2021],
-  [#small[#small[main supervisor Christophe Dubach]], University of Edinburgh],
-  now: [Research Fellow at the University of Manchester])
 
 = PhD Examinations
 #let examinationEntry(date,name,details,examiner) = entry(date: date)[
-    #name,#small(details)#h(1fr) #examiner]
+    #name, #small(details)#h(1fr) #small[#examiner]]
 #examinationEntry(
   [12/2022],
   [Nicolas Tollenaere],
@@ -288,6 +208,97 @@
   [Blair Archibald],
   [University of Glasgow, UK],
   [Internal Examiner])
+
+= Supervised PhD Students
+
+#emph[I currently supervise 7 PhD students as main supervisor]. So far, I have supervised 8 PhD students who sucessfully graduated, 3 as main supervisor and 5 as second supervisor.
+
+#let studentEntry(name,date,details,notes:none,now: none) = entry(date: small[#date])[
+    #name #h(1fr) #small(details)
+    #if notes != none {[\ #small[#small[#notes]]]}
+    #if now != none {[\ #small[#small[Now #now]]]}]
+== Main Supervisor of Currently Active PhD Students
+#studentEntry(
+  [Nicole Heinimann],
+  [#small[since 05/2024]],
+  [Technische Universität Berlin])
+#studentEntry(
+  [Serkan Muhcu],
+  [#small[since 05/2024]],
+  [Technische Universität Berlin])
+#studentEntry(
+  [Rudi Schneider],
+  [#small[since 02/2024]],
+  [Technische Universität Berlin])
+#studentEntry(
+  [Xueying Qin],
+  [#small[since 09/2020]],
+  [University of Edinburgh])
+#studentEntry(
+  [Johannes Lenfers],
+  [#small[since 10/2019]],
+  [#small[together with Sergei Gorlatch], University of Münster])
+#studentEntry(
+  [Martin Lücke],
+  [#small[since 09/2019]],
+  [University of Edinburgh])
+#studentEntry(
+  [Bastian Köpcke],
+  [#small[since 10/2018]],
+  [#small[together with Sergei Gorlatch], University of Münster])
+
+== Main Supervisor of Graduated PhD Students
+#studentEntry(
+  [Dr. Rongxiao Fu],
+  [2019-2024],
+  [#small[University of Edinburgh]],
+  now: [Programming Language Researcher at Huawei Research China])
+#show "Koehler": "Kœhler"
+#studentEntry(
+  [Dr. Thomas Koehler],
+  [2018--2022],
+  [#small[University of Glasgow]],
+  now: [Researcher at CNRS, Strasbourg])
+#studentEntry(
+  [Dr. Bastian Hagedorn],
+  [2016--2020],
+  [#small[together with Sergei Gorlatch, University of Münster]],
+  now: [Senior Deep Learning Compiler Engineer at NVIDIA],
+  notes: [
+    *Only European receipient of the NVIDIA Graduate Fellowship 2019 worth \$50K.*\
+    *Selected as participant of the Heidelberg Laureate Forum 2019.*\
+    *Winner of the disseration award 2021 at the University of Münster.*])
+
+== Second Supervisor of Graduate PhD Students
+#studentEntry(
+  [Dr. Federico Pizzuti],
+  [2016--2022],
+  [#small[#small[main supervisor Christophe Dubach], University of Edinburgh]],
+  now: [Researcher at Huawei Research Edinburgh])
+#studentEntry(
+  [Dr. Larisa Stoltzfus],
+  [2015--2021],
+  [#small[#small[main supervisor Christophe Dubach], University of Edinburgh]],
+  now: [HPC Benchmark Specialist at Eviden])
+#studentEntry(
+  [Dr. Toomas Remmelg],
+  [2014--2019],
+  [#small[#small[main supervisor Christophe Dubach], University of Edinburgh]],
+  now: [Senior Compiler Engineer at ARM],
+  notes: [
+    *Winner of the Estonian national contest for university students for his doctoral thesis*])
+#studentEntry(
+  [Dr. Michael Haidl],
+  [2015--2018],
+  [#small[main supervisor Sergei Gorlatch, University of Münster]],
+  now: [System Software Manager at NVIDIA])
+#studentEntry(
+  [Dr. Juan José Fumero],
+  [2015--2021],
+  [#small[#small[main supervisor Christophe Dubach], University of Edinburgh]],
+  now: [Research Fellow at the University of Manchester])
+
+#pagebreak()
 
 = Publications
 
@@ -389,10 +400,41 @@ In my research communities publications in highly regarded conferences are much 
 #show "Microsoft Research": strong
 #show "Shonan Meeting": strong
 #show "Dagstuhl Seminar": strong
+
+I have given #emph[over 50 talks], of which over 20 were invited talks at leading institutions worldwide including at MIT CSAIL, University of Washington, University of Cambridge, Imperial College London, Google DeepMind, Microsoft Research, and at a Shonan Meeting and a Dagstuhl Seminar.
+
 #printTalks(yaml("talks.yaml"))
 ]
 
 = Teaching Experience
+I have been teaching #emph[thousands of students] across my various roles at the University of Münster, University of Edinburgh, University of Glasgow, and now at Technische Universität Berlin.
+
+#let teachingEntry(
+  title, type, number,
+  lead: none, with: none) = {
+  [- #emph(title), #type course#if lead != none {
+    [, course lead by #lead]
+  } else if with != none {
+    [, together with #with]
+  }. About #number students.]
+}
+
+== As a Professor at Technische Universität Berlin
+#entry(date: [Summer 2024])[
+  #teachingEntry(
+    [Compiling Techniques],
+    [undergraduate],
+    [150])
+  #teachingEntry(
+    [Programmierpraktikum: Programming Language Design and Implementation],
+    [undergraduate],
+    [20])
+  #teachingEntry(
+    [Seminar: Current Research Topics in Programming Languages and Compilers],
+    [undergraduate],
+    [10])
+]
+
 #let teachingEntry(
   role: "Lecturer",
   title, type, number,
@@ -523,8 +565,19 @@ In my research communities publications in highly regarded conferences are much 
 ]
 
 = Supervised Undergraduate and Master Students
+
+I have supervised 35 students during their Bachelor and Master projects across the University of Münster, University of Glasgow, University of Edinburg, and now Technische Universität Berlin.
+
 #let supervisionEntry(name, date, type, title) = {
   entry(date: date)[#type project of #name on\ #small(emph(title))]}
+
+== As Professor at Technische Universität Berlin
+#supervisionEntry(
+  [Lisa Barthel],
+  [07/2024],
+  [MSc],
+  [Solving Rewrite Problems with Slotted E-Graphs])
+
 == As Lecturer at the University of Edinburgh
 #supervisionEntry(
   [Limrod Liberman],
